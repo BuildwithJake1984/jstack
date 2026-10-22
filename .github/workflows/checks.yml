@@ -93,12 +93,12 @@ jobs:
             require_field "$block" status "$f"
             require_field "$block" tags "$f"
             require_field "$block" purpose "$f"
-            require_nonempty "$block" '^purpose:\s*.+' "$f" "purpose"
-            require_nonempty "$block" '^title:\s*.+' "$f" "title"
-            require_nonempty "$block" '^slug:\s*.+' "$f" "slug"
-            require_nonempty "$block" '^date:\s*.+' "$f" "date"
-            require_nonempty "$block" '^status:\s*.+' "$f" "status"
-            if echo "$block" | grep -qE '^status:\s*draft\b'; then
+            require_nonempty "$block" '^purpose:[[:space:]]*.+' "$f" "purpose"
+            require_nonempty "$block" '^title:[[:space:]]*.+' "$f" "title"
+            require_nonempty "$block" '^slug:[[:space:]]*.+' "$f" "slug"
+            require_nonempty "$block" '^date:[[:space:]]*.+' "$f" "date"
+            require_nonempty "$block" '^status:[[:space:]]*.+' "$f" "status"
+            if echo "$block" | grep -qE '^status:[[:space:]]*draft\b'; then
               echo "::error file=$f::Lessons must not use status: draft"
               exit 1
             fi
@@ -109,12 +109,12 @@ jobs:
             echo "Checking tool $f"
             local block
             block="$(extract_frontmatter "$f")"
-            require_nonempty "$block" '^type:\s*tool\b' "$f" "type: tool"
+            require_nonempty "$block" '^type:[[:space:]]*tool\b' "$f" "type: tool"
             require_field "$block" title "$f"
             require_field "$block" tags "$f"
             require_field "$block" purpose "$f"
-            require_nonempty "$block" '^purpose:\s*.+' "$f" "purpose"
-            require_nonempty "$block" '^title:\s*.+' "$f" "title"
+            require_nonempty "$block" '^purpose:[[:space:]]*.+' "$f" "purpose"
+            require_nonempty "$block" '^title:[[:space:]]*.+' "$f" "title"
           }
 
           check_skill() {
@@ -122,14 +122,14 @@ jobs:
             echo "Checking skill $f"
             local block
             block="$(extract_frontmatter "$f")"
-            require_nonempty "$block" '^type:\s*skill\b' "$f" "type: skill"
+            require_nonempty "$block" '^type:[[:space:]]*skill\b' "$f" "type: skill"
             require_field "$block" name "$f"
             require_field "$block" description "$f"
             require_field "$block" tags "$f"
             require_field "$block" purpose "$f"
-            require_nonempty "$block" '^name:\s*.+' "$f" "name"
-            require_nonempty "$block" '^description:\s*.+' "$f" "description"
-            require_nonempty "$block" '^purpose:\s*.+' "$f" "purpose"
+            require_nonempty "$block" '^name:[[:space:]]*.+' "$f" "name"
+            require_nonempty "$block" '^description:[[:space:]]*.+' "$f" "description"
+            require_nonempty "$block" '^purpose:[[:space:]]*.+' "$f" "purpose"
           }
 
           lesson_files=(
