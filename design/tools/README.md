@@ -14,4 +14,4 @@ Curated references for design and build tools. For UI component libraries, see [
 | [`shotbase/`](shotbase/README.md) | Shotbase — screen capture and recording workspace | reference | curated | tools, macos, screenshots, screen-recording, video, documentation, sharing, paid |
 | [`voicestudio/`](voicestudio/README.md) | VoiceStudio — local AI voice production workspace | reference | curated | tools, audio, voice, ai, local-first, dubbing, transcription, audiobook, api, mcp, agpl |
 
-Contributions: add a folder from [`../templates/reference-template/`](../templates/reference-template/) and a row here; entries are merged after maintainer review.
+Contributions: add a tool folder (`README.md` with tool frontmatter from [CONVENTIONS.md](../../CONVENTIONS.md#tool-designtoolsnamereadmemd)) and a row here; entries are merged after maintainer review.

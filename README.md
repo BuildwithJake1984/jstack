@@ -31,7 +31,7 @@ To use a skill in a project, link or copy from the **Skill source** URL (for exa
 
 ## Contributing
 
-Open a pull request. Follow [CONVENTIONS.md](CONVENTIONS.md) for lessons, tools, and skills. New UI library or tool references start from [`design/templates/reference-template/`](design/templates/reference-template/) and get a row in the matching catalog. Skills should follow the [skills audit standard](design/templates/astra-skills-standard/README.md).
+Open a pull request. Follow [CONVENTIONS.md](CONVENTIONS.md) for lessons, tools, skills, and reference frontmatter. New UI library or tool references use the reference layout in CONVENTIONS and get a row in the matching catalog. Skills should meet the [skills audit standard](CONVENTIONS.md#skills-audit-standard).
 
 ## Credits
 

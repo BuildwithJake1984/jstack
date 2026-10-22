@@ -113,7 +113,6 @@ Link to the upstream or vendored skill (for example `SKILL.md` on GitHub).
 ### Skill — vendored (`<category>/skills/<name>/SKILL.md`)
 
 When a skill's full instructions live in this repo (no external source), keep the router `SKILL.md` and detail files under `ai-agents/skills/` or `development/skills/` and link to that path from the design catalog file when applicable.
-```
 
 ### Reference (ui-libraries link-outs)
 
@@ -138,6 +137,24 @@ sources:
 
 (body unchanged from prior digest)
 ```
+
+For `kind: media-set` entries, keep `README.md` as the index and add a sibling `media.md` with URL rows only (no image or video binaries in git).
+
+## Skills audit standard
+
+Governing checklist for operator skills, always-on agent instructions (`AGENTS.md`), and agent profiles. Read [Eric Provencher — Rethinking skills and prompts for GPT-6 Astra](https://x.com/pvncher/status/2095991462416490862) for context; do not invent article text.
+
+1. **Descriptions** — as short as possible; clear WHEN; no pick-me; no overlapping triggers
+2. **Skill count** — fewer is better; catalog pressure truncates descriptions
+3. **Progressive disclosure** — root `SKILL.md` is a minimal router; detail in supporting docs loaded on demand
+4. **Specificity** — drop elaborate itineraries that overconstrain; keep durable principles and true constraints
+5. **Multi-model** — don't overfit to one model
+6. **Always-on (`AGENTS.md`)** — every line must earn its place on every task
+7. **Testing / verification** — no redundant always-run-all-tests
+8. **Decision boundaries** — ask-first only for real risk; avoid premature stops
+9. **Persistence / completion** — define done; don't force early review stops unless needed
+
+Maintainer review audits every skill add or change against these nine points before merge (or records an explicit exception).
 
 ## CI
 
