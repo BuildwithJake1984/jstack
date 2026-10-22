@@ -142,5 +142,13 @@ Pull requests must satisfy the frontmatter job for:
 - `*/lessons/*.md` (except `README.md`)
 - `design/tools/*/README.md` (not the catalog `design/tools/README.md`)
 - `design/ui-libraries/*/README.md` (not the catalog `design/ui-libraries/README.md`)
+<<<<<<< HEAD
 - `design/skills/*.md` (not `design/skills/README.md`)
 - `ai-agents/skills/**/SKILL.md` and `development/skills/**/SKILL.md`
+=======
+- `**/skills/**/SKILL.md`
+- `*/templates/**/*.md` (catalog `*/templates/README.md` excluded; YAML parse when frontmatter is present)
+- `updates/*.md` (except `updates/README.md`; YAML parse when frontmatter is present)
+
+Frontmatter must be valid YAML (`yaml.safe_load`); schema rules apply to lessons, tools, skills, and references.
+>>>>>>> 91a796d (Fix skill frontmatter YAML and validate with safe_load)

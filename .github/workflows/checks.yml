@@ -58,6 +58,7 @@ jobs:
       - name: Validate write-up frontmatter
         run: |
           set -euo pipefail
+<<<<<<< HEAD
           shopt -s nullglob
 
           extract_frontmatter() {
@@ -211,6 +212,10 @@ jobs:
           done
 
           echo "Write-up frontmatter OK."
+=======
+          python3 -m pip install --quiet pyyaml
+          python3 .github/scripts/validate_frontmatter.py
+>>>>>>> 91a796d (Fix skill frontmatter YAML and validate with safe_load)
 
   markdown-only:
     name: markdown-only
