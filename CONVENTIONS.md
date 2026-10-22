@@ -80,12 +80,14 @@ sources:
 …
 ```
 
-### Skill (`SKILL.md`)
+### Skill — design catalog (`design/skills/<name>.md`)
+
+One markdown file per skill under `design/skills/`. It is a catalog entry that points at the executable skill (upstream repo or a vendored `SKILL.md` elsewhere in this repo). Do not nest a skill folder under `design/skills/`.
 
 ```markdown
 ---
 type: skill
-name: skill-folder-name
+name: skill-id
 description: Short loader line (when to invoke this skill).
 tags: [design, ui]
 purpose: One line on the outcome this skill helps you produce.
@@ -97,7 +99,16 @@ purpose: One line on the outcome this skill helps you produce.
 
 - Building or reviewing …
 
-(rest of skill content unchanged)
+Short summary of what the skill covers.
+
+## Skill source
+
+Link to the upstream or vendored skill (for example `SKILL.md` on GitHub).
+```
+
+### Skill — vendored (`<category>/skills/<name>/SKILL.md`)
+
+When a skill's full instructions live in this repo (no external source), keep the router `SKILL.md` and detail files under `ai-agents/skills/` or `development/skills/` and link to that path from the design catalog file when applicable.
 ```
 
 ### Reference (ui-libraries link-outs)
@@ -131,4 +142,5 @@ Pull requests must satisfy the frontmatter job for:
 - `*/lessons/*.md` (except `README.md`)
 - `design/tools/*/README.md` (not the catalog `design/tools/README.md`)
 - `design/ui-libraries/*/README.md` (not the catalog `design/ui-libraries/README.md`)
-- `**/skills/**/SKILL.md`
+- `design/skills/*.md` (not `design/skills/README.md`)
+- `ai-agents/skills/**/SKILL.md` and `development/skills/**/SKILL.md`

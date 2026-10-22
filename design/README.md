@@ -6,7 +6,7 @@ Skills and references for designing and polishing web and product interfaces.
 
 | Skill | When to load |
 | --- | --- |
-| [`make-interfaces-feel-better`](skills/make-interfaces-feel-better/SKILL.md) | Building or reviewing UI polish: components, animation, hover/focus states, shadows, borders, typography, icons, micro-interactions. |
+| [`make-interfaces-feel-better`](skills/make-interfaces-feel-better.md) | Building or reviewing UI polish: components, animation, hover/focus states, shadows, borders, typography, icons, micro-interactions. |
 
 ## UI libraries
 

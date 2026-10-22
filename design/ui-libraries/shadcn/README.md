@@ -22,7 +22,7 @@ sources:
 - Default starting point for new web UI (client sites and product apps) before Amicro, Kinetics, or one-off patterns.
 - Prefer existing project components / brand tokens when they already cover the need; otherwise reach for shadcn patterns and adapt.
 - Pair with [Keyline Icons](../keyline-icons/) when an icon set is needed (built for shadcn defaults).
-- Pair with [`skills/make-interfaces-feel-better`](../../skills/make-interfaces-feel-better/) for polish after structure is in place.
+- Pair with [`skills/make-interfaces-feel-better`](../../skills/make-interfaces-feel-better.md) for polish after structure is in place.
 
 Listed in [UI Components catalog](../components/) under **Primary**.
 

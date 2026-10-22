@@ -35,7 +35,7 @@ npx skills add jakubkrehel/skills
 
 ## Overlap with local work
 
-The local operator skill is [`skills/make-interfaces-feel-better/`](../../skills/make-interfaces-feel-better/SKILL.md) (thin router + detail files; upstream [jakubkrehel/make-interfaces-feel-better](https://github.com/jakubkrehel/make-interfaces-feel-better) / [jakubf.dev article](https://jakubf.dev/)). Load that skill for UI polish and interface review. This reference covers the broader `better-*` suite and when to pull domain depth (colors, a11y, writing, layout) without registering every `better-*` into the catalog.
+The design catalog entry is [`skills/make-interfaces-feel-better.md`](../../skills/make-interfaces-feel-better.md) (points at upstream [jakubkrehel/make-interfaces-feel-better](https://github.com/jakubkrehel/make-interfaces-feel-better) / [jakubf.dev article](https://jakubf.dev/)). Load that skill for UI polish and interface review. This reference covers the broader `better-*` suite and when to pull domain depth (colors, a11y, writing, layout) without registering every `better-*` into the catalog.
 
 ## Astra rule
 
