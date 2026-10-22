@@ -106,13 +106,12 @@ def iter_tools() -> list[Path]:
 
 
 def iter_skills() -> list[Path]:
-    patterns = (
-        "design/skills/*/SKILL.md",
-        "ai-agents/skills/*/SKILL.md",
-        "development/skills/*/SKILL.md",
-    )
     paths: list[Path] = []
-    for pattern in patterns:
+    for path in sorted((ROOT / "design/skills").glob("*.md")):
+        if path.name == "README.md":
+            continue
+        paths.append(path)
+    for pattern in ("ai-agents/skills/*/SKILL.md", "development/skills/*/SKILL.md"):
         paths.extend(sorted(ROOT.glob(pattern)))
     return paths
 

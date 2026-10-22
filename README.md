@@ -9,7 +9,7 @@ A public library of agent skills and reference notes, organized by category. Ski
 | [`ai-agents/`](ai-agents/lessons/README.md) | Lessons, skills, tools, and templates for building AI-powered product features |
 | [`design/`](design/README.md) | UI polish skill plus UI library link-outs, design tools, and templates |
 | [`development/`](development/README.md) | Lessons, skills, tools, and templates for building and shipping software (coming soon) |
-| [`workflows/`](workflows/project-1/README.md) | Project workflow placeholders |
+| [`workflows/`](workflows/README.md) | Project workflow playbooks (one subfolder per project) |
 | [`updates/`](updates/README.md) | Monthly index of new lessons and published material |
 
 More categories will be added over time.
