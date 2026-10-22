@@ -11,6 +11,10 @@ Lessons, tools, skills, and reference notes share one shape so humans and agents
 
 Optional sections (tools): `## Capabilities`, `## Access and pricing`, `## Use notes`, `## Jake's take`, `## Sources`.
 
+## Workflows
+
+`workflows/` is the one section that uses **per-project subfolders** (`workflows/<project-name>/`). Lessons, tools, design skills, and ui-library references stay in the flat catalog paths described below; only workflow projects nest under their own folder. Add a subfolder when a real project is ready—start with `README.md` inside it—and list it from [`workflows/README.md`](workflows/README.md). Do not commit empty placeholder project folders.
+
 ## Frontmatter
 
 | Key | Lessons | Tools | Skills | References (ui-libraries) |
@@ -144,3 +148,7 @@ Pull requests must satisfy the frontmatter job for:
 - `design/ui-libraries/*/README.md` (not the catalog `design/ui-libraries/README.md`)
 - `design/skills/*.md` (not `design/skills/README.md`)
 - `ai-agents/skills/**/SKILL.md` and `development/skills/**/SKILL.md`
+- `*/templates/**/*.md` (catalog `*/templates/README.md` excluded; YAML parse when frontmatter is present)
+- `updates/*.md` (except `updates/README.md`; YAML parse when frontmatter is present)
+
+Frontmatter must be valid YAML (`yaml.safe_load`); schema rules apply to lessons, tools, skills, and references.

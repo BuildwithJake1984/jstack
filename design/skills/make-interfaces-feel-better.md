@@ -1,7 +1,7 @@
 ---
 type: skill
 name: make-interfaces-feel-better
-description: When building or reviewing UI polish: components, animations, hover/focus states, shadows, borders, typography, icons, or micro-interactions.
+description: "When building or reviewing UI polish: components, animations, hover/focus states, shadows, borders, typography, icons, or micro-interactions."
 tags: [design, ui, polish, animation, typography, accessibility]
 purpose: Apply design-engineering polish using the project's existing styling system.
 ---
