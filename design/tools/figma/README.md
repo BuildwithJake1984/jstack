@@ -34,7 +34,7 @@ Figma offers multiple products and seat types (Design, Dev, and others). **Verif
 
 ## Use notes
 
-Jake uses Figma especially for **setting up a design system** and a **token library** for colors and typography—foundations that downstream tools (including Paper and code) can align to.
+Jake uses Figma especially for **setting up a design system** and a **token library** for colors and typography—foundations that downstream tools (including Paper and code) can align to. He reaches for it when he is doing **more advanced design** work that benefits from deep component, variable, and systems tooling.
 
 When tokens live in Figma variables, keep naming and tiers documented so agents and developers map them consistently to CSS custom properties or Tailwind theme extensions.
 

@@ -34,7 +34,7 @@ Paper offers web and desktop experiences; **verify current plans and pricing on 
 
 ## Use notes
 
-Jake uses Paper as his **primary UI/UX tool for mapping website and app screens**. His AI agents connect through Paper MCP and design directly on the platform. Because output is grounded in **HTML/CSS**, handoff to front-end development tends to stay closer to what ships in the browser.
+Jake uses Paper as his **primary UI/UX tool for mapping website and app screens**. His AI agents connect through Paper MCP and design directly on the platform. Because output is grounded in **HTML/CSS**, handoff to front-end development tends to stay closer to what ships in the browser. Paper also lets him be **more hands-on** when he wants to—he can work **directly on the canvas** instead of only delegating to agents.
 
 Treat Paper files as the source of truth for exploratory UI work in this stack; pair with your repo’s components, tokens, and accessibility standards before production merge.
 
