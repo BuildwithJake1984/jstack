@@ -81,13 +81,27 @@ The weekly sweep covers **only** the vendors in the tables below (major labs, sh
 
 ### Analysts and commentators
 
-For **tool comparisons and analysis** (not official vendor announcements), follow these X accounts:
+For **tool comparisons and analysis** (not official vendor announcements). Cadence is a guide for the weekly sweep—not a hard rule.
 
-| Name | X |
-| --- | --- |
-| mreflow | [@mreflow](https://x.com/mreflow) |
-| Theo | [@theo](https://x.com/theo) |
-| Matthew Berman | [@MatthewBerman](https://x.com/MatthewBerman) |
+**Weekly**
+
+| Name | X | Focus |
+| --- | --- | --- |
+| Matt Wolfe | [@mreflow](https://x.com/mreflow) | Tool comparisons |
+| Theo | [@theo](https://x.com/theo) | Next.js, Vercel, and AI coding |
+| Matthew Berman | [@MatthewBerman](https://x.com/MatthewBerman) | AI labs and agents |
+| Alex Volkov (ThursdAI) | [@altryne](https://x.com/altryne) | Weekly AI news show |
+| Ray Fernando | [@RayFernando1337](https://x.com/RayFernando1337) | Hands-on model testing |
+
+**Occasional**
+
+| Name | X | Focus |
+| --- | --- | --- |
+| swyx | [@swyx](https://x.com/swyx) | AI engineering |
+| Jake (Railway founder; not neutral) | [@JustJake](https://x.com/JustJake) | Railway updates |
+| shadcn | [@shadcn](https://x.com/shadcn) | Design and front end |
+| Lee Robinson | [@leerob](https://x.com/leerob) | Agent explainers |
+| Riley Brown | [@rileybrown](https://x.com/rileybrown) | Vibe-coding and agent tools |
 
 When their takes appear in a weekly issue:
 
