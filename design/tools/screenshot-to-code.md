@@ -39,4 +39,27 @@ Use for rapid layout reconstruction, prototyping, migration studies, and extract
 - Reconcile output with the project's design system and verify semantics, accessibility, responsive behavior, performance, states, and tests.
 - Confirm rights before uploading confidential or third-party designs.
 
+## Where it fits in Jake's stack and JStack
+
+A **rapid prototyping** reference in the design/build lane: useful for bootstrapping layout from mocks when exploring ideas, not as a substitute for the project's design system or production components. Cataloged in [`design/tools/`](README.md); pair with [Figma](figma.md) exports and [Paper](paper.md) exploration before merge.
+
+## Official links
+
+- [Screenshot to Code (hosted)](https://screenshottocode.com/)
+- [Open-source repository](https://github.com/abi/screenshot-to-code)
+
+## News & Insights
+
+Weekly external coverage: [`news-and-insights/README.md`](../../news-and-insights/README.md). When an issue mentions Screenshot to Code, link to [this file](screenshot-to-code.md).
+
+## Jake's take
+
+<!-- Jake's input goes here -->
+
+## Sources
+
+Pages checked for this reference (2026-10-22):
+
+- [https://screenshottocode.com/](https://screenshottocode.com/) — hosted product
+- [https://github.com/abi/screenshot-to-code](https://github.com/abi/screenshot-to-code) — MIT license and README
 

@@ -52,11 +52,20 @@ Mobbin offers **Free, Pro, Team, and Enterprise** tiers. Highlights from [Mobbin
 
 Free browsing is available at [mobbin.com/explore](https://mobbin.com/explore) with limited access; paid plans unlock the full library, search, flows, animations, and related features per Mobbin’s overview.
 
-## Use notes
+## Where it fits in Jake's stack and JStack
 
 Jake uses Mobbin to **research UX/UI best practices** from real products. When building screen designs, he often has an AI agent **reference Mobbin through MCP** to compare patterns before committing to a layout.
 
 Preserve product names and Mobbin URLs when citing examples in specs or PRs so others can inspect the source.
+
+## Official links
+
+- [Mobbin](https://mobbin.com/)
+- [Mobbin on X](https://x.com/mobbin)
+
+## News & Insights
+
+Weekly external coverage: [`news-and-insights/README.md`](../../news-and-insights/README.md). When an issue mentions Mobbin, link to [this file](mobbin.md).
 
 ## Related
 

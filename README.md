@@ -15,6 +15,18 @@ A public library of agent skills and reference notes, organized by category. Ski
 
 More categories will be added over time.
 
+## Core stack
+
+Canonical JStack tool files for Jake's AI labs, shipping infrastructure, and design/build tools. Use these paths when linking from [News & Insights](news-and-insights/README.md) or lessons.
+
+| Area | Tools |
+| --- | --- |
+| **AI frontier labs** | [Claude](ai-agents/tools/claude.md) · [OpenAI](ai-agents/tools/openai.md) · [xAI / Grok](ai-agents/tools/xai.md) · [Google / Gemini](ai-agents/tools/google.md) · [Meta / Muse](ai-agents/tools/meta-muse.md) |
+| **Infrastructure** | [Supabase](development/tools/supabase.md) · [Railway](development/tools/railway.md) · [Vercel](development/tools/vercel.md) · [Next.js](development/tools/nextjs.md) · [GitHub](development/tools/github.md) |
+| **Design and build** | [Paper](design/tools/paper.md) · [Figma](design/tools/figma.md) · [Mobbin](design/tools/mobbin.md) · [Canva](design/tools/canva.md) · [Screenshot to Code](design/tools/screenshot-to-code.md) · [Shotbase](design/tools/shotbase.md) · [VoiceStudio](design/tools/voicestudio.md) |
+
+Full catalogs: [`ai-agents/tools/`](ai-agents/tools/README.md), [`development/tools/`](development/tools/README.md), [`design/tools/`](design/tools/README.md).
+
 ## Skills
 
 | Skill | Category | When to load |

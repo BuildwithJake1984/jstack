@@ -69,4 +69,27 @@ VoiceStudio is a promising creative-production reference for:
 
 **Free, local-first AGPL voice-production tool with separately licensed models and enquiry-based commercial options.**
 
+## Where it fits in Jake's stack and JStack
+
+A **local audio production** reference for narration, dubbing, and transcription experiments without sending recordings to a hosted voice API. Listed in [`design/tools/`](README.md); confirm AGPL obligations before embedding in client deliverables.
+
+## Official links
+
+- [VoiceStudio](https://voicestudio.sh/)
+- [VoiceStudio on GitHub](https://github.com/debpalash/VoiceStudio)
+
+## News & Insights
+
+Weekly external coverage: [`news-and-insights/README.md`](../../news-and-insights/README.md). When an issue mentions VoiceStudio, link to [this file](voicestudio.md).
+
+## Jake's take
+
+<!-- Jake's input goes here -->
+
+## Sources
+
+Pages checked for this reference (2026-10-22):
+
+- [https://voicestudio.sh/](https://voicestudio.sh/) — product overview
+- [https://github.com/debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio) — license and capabilities
 

@@ -35,37 +35,47 @@ The article **H1** uses a slash date and the section title, for example:
 2. **Why it matters** — Every item should make clear what changed and why a JStack reader should care.
 3. **Source link** — Each item ends with a link to the primary official announcement or doc (see body template in [CONVENTIONS.md](../CONVENTIONS.md)).
 4. **Related JStack** — Tie items to relevant lessons, tools, or skills in this repo when they exist.
+5. **JStack tool links** — Every mention of a tool that has a JStack tool file must link to that file with a relative path (for example [`../ai-agents/tools/claude.md`](../ai-agents/tools/claude.md), [`../development/tools/vercel.md`](../development/tools/vercel.md), [`../design/tools/figma.md`](../design/tools/figma.md)).
 
 Follow the `news-insights` template in [CONVENTIONS.md](../CONVENTIONS.md) for frontmatter and body structure.
 
-## Sources we watch
+## Sources we follow
 
-Track both **official sites / feeds** and **X (Twitter) accounts** where teams ship news. Include any tool added to JStack later (new rows in `design/tools/`, integrations, etc.) using the same rules: official channels first; add feeds to this README when verified.
+Official sites and X accounts for each cataloged tool. When a weekly item is about one of these products, link the tool name to its JStack file and cite the vendor announcement in **Source**.
 
-### AI frontier labs
+### AI frontier labs (`ai-agents/tools/`)
 
-| Source | Notes |
+| JStack file | Follow for news |
 | --- | --- |
-| Anthropic / Claude | Website, blog, docs; X: [@Anthropic](https://x.com/Anthropic), [@Claude](https://x.com/Claude) |
-| OpenAI | Website, blog, platform docs; X: [@OpenAI](https://x.com/OpenAI) |
-| xAI / Grok, Grok Bot | Website, docs; X: [@xai](https://x.com/xai), [@grok](https://x.com/grok) |
-| Google (Gemini, AI studio, cloud AI) | Google AI blog and product pages; X: Google / DeepMind accounts as relevant |
-| Meta (incl. Muse) | AI blog and product news; X: Meta AI accounts as relevant |
+| [Claude / Anthropic](../ai-agents/tools/claude.md) | anthropic.com, docs.anthropic.com; X: [@Anthropic](https://x.com/Anthropic), [@Claude](https://x.com/Claude) |
+| [OpenAI](../ai-agents/tools/openai.md) | openai.com, platform.openai.com/docs; X: [@OpenAI](https://x.com/OpenAI) |
+| [xAI / Grok](../ai-agents/tools/xai.md) | x.ai, docs.x.ai; X: [@xai](https://x.com/xai), [@grok](https://x.com/grok) |
+| [Google / Gemini](../ai-agents/tools/google.md) | ai.google, gemini.google.com, ai.google.dev; X: [@GoogleDeepMind](https://x.com/GoogleDeepMind), [@GeminiApp](https://x.com/GeminiApp) |
+| [Meta / Meta AI / Muse](../ai-agents/tools/meta-muse.md) | ai.meta.com, meta.ai; X: [@MetaAI](https://x.com/MetaAI) |
 
-### Platform and stack (JStack catalog and peers)
+### Infrastructure and shipping (`development/tools/`)
 
-| Source | Notes |
+| JStack file | Follow for news |
 | --- | --- |
-| Supabase | Blog, changelog, docs; X: [@supabase](https://x.com/supabase) |
-| Railway | Blog, changelog; X: [@Railway](https://x.com/Railway) |
-| Paper | Product updates; X as listed on official site |
-| Next.js | Blog, releases; X: [@nextjs](https://x.com/nextjs) |
-| Vercel | Blog, changelog; X: [@vercel](https://x.com/vercel) |
-| GitHub | Changelog, blog; X: [@github](https://x.com/github) |
-| Resend | Blog, changelog; X: [@resend](https://x.com/resend) |
-| Figma | Blog, release notes; X: [@figma](https://x.com/figma) |
+| [Supabase](../development/tools/supabase.md) | supabase.com, supabase.com/docs; X: [@supabase](https://x.com/supabase) |
+| [Railway](../development/tools/railway.md) | railway.com, docs.railway.com; X: [@Railway](https://x.com/Railway) |
+| [Vercel](../development/tools/vercel.md) | vercel.com, vercel.com/docs; X: [@vercel](https://x.com/vercel) |
+| [Next.js](../development/tools/nextjs.md) | nextjs.org, nextjs.org/docs; X: [@nextjs](https://x.com/nextjs) |
+| [GitHub](../development/tools/github.md) | github.com, docs.github.com; X: [@github](https://x.com/github) |
 
-Add new JStack tools here when they land in the repo (feed URL: **TBD** until verified).
+### Design and build (`design/tools/`)
+
+| JStack file | Follow for news |
+| --- | --- |
+| [Paper](../design/tools/paper.md) | paper.design; X: [@paper](https://x.com/paper) |
+| [Figma](../design/tools/figma.md) | figma.com; X: [@figma](https://x.com/figma) |
+| [Mobbin](../design/tools/mobbin.md) | mobbin.com; X: [@mobbin](https://x.com/mobbin) |
+| [Canva](../design/tools/canva.md) | canva.com; X: [@canva](https://x.com/canva) |
+| [Screenshot to Code](../design/tools/screenshot-to-code.md) | screenshottocode.com, GitHub releases; feed **TBD** |
+| [Shotbase](../design/tools/shotbase.md) | shotbase.com; X **TBD** (verify on vendor site before citing) |
+| [VoiceStudio](../design/tools/voicestudio.md) | voicestudio.sh, GitHub releases; X **TBD** |
+
+Add a row when a new tool file lands under `ai-agents/tools/`, `development/tools/`, or `design/tools/`. Do not invent feed URLs—update the verified feeds section below when confirmed.
 
 ## Verified feeds and check pages
 
@@ -98,7 +108,7 @@ Hosted at https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/:
 
 ### Feed TBD
 
-Official RSS/Atom URLs are **not listed** for: Anthropic (primary site), Google, Meta, Supabase, Railway, Paper, Next.js, Vercel, GitHub (beyond per-repo release atoms above), Resend, and Figma. Add rows here only after a feed is verified—do not invent URLs.
+Official RSS/Atom URLs are **not listed** for: Anthropic (primary site), Google, Meta, Supabase, Railway, Paper, Next.js, Vercel, GitHub (beyond per-repo release atoms above), Resend, Figma, and other design tools without a verified feed. Add rows only after a feed is verified—do not invent URLs.
 
 ## Index
 

@@ -40,11 +40,20 @@ Canva states on that page that teams can collaborate with **real-time cursors**,
 
 Canva offers **free and paid** plans (individual, team, and business tiers). Canva notes **education and nonprofit** programs on its site. **Verify current plans, limits, and pricing at [canva.com](https://www.canva.com/)** before recommending a subscription.
 
-## Use notes
+## Where it fits in Jake's stack and JStack
 
 Jake treats Canva as an **easy-to-use, all-purpose graphic design tool** for quick marketing assets, social visuals, presentations, and other general creative work outside strict product-UI system work. He especially likes that you can **create templates** and **update them easily**—handy when the same layouts need fresh copy, imagery, or seasonal tweaks without rebuilding from scratch.
 
 Use Canva for speed and reach; use Figma, Paper, or your code design system when you need component-level product UI, tokens, or dev handoff. Export assets deliberately (format, resolution, licensing) before dropping them into a product repo.
+
+## Official links
+
+- [Canva](https://www.canva.com/)
+- [Canva on X](https://x.com/canva)
+
+## News & Insights
+
+Weekly external coverage: [`news-and-insights/README.md`](../../news-and-insights/README.md). When an issue mentions Canva, link to [this file](canva.md).
 
 ## Jake's take
 

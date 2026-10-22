@@ -37,11 +37,21 @@ Paper’s site emphasizes a **design-to-code loop**: an **HTML/CSS canvas** so d
 
 Paper offers web and desktop experiences. **Verify current plans and pricing on [paper.design](https://paper.design/)** before recommending a purchase. MCP workflows in the official documentation assume **Paper Desktop** is installed and updated.
 
-## Use notes
+## Where it fits in Jake's stack and JStack
 
 Jake uses Paper as his **primary UI/UX tool for mapping website and app screens**. His AI agents connect through Paper MCP and design directly on the platform. Because output is grounded in **HTML/CSS**, handoff to front-end development tends to stay closer to what ships in the browser. Paper also lets him be **more hands-on** when he wants to—he can work **directly on the canvas** instead of only delegating to agents.
 
 Treat Paper files as the source of truth for exploratory UI work in this stack; pair with your repo’s components, tokens, and accessibility standards before production merge.
+
+## Official links
+
+- [Paper](https://paper.design/)
+- [Paper documentation](https://paper.design/docs)
+- [Paper on X](https://x.com/paper)
+
+## News & Insights
+
+Weekly external coverage: [`news-and-insights/README.md`](../../news-and-insights/README.md). When an issue mentions Paper, link to [this file](paper.md).
 
 ## Related
 
