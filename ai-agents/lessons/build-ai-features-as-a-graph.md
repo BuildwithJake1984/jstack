@@ -4,10 +4,17 @@ title: Build AI Features as a Graph, Not One Giant Prompt
 slug: build-ai-features-as-a-graph
 date: 2026-10-21
 tags: [ai-agents, llm, workflows, architecture]
+purpose: Replace one brittle mega-prompt with a testable graph of steps, branches, and checks.
 status: published
 ---
 
 # Build AI Features as a Graph, Not One Giant Prompt
+
+## When to use
+
+- A single LLM prompt is doing too many jobs in production.
+- You need to log, test, or swap one step without rewriting the whole feature.
+- You want branches, fallbacks, or code validation between model calls.
 
 *Draft for Gravity Web Studio. Not published. Destined for JStack.*
 

@@ -1,7 +1,8 @@
 
 ---
+type: tool
 title: Screenshot to Code — visual frontend reconstruction
-kind: reference
+purpose: Generate a first-pass front-end from screenshots, mockups, or Figma exports.
 status: curated
 tags: [tools, ai, code, screenshots, figma, frontend, react, vue, tailwind, mit, free, paid]
 sources:
@@ -11,9 +12,14 @@ sources:
     label: Open-source repository and license
 ---
 
-Listed in the [UI Components catalog](../../ui-libraries/components/).
-
 # Screenshot to Code — visual frontend reconstruction
+
+## When to use
+
+- Bootstrapping layout or component structure from an approved visual reference.
+- Prototyping migration or rebuild studies from screenshots or short recordings.
+
+Listed in the [UI Components catalog](../../ui-libraries/components/).
 
 An AI tool that converts screenshots, mockups, Figma designs, text prompts, and short screen recordings into frontend code. Supported outputs include HTML with Tailwind or CSS, React with Tailwind, Vue with Tailwind, Bootstrap, and Ionic with Tailwind.
 

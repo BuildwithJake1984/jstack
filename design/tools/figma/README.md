@@ -1,7 +1,8 @@
 
 ---
+type: tool
 title: Figma — collaborative design and design systems
-kind: reference
+purpose: Build and maintain design systems, variables, and dev-ready UI specs.
 status: curated
 tags: [tools, design, design-system, variables, tokens, components, collaboration, dev-mode]
 sources:
@@ -14,6 +15,12 @@ sources:
 ---
 
 # Figma — collaborative design and design systems
+
+## When to use
+
+- Setting up or extending a design system, token library, or component library.
+- Advanced product UI work that needs variables, variants, and Dev Mode handoff.
+- Aligning design foundations before Paper or code implementation.
 
 [Figma](https://www.figma.com/) markets a **collaborative canvas** for turning ideas into apps, websites, and products, with separate emphasis on **design tools** and **build/dev tools** that extend toward production. Figma also promotes an in-product **agent** for tasks such as adding motion, documenting design systems, and implementing feedback (see Figma homepage).
 

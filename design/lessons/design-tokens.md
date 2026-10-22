@@ -4,10 +4,17 @@ title: Design Tokens in a Design System
 slug: design-tokens
 date: 2026-10-22
 tags: [design, design-system, tokens, figma, css, tailwind, theming]
+purpose: Define and tier tokens so design tools and code share one naming system.
 status: published
 ---
 
 # Design Tokens in a Design System
+
+## When to use
+
+- Starting or refactoring a design system for color, type, spacing, or radius.
+- Preparing Figma variables, Paper tokens, or Tailwind/CSS custom properties to match.
+- Debugging inconsistent UI or planning dark mode and theming.
 
 Hard-coded hex values and one-off spacing in components feel fast until you ship dark mode, rebrand, or a second product surface. **Design tokens** are the shared vocabulary that keeps visual decisions consistent from Figma or Paper through to CSS and Tailwind.
 
