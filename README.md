@@ -31,7 +31,7 @@ To use a skill in a project, link or copy its folder (for example into `.claude/
 
 ## Contributing
 
-Open a pull request. New UI library or tool references start from [`design/templates/reference-template/`](design/templates/reference-template/) and get a row in the matching catalog. Skills should follow the [skills audit standard](design/templates/astra-skills-standard/README.md).
+Open a pull request. Follow [CONVENTIONS.md](CONVENTIONS.md) for lessons, tools, and skills. New UI library or tool references start from [`design/templates/reference-template/`](design/templates/reference-template/) and get a row in the matching catalog. Skills should follow the [skills audit standard](design/templates/astra-skills-standard/README.md).
 
 ## Credits
 

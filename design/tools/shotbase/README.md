@@ -1,7 +1,8 @@
 
 ---
+type: tool
 title: Shotbase - screen capture and recording workspace
-kind: reference
+purpose: Capture and edit macOS screenshots and recordings for demos, bugs, and docs.
 status: curated
 tags: [tools, macos, screenshots, screen-recording, video, documentation, sharing, paid]
 sources:
@@ -10,6 +11,11 @@ sources:
 ---
 
 # Shotbase - screen capture and recording workspace
+
+## When to use
+
+- Recording product walkthroughs, bug reports, or before/after evidence on macOS.
+- Organizing and sharing captures with editing, frames, or scroll capture.
 
 A macOS capture workspace for screenshots, screen recordings, webpage captures, editing, animation, organization, and share links. Useful for product walkthroughs, feature demos, bug reports, before-and-after evidence, client instructions, launch assets, and development documentation.
 

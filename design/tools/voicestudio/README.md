@@ -1,7 +1,8 @@
 
 ---
+type: tool
 title: VoiceStudio — local AI voice production workspace
-kind: reference
+purpose: Clone, design, dub, and transcribe voice locally with optional API or MCP.
 status: curated
 tags: [tools, audio, voice, ai, local-first, voice-cloning, dubbing, transcription, audiobook, api, mcp, agpl]
 sources:
@@ -12,6 +13,11 @@ sources:
 ---
 
 # VoiceStudio
+
+## When to use
+
+- Local voice cloning, dubbing, or transcription without sending audio to the cloud.
+- Audiobook, multi-speaker story, or dictation workflows on your own machine.
 
 [VoiceStudio](https://voicestudio.sh/) is a local-first AI audio workspace for voice cloning and design, video dubbing, dictation, transcription, multi-speaker stories, and audiobook production. It supports hundreds of languages and can expose an OpenAI-compatible local API.
 

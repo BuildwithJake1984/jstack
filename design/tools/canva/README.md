@@ -1,7 +1,8 @@
 
 ---
+type: tool
 title: Canva — visual design and publishing platform
-kind: reference
+purpose: Produce marketing and general graphics quickly with templates and brand kits.
 status: curated
 tags: [tools, design, graphics, templates, brand, collaboration, marketing, ai]
 sources:
@@ -14,6 +15,12 @@ sources:
 ---
 
 # Canva — visual design and publishing platform
+
+## When to use
+
+- Fast social, presentation, or marketing visuals outside product UI systems.
+- Reusing or updating branded templates for recurring campaigns.
+- Non-designers or quick iterations before heavier tools.
 
 [Canva](https://www.canva.com/) is an online **design and publishing** platform. Canva’s **Visual Suite** messaging combines multiple creation surfaces—such as **Docs**, **Emails**, **Sheets**, **Whiteboards**, **Presentations**, **social**, **video**, **websites**, and **landing pages**—in one workflow with drag-and-drop editing, templates, collaboration, and AI-assisted creation ([Visual Suite](https://www.canva.com/visual-suite/)).
 

@@ -1,7 +1,8 @@
 
 ---
+type: tool
 title: Paper — connected canvas for design and agents
-kind: reference
+purpose: Map product UI on an HTML/CSS canvas with agents and cleaner code handoff.
 status: curated
 tags: [tools, design, ui, agents, mcp, html, css, canvas, handoff]
 sources:
@@ -12,6 +13,12 @@ sources:
 ---
 
 # Paper — connected canvas for design and agents
+
+## When to use
+
+- Mapping website or app screens before implementation.
+- Connecting Cursor or other agents to a design file via Paper MCP.
+- Syncing tokens or real content between code and canvas.
 
 [Paper](https://paper.design/) describes itself as **the connected canvas for teams shipping with agents**: a single design space built on **web standards** where teams, agents, code, and data can stay aligned. Paper Desktop extends that workflow by connecting visual work to apps, agents, and repos through **MCP**.
 

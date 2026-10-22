@@ -1,7 +1,8 @@
 
 ---
+type: tool
 title: Mobbin — real-product UI and UX research library
-kind: reference
+purpose: Find how shipped apps handle screens, flows, and sections before you design.
 status: curated
 tags: [tools, design, ux, research, patterns, flows, mcp, inspiration]
 sources:
@@ -16,6 +17,12 @@ sources:
 ---
 
 # Mobbin — real-product UI and UX research library
+
+## When to use
+
+- Researching UX patterns from real shipped products (not mock concepts).
+- Having an agent search screens, flows, or site sections via Mobbin MCP.
+- Comparing multiple products before locking a layout or flow.
 
 [Mobbin](https://mobbin.com/) is a **searchable library of real mobile apps, web apps, and websites**. Mobbin’s own overview states that designers, developers, and agents use it to see how **shipped products** handle screens, UI patterns, website sections, and **multi-step user flows** (for example onboarding, checkout, account setup, and subscription).
 
