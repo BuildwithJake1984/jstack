@@ -1,7 +1,7 @@
-
 ---
+type: reference
 title: Page Mascot — cursor-aware interactive character
-kind: reference
+purpose: MIT cursor-aware mascot component with sprite-sheet reactions.
 status: curated
 tags: [ui, mascot, character, animation, sprite-sheet, react, interaction, mit, free]
 sources:
@@ -11,7 +11,12 @@ sources:
     label: Page Mascot source and documentation
 ---
 
-# Page Mascot
+# Page Mascot — cursor-aware interactive character
+
+## When to use
+
+- Adding a cursor-aware brand mascot with sprite-sheet reactions.
+- Shipping a lightweight MIT character without a full illustration pipeline.
 
 Page Mascot is a lightweight interactive-character component by Kamran Ahmed. A mascot watches the pointer, changes its gaze as the cursor moves, and briefly reacts when clicked or “poked.”
 
@@ -90,5 +95,3 @@ Page Mascot’s generation workflow supports color, ink, sketch, riso, paper, an
 The best first experiment is an immersive homepage. Position one alien or astronaut beside the primary navigation universe and have its gaze follow the pointer toward the planets. A click reaction could acknowledge planet selection before the transition begins.
 
 This preserves the character’s surprise-and-delight value without turning it into constant decoration throughout every page.
-
-

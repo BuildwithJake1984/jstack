@@ -1,12 +1,17 @@
-
 ---
+type: reference
 title: UI Components — catalog
-kind: reference
+purpose: Index of curated UI libraries and adjacent design resources.
 status: curated
 tags: [ui, components, catalog, micro-interactions]
 ---
 
 # UI Components — catalog
+
+## When to use
+
+- Choosing which UI library or resource folder to open first.
+- Scanning supplements, motion, icons, AI UI, assets, tools, or inspiration rows.
 
 Index of UI component libraries and adjacent design resources for your projects. Detail folders hold security, stack, pricing, licensing, and Astra notes. **Do not register these as agent skills.**
 
@@ -79,4 +84,3 @@ Index of UI component libraries and adjacent design resources for your projects.
 | Name | Link | Description | Notes |
 | --- | --- | --- | --- |
 | Keyline Icons | [keylineicons.com](https://keylineicons.com/) | 585 MIT icons on 24×24 / 2px keylines for shadcn/ui; stroke, duotone, fill; rounded/sharp. Detail: [`../ui-keyline-icons/`](../keyline-icons/) | reference only; free commercial; pairs with shadcn |
-

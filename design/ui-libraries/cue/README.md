@@ -1,7 +1,7 @@
-
 ---
+type: reference
 title: Cue - curated component references and AI prompts
-kind: reference
+purpose: Awwwards-tier component references with AI build prompts.
 status: curated
 tags: [ui, components, inspiration, prompts, react, motion, free, paid]
 sources:
@@ -15,9 +15,14 @@ sources:
     label: Cue product and license reference
 ---
 
-Listed in [UI Components catalog](../components/).
-
 # Cue - curated component references and AI prompts
+
+## When to use
+
+- Wanting taste-led interaction references with AI build prompts.
+- Comparing curated Awwwards-tier patterns before custom implementation.
+
+Listed in [UI Components catalog](../components/).
 
 A taste-first library of interaction and component references selected from Awwwards, Behance, Dribbble, Pinterest, and production work. Each entry includes an AI prompt for tools such as Codex, Cursor, Claude Code, v0, Bolt, Framer AI, and Lovable. React source is rolling out for selected components; MCP support is on the roadmap and should not be treated as currently installed.
 
@@ -35,5 +40,3 @@ The founding price is availability-limited. Verify the live checkout before reco
 ## Use notes
 
 Use Cue primarily as a high-quality interaction reference and prompt library, not as a unified design system. Review generated or copied code, dependencies, accessibility, performance, responsive behavior, and reduced-motion handling before adoption. This is a reference, not a registered agent skill.
-
-

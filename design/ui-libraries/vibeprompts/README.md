@@ -1,7 +1,7 @@
-
 ---
+type: reference
 title: VibePrompt — UI prompt and Tailwind snippet library
-kind: reference
+purpose: Searchable UI layout prompts with Tailwind previews.
 status: curated
 tags: [ui, prompts, tailwind, components, layouts, ai, vibe-coding, free]
 sources:
@@ -9,7 +9,16 @@ sources:
     label: VibePrompt
 ---
 
-# VibePrompt
+# VibePrompt — UI prompt and Tailwind snippet library
+
+## When to use
+
+- Use VibePrompt early in a screen brief when the desired component type is known but the layout is not.
+- Comparing several structural approaches to the same UI problem.
+- Turning a verbal idea into a more complete implementation prompt.
+- Rapidly prototyping standard SaaS screens and states.
+- Studying responsive Tailwind composition before creating a branded original.
+- Giving an AI builder a concrete layout specification without prescribing every visual detail.
 
 [VibePrompt](https://vibeprompts.dev/) is a searchable library of UI layout prompts for AI-assisted interface building. Each entry pairs a plain-language build prompt with a live preview and copyable Tailwind CSS markup.
 
@@ -32,15 +41,6 @@ sources:
 
 Treat VibePrompt primarily as a **layout brief and inspiration source**. The ideas and prompts are useful for generating an original implementation inside the target project. Do not assume the displayed Tailwind source carries an MIT or other open-source license unless the publisher adds one.
 
-## Best use
-
-Use VibePrompt early in a screen brief when the desired component type is known but the layout is not. It is especially useful for:
-
-1. Comparing several structural approaches to the same UI problem.
-2. Turning a verbal idea into a more complete implementation prompt.
-3. Rapidly prototyping standard SaaS screens and states.
-4. Studying responsive Tailwind composition before creating a branded original.
-5. Giving an AI builder a concrete layout specification without prescribing every visual detail.
 
 ## Selection guidance
 
@@ -53,5 +53,3 @@ Use VibePrompt early in a screen brief when the desired component type is known 
 ## Classification
 
 **Free UI prompt and Tailwind snippet reference; not a conventional installable component library.**
-
-

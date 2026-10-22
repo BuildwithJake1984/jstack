@@ -1,7 +1,7 @@
-
 ---
+type: reference
 title: Kobra - React component system
-kind: reference
+purpose: React component system with shadcn installs, Figma kit, and MCP.
 status: curated
 tags: [ui, components, react, shadcn, figma, mcp, free, paid]
 sources:
@@ -13,9 +13,14 @@ sources:
     label: Input OTP component
 ---
 
-Listed in [UI Components catalog](../components/).
-
 # Kobra - React component system
+
+## When to use
+
+- Evaluating a shadcn-compatible system with Figma kit and MCP.
+- Checking free vs commercial license before client deliverables.
+
+Listed in [UI Components catalog](../components/).
 
 A polished React component system built around shadcn-compatible installation, Tailwind, Base UI, motion, interface sound, a Figma kit, agent guidance, and an MCP server. The Input OTP component is included in Kobra's free set.
 
@@ -32,5 +37,3 @@ Do not treat a component being publicly copyable as permission for commercial us
 ## Use notes
 
 Kobra is strong value when a commercial project needs its broader design system, motion, Figma alignment, or agent integration. Review dependencies, accessibility, motion, sound defaults, and license scope before adoption. This is a reference, not a registered agent skill.
-
-

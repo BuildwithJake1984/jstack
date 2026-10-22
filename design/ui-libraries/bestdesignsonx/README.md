@@ -1,7 +1,7 @@
-
 ---
+type: reference
 title: Best Designs On X
-kind: reference
+purpose: X-sourced design inspiration moodboard, not a component kit.
 status: curated
 tags: [ui, design, inspiration, gallery, x, twitter, instagram, dribbble, behance, fonts, app-icons]
 sources:
@@ -9,9 +9,14 @@ sources:
     label: Best Designs On X
 ---
 
-Listed in [UI Components catalog](../components/) under Inspiration.
-
 # Best Designs On X
+
+## When to use
+
+- Gathering visual and interaction inspiration for marketing or product UI.
+- Moodboarding from X and related platforms—not installing components.
+
+Listed in [UI Components catalog](../components/) under Inspiration.
 
 A continuously updated inspiration library of design work shared by creatives on X. It also surfaces related Instagram, Fonts, Dribbble, Behance, App Icons, and Saved Items sections. Use it for visual and interaction inspiration when shaping marketing sites and product UI; it is a moodboard reference, not a component kit.
 
@@ -31,5 +36,3 @@ A continuously updated inspiration library of design work shared by creatives on
 ## Use notes
 
 Use for moodboards, pattern discovery, and finding designers before inventing a new visual direction. The site is JavaScript-rendered, so static text extraction may miss the live feed. Pair inspiration research with implementable libraries from the UI Components catalog and independent accessibility and originality review. This is a reference, not a registered agent skill.
-
-

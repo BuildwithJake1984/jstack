@@ -1,7 +1,7 @@
-
 ---
+type: reference
 title: Evil Buttons - animated shadcn button components
-kind: reference
+purpose: Apache-licensed animated shadcn button registry.
 status: curated
 tags: [ui, components, buttons, react, shadcn, motion, apache, free]
 sources:
@@ -13,9 +13,14 @@ sources:
     label: Apache 2.0 license
 ---
 
-Listed in [UI Components catalog](../components/).
-
 # Evil Buttons - animated shadcn button components
+
+## When to use
+
+- Adding playful animated buttons on top of shadcn/ui.
+- Installing or copying from the Evil Buttons registry after review.
+
+Listed in [UI Components catalog](../components/).
 
 A shadcn/ui registry of 31 playful, highly animated button components with live previews, copy-paste documentation, and one-command registry installation. Patterns include hold-to-confirm, status morphs, sliders, 3D, glitch, confetti, command shortcuts, and intentionally mischievous interactions.
 
@@ -26,5 +31,3 @@ A shadcn/ui registry of 31 playful, highly animated button components with live 
 ## Use notes
 
 Treat the site names and destructive language as demos, not product copy. Adapt motion and styling to the approved design system, and verify keyboard behavior, accessible labels, reduced-motion fallbacks, dependencies, and safe semantics before using unusual interaction patterns. Review registry-installed code before commit. This is a reference, not a registered agent skill.
-
-

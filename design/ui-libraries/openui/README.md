@@ -1,7 +1,7 @@
-
 ---
+type: reference
 title: OpenUI — open standard for generative interfaces
-kind: reference
+purpose: MIT standard for agent-streamed generative interfaces.
 status: curated
 tags: [ui, generative-ui, agents, ai, streaming, react, vue, svelte, react-native, mcp, mit, free]
 sources:
@@ -11,7 +11,12 @@ sources:
     label: OpenUI GitHub
 ---
 
-# OpenUI
+# OpenUI — open standard for generative interfaces
+
+## When to use
+
+- Architecting agent-driven charts, forms, dashboards, or screens.
+- Streaming generative UI through a trusted component registry.
 
 [OpenUI](https://www.openui.com/) is an open standard and framework for agent-driven generative interfaces. Instead of returning only prose or arbitrary generated code, an AI agent can stream a constrained UI description that renders through components the application already trusts.
 
@@ -59,5 +64,3 @@ OpenUI could become useful when a product moves beyond fixed chat responses and 
 ## Classification
 
 **Free MIT generative-UI framework with optional managed production services.**
-
-

@@ -1,7 +1,7 @@
-
 ---
+type: reference
 title: beUI Pro - premium motion components
-kind: reference
+purpose: Paid animated React components and Next.js templates via shadcn registry.
 status: curated
 tags: [ui, components, motion, react, nextjs, tailwind, paid]
 sources:
@@ -9,9 +9,14 @@ sources:
     label: beUI Pro
 ---
 
-Listed in [UI Components catalog](../components/).
-
 # beUI Pro - premium motion components
+
+## When to use
+
+- Purchasing motion-rich React source via a shadcn-compatible registry.
+- Building animated marketing or product surfaces with paid templates.
+
+Listed in [UI Components catalog](../components/).
 
 A paid source-code library of animated React components, blocks, illustrations, and Next.js templates delivered through a private shadcn-compatible registry or direct source download.
 
@@ -27,5 +32,3 @@ Installed source files remain in the project and may be customized and kept. The
 ## Use notes
 
 Use when motion-rich production blocks or complete templates justify the paid source access. Review copied code, dependencies, accessibility, performance, and reduced-motion behavior before adoption. This is a reference, not a registered agent skill.
-
-

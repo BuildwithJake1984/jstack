@@ -1,7 +1,7 @@
-
 ---
+type: reference
 title: DESIGN.md generators, catalogs, and UI references
-kind: link-digest
+purpose: Link digest of DESIGN.md generators, catalogs, and UI references.
 status: curated
 tags: [design, design-md, design-systems, agents, inspiration, mcp, ui-reference]
 sources:
@@ -30,6 +30,11 @@ sources:
 ---
 
 # DESIGN.md generators, catalogs, and UI references
+
+## When to use
+
+- Giving coding agents stronger visual direction via DESIGN.md or references.
+- Picking a generator, catalog, or real-UI library for a specific task.
 
 A curated starting point for giving AI coding agents stronger visual direction. Some entries generate or distribute structured `DESIGN.md` files; others provide real interface references that help people and agents study proven patterns.
 
@@ -71,5 +76,3 @@ A `DESIGN.md` file is portable design context: colors, typography, spacing, radi
 - Adapt patterns to the target product’s own brand, accessibility requirements, content, and user workflows.
 - Prefer one coherent project-level `DESIGN.md` over combining several unrelated brand systems.
 - Record the source and retrieval date when a generated design file becomes part of a client or the project project.
-
-

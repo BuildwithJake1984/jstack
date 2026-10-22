@@ -1,7 +1,7 @@
-
 ---
+type: reference
 title: ShadcnCraft — production-ready shadcn blocks and Figma kit
-kind: reference
+purpose: shadcn blocks, Figma kit, and agent-oriented design-to-code workflows.
 status: curated
 tags: [ui, components, blocks, shadcn, react, figma, design-system, mcp, agents, free, paid]
 sources:
@@ -9,7 +9,17 @@ sources:
     label: ShadcnCraft
 ---
 
-# ShadcnCraft
+# ShadcnCraft — production-ready shadcn blocks and Figma kit
+
+## When to use
+
+- ShadcnCraft is most useful when the project wants to keep shadcn/ui as the technical foundation but avoid assembling every complex screen from primitives:
+- Application shells, navigation, sidebars, and dashboards.
+- Tables, calendars, activity feeds, uploads, and messaging surfaces.
+- Marketing heroes, pricing, testimonials, social proof, and CTAs.
+- Ecommerce product, cart, checkout, and category layouts.
+- Figma-first client design that needs a close React handoff.
+- Agent builds where shared tokens and exact component definitions reduce drift.
 
 [ShadcnCraft](https://shadcncraft.com/) extends the official shadcn/ui primitives with production-ready React components, full interface blocks, pages, applications, and a matching Figma system. Its distinguishing value is the 1:1 connection between design assets and implementation code, including agent skills and MCP-oriented workflows for Codex, Claude Code, and Cursor.
 
@@ -44,16 +54,6 @@ Paid tiers advertise lifetime access, lifetime updates, and unlimited commercial
 
 The live catalog identifies a small free collection—currently eight free blocks and fifteen free components—alongside official shadcn items. Most of the distinctive application, marketing, ecommerce, and AI inventory belongs to the paid Pro products.
 
-## Best use
-
-ShadcnCraft is most useful when the project wants to keep shadcn/ui as the technical foundation but avoid assembling every complex screen from primitives:
-
-- Application shells, navigation, sidebars, and dashboards.
-- Tables, calendars, activity feeds, uploads, and messaging surfaces.
-- Marketing heroes, pricing, testimonials, social proof, and CTAs.
-- Ecommerce product, cart, checkout, and category layouts.
-- Figma-first client design that needs a close React handoff.
-- Agent builds where shared tokens and exact component definitions reduce drift.
 
 ## Relationship to shadcn/ui
 
@@ -73,5 +73,3 @@ ShadcnCraft is most useful when the project wants to keep shadcn/ui as the techn
 ## Classification
 
 **Freemium shadcn extension with one-time paid Figma and React tiers, lifetime updates, and commercial-use licensing.**
-
-
