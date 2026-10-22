@@ -11,6 +11,7 @@ A public library of agent skills and reference notes, organized by category. Ski
 | [`development/`](development/README.md) | Lessons, skills, tools, and templates for building and shipping software (coming soon) |
 | [`workflows/`](workflows/README.md) | Project workflow playbooks (one subfolder per project) |
 | [`updates/`](updates/README.md) | Monthly index of new lessons and published material |
+| [`news-and-insights/`](news-and-insights/README.md) | Weekly digest of external product news (AI labs and stack tools), separate from JStack changelogs |
 
 More categories will be added over time.
 

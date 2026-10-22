@@ -1,5 +1,11 @@
 # October 2026 Update
 
+## News & Insights — weekly external digest
+
+New top-level folder for one article per week (`news-and-insights/YYYY-MM-DD-news-and-insights.md`, Monday date), with review and sourcing rules in the README. Distinct from this monthly JStack changelog.
+
+[Read the README](../news-and-insights/README.md)
+
 ## Design Tokens in a Design System
 
 Learn what design tokens are, how primitive and semantic tiers work, and how to carry them from Figma or Paper into CSS and Tailwind without drift.
