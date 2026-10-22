@@ -8,7 +8,8 @@ A public library of agent skills and reference notes, organized by category. Ski
 | --- | --- |
 | [`ai-agents/`](ai-agents/lessons/README.md) | Lessons, skills, tools, and templates for building AI-powered product features |
 | [`design/`](design/README.md) | UI polish skill plus UI library link-outs, design tools, and templates |
-| [`development/`](development/README.md) | Lessons, skills, tools, and templates for building and shipping software (coming soon) |
+| [`development/`](development/README.md) | Lessons, skills, tools, and templates for building and shipping software |
+| [`marketing/`](marketing/README.md) | Lessons, skills, tools, and templates for campaigns and creative (use-not-tech category) |
 | [`workflows/`](workflows/README.md) | Project workflow playbooks (one subfolder per project) |
 | [`updates/`](updates/README.md) | Monthly index of new lessons and published material |
 | [`news-and-insights/`](news-and-insights/README.md) | Weekly digest of external product news (AI labs and stack tools), separate from JStack changelogs |
@@ -21,11 +22,13 @@ Canonical JStack tool files for Jake's AI labs, shipping infrastructure, and des
 
 | Area | Tools |
 | --- | --- |
-| **AI frontier labs** | [Claude](ai-agents/tools/claude.md) · [OpenAI](ai-agents/tools/openai.md) · [xAI / Grok](ai-agents/tools/xai.md) · [Google / Gemini](ai-agents/tools/google.md) · [Meta / Muse](ai-agents/tools/meta-muse.md) |
-| **Infrastructure** | [Supabase](development/tools/supabase.md) · [Railway](development/tools/railway.md) · [Vercel](development/tools/vercel.md) · [Next.js](development/tools/nextjs.md) · [GitHub](development/tools/github.md) |
-| **Design and build** | [Paper](design/tools/paper.md) · [Figma](design/tools/figma.md) · [Mobbin](design/tools/mobbin.md) · [Canva](design/tools/canva.md) · [Screenshot to Code](design/tools/screenshot-to-code.md) · [Shotbase](design/tools/shotbase.md) · [VoiceStudio](design/tools/voicestudio.md) |
+| **AI agents** | [Claude](ai-agents/tools/claude.md) · [OpenAI](ai-agents/tools/openai.md) · [xAI / Grok](ai-agents/tools/xai.md) · [Google / Gemini](ai-agents/tools/google.md) · [Meta / Muse](ai-agents/tools/meta-muse.md) · [Cursor](ai-agents/tools/cursor.md) |
+| **Development** | [Supabase](development/tools/supabase.md) · [Railway](development/tools/railway.md) · [Vercel](development/tools/vercel.md) · [Next.js](development/tools/nextjs.md) · [GitHub](development/tools/github.md) · [Resend](development/tools/resend.md) |
+| **Design** (weekly news sweep) | [Paper](design/tools/paper.md) · [Figma](design/tools/figma.md) · [Mobbin](design/tools/mobbin.md) · [Canva](design/tools/canva.md) |
+| **Design** (other references) | [Screenshot to Code](design/tools/screenshot-to-code.md) · [Shotbase](design/tools/shotbase.md) · [VoiceStudio](design/tools/voicestudio.md) |
+| **Marketing** | [Higgsfield](marketing/tools/higgsfield.md) · [ElevenLabs](marketing/tools/elevenlabs.md) |
 
-Full catalogs: [`ai-agents/tools/`](ai-agents/tools/README.md), [`development/tools/`](development/tools/README.md), [`design/tools/`](design/tools/README.md).
+Full catalogs: [`ai-agents/tools/`](ai-agents/tools/README.md), [`development/tools/`](development/tools/README.md), [`design/tools/`](design/tools/README.md), [`marketing/tools/`](marketing/tools/README.md). Weekly [News & Insights](news-and-insights/README.md) sweep scope is narrower—see **Sources we follow** there.
 
 ## Skills
 

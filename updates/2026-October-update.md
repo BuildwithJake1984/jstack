@@ -6,6 +6,10 @@ New top-level folder for one article per week (`news-and-insights/YYYY-MM-DD-new
 
 [Read the README](../news-and-insights/README.md)
 
+## Marketing category and core stack tools
+
+New [`marketing/`](../marketing/README.md) folder (lessons, skills, templates, tools) with **use-not-tech** placement in CONVENTIONS. Added [Cursor](../ai-agents/tools/cursor.md), [Resend](../development/tools/resend.md), [Higgsfield](../marketing/tools/higgsfield.md), and [ElevenLabs](../marketing/tools/elevenlabs.md); tightened News & Insights sweep scope in the [news README](../news-and-insights/README.md).
+
 ## Design Tokens in a Design System
 
 Learn what design tokens are, how primitive and semantic tiers work, and how to carry them from Figma or Paper into CSS and Tailwind without drift.

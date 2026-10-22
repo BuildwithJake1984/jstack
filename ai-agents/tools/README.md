@@ -11,5 +11,6 @@ Frontier labs and model providers Jake builds on. Each file explains what the to
 | [`xai.md`](xai.md) | xAI — Grok models, API, and Grok Bot | curated | ai-agents, xai, grok, api, agents |
 | [`google.md`](google.md) | Google — Gemini and Google AI | curated | ai-agents, google, gemini, ai-studio, api |
 | [`meta-muse.md`](meta-muse.md) | Meta — Meta AI and Muse | curated | ai-agents, meta, meta-ai, muse, llama, open-models |
+| [`cursor.md`](cursor.md) | Cursor — AI editor and cloud agents | curated | ai-agents, cursor, ide, agents, mcp, cloud-agents |
 
-Contributions: add a tool `.md` file (tool frontmatter from [CONVENTIONS.md](../../CONVENTIONS.md#tool-designtoolsnamemd-ai-agentstoolsnamemd-developmenttoolsnamemd)) and a row here; update [`news-and-insights/README.md`](../../news-and-insights/README.md) **Sources we follow**.
+Contributions: add a tool `.md` file (tool frontmatter from [CONVENTIONS.md](../../CONVENTIONS.md#tool-designtoolsnamemd-ai-agentstoolsnamemd-developmenttoolsnamemd-marketingtoolsnamemd)) and a row here; update [`news-and-insights/README.md`](../../news-and-insights/README.md) **Sources we follow** when the tool joins the weekly sweep.

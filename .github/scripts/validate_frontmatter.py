@@ -129,7 +129,12 @@ def check_news_insights(data: dict, path: Path, errors: list[str]) -> None:
 
 def iter_lessons() -> list[Path]:
     paths: list[Path] = []
-    for base in ("ai-agents/lessons", "design/lessons", "development/lessons"):
+    for base in (
+        "ai-agents/lessons",
+        "design/lessons",
+        "development/lessons",
+        "marketing/lessons",
+    ):
         for path in sorted((ROOT / base).glob("*.md")):
             if path.name == "README.md":
                 continue
@@ -139,7 +144,12 @@ def iter_lessons() -> list[Path]:
 
 def iter_tools() -> list[Path]:
     paths: list[Path] = []
-    for base in ("design/tools", "ai-agents/tools", "development/tools"):
+    for base in (
+        "design/tools",
+        "ai-agents/tools",
+        "development/tools",
+        "marketing/tools",
+    ):
         folder = ROOT / base
         if not folder.is_dir():
             continue
