@@ -102,7 +102,11 @@ def iter_lessons() -> list[Path]:
 
 
 def iter_tools() -> list[Path]:
-    return sorted((ROOT / "design/tools").glob("*/README.md"))
+    return sorted(
+        p
+        for p in (ROOT / "design/tools").glob("*.md")
+        if p.name != "README.md"
+    )
 
 
 def iter_skills() -> list[Path]:
@@ -117,7 +121,11 @@ def iter_skills() -> list[Path]:
 
 
 def iter_references() -> list[Path]:
-    return sorted((ROOT / "design/ui-libraries").glob("*/README.md"))
+    return sorted(
+        p
+        for p in (ROOT / "design/ui-libraries").glob("*.md")
+        if p.name != "README.md"
+    )
 
 
 def iter_templates() -> list[Path]:

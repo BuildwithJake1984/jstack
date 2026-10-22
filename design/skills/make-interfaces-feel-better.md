@@ -20,4 +20,4 @@ Design-engineering principles for polished UI. Apply when building or reviewing 
 
 Upstream skill (MIT, © 2026 Jakub Krehel): [jakubkrehel/make-interfaces-feel-better](https://github.com/jakubkrehel/make-interfaces-feel-better) — load [`skills/make-interfaces-feel-better/SKILL.md`](https://github.com/jakubkrehel/make-interfaces-feel-better/blob/main/skills/make-interfaces-feel-better/SKILL.md) first, then open the detail files it links to on demand.
 
-Broader `better-*` suite: [`ui-libraries/jakubkrehel-skills/`](../ui-libraries/jakubkrehel-skills/README.md).
+Broader `better-*` suite: [`ui-libraries/jakubkrehel-skills.md`](../ui-libraries/jakubkrehel-skills.md).

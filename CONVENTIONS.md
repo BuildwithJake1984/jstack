@@ -11,9 +11,23 @@ Lessons, tools, skills, and reference notes share one shape so humans and agents
 
 Optional sections (tools): `## Capabilities`, `## Access and pricing`, `## Use notes`, `## Jake's take`, `## Sources`.
 
+## Catalog layout
+
+**One markdown file per catalog item** — no per-item subfolders. Each category folder keeps a single `README.md` index that links to sibling `.md` files with a one-line purpose.
+
+| Area | Item path | Index |
+| --- | --- | --- |
+| Lessons | `*/lessons/<slug>.md` | `*/lessons/README.md` |
+| Design tools | `design/tools/<name>.md` | `design/tools/README.md` |
+| UI libraries | `design/ui-libraries/<name>.md` | `design/ui-libraries/README.md` |
+| Design skills | `design/skills/<name>.md` | _(listed in `design/README.md`)_ |
+| Vendored skills | `ai-agents/skills/<name>/SKILL.md`, `development/skills/<name>/SKILL.md` | category `skills/README.md` |
+
+For `kind: media-set` references, put URL tables in a `## Media` section inside the same file (not a sibling `media.md`).
+
 ## Workflows
 
-`workflows/` is the one section that uses **per-project subfolders** (`workflows/<project-name>/`). Lessons, tools, design skills, and ui-library references stay in the flat catalog paths described below; only workflow projects nest under their own folder. Add a subfolder when a real project is ready—start with `README.md` inside it—and list it from [`workflows/README.md`](workflows/README.md). Do not commit empty placeholder project folders.
+`workflows/` is the **only** section that uses **per-project subfolders** (`workflows/<project-name>/`). Everything in the catalog table above stays flat. Add a workflow subfolder when a real project is ready—start with `README.md` inside it—and list it from [`workflows/README.md`](workflows/README.md). Do not commit empty placeholder project folders.
 
 ## Frontmatter
 
@@ -58,7 +72,7 @@ status: published
 Content…
 ```
 
-### Tool (`design/tools/<name>/README.md`)
+### Tool (`design/tools/<name>.md`)
 
 ```markdown
 ---
@@ -138,8 +152,6 @@ sources:
 (body unchanged from prior digest)
 ```
 
-For `kind: media-set` entries, keep `README.md` as the index and add a sibling `media.md` with URL rows only (no image or video binaries in git).
-
 ## Skills audit standard
 
 Governing checklist for operator skills, always-on agent instructions (`AGENTS.md`), and agent profiles. Read [Eric Provencher — Rethinking skills and prompts for GPT-6 Astra](https://x.com/pvncher/status/2095991462416490862) for context; do not invent article text.
@@ -161,8 +173,8 @@ Maintainer review audits every skill add or change against these nine points bef
 Pull requests must satisfy the frontmatter job for:
 
 - `*/lessons/*.md` (except `README.md`)
-- `design/tools/*/README.md` (not the catalog `design/tools/README.md`)
-- `design/ui-libraries/*/README.md` (not the catalog `design/ui-libraries/README.md`)
+- `design/tools/*.md` (not the catalog `design/tools/README.md`)
+- `design/ui-libraries/*.md` (not the catalog `design/ui-libraries/README.md`)
 - `design/skills/*.md` (not `design/skills/README.md`)
 - `ai-agents/skills/**/SKILL.md` and `development/skills/**/SKILL.md`
 - `*/templates/**/*.md` (catalog `*/templates/README.md` excluded; YAML parse when frontmatter is present)

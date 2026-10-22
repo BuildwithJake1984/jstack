@@ -99,6 +99,8 @@ Document the **spacing scale** (linear, geometric, or hybrid) so agents do not i
 
 ### Figma variables
 
+See also: [Figma tool reference](../tools/figma.md).
+
 Define primitives and semantics as **variables** and publish them through your library. Dev Mode and export tooling (plus team integrations such as MCP or Code Connect, where you use them) should read the same names developers implement.
 
 Typical CSS output:
@@ -112,6 +114,8 @@ Typical CSS output:
 ```
 
 ### Paper
+
+See also: [Paper tool reference](../tools/paper.md).
 
 Paper documents **tokens and themes** on canvas and supports syncing token/style context with code via agent workflows. Treat Paper as another consumer of the same semantic names you maintain in Figma or in the repo.
 

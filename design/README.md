@@ -13,7 +13,7 @@ Skills and references for designing and polishing web and product interfaces.
 Curated, non-executable notes on component libraries and design inspiration. Start with:
 
 - [`ui-libraries/README.md`](ui-libraries/README.md) — full catalog with tags and status
-- [`ui-libraries/components/README.md`](ui-libraries/components/README.md) — UI component library index (shadcn/ui is the primary foundation)
+- [`ui-libraries/components.md`](ui-libraries/components.md) — UI component library index (shadcn/ui is the primary foundation)
 
 ## Tools
 
