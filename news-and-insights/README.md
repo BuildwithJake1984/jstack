@@ -79,6 +79,24 @@ The weekly sweep covers **only** the vendors in the tables below (major labs, sh
 | [Mobbin](../design/tools/mobbin.md) | mobbin.com; X: [@mobbin](https://x.com/mobbin) |
 | [Canva](../design/tools/canva.md) | canva.com; X: [@canva](https://x.com/canva) |
 
+### Analysts and commentators
+
+For **tool comparisons and analysis** (not official vendor announcements), follow these X accounts:
+
+| Name | X |
+| --- | --- |
+| mreflow | [@mreflow](https://x.com/mreflow) |
+| Theo | [@theo](https://x.com/theo) |
+| Matthew Berman | [@MatthewBerman](https://x.com/MatthewBerman) |
+
+When their takes appear in a weekly issue:
+
+- **Credit by name** (for example “Matthew Berman argues…”).
+- Label the item as **analysis**, not official news.
+- **Verify against the official source** (vendor blog, changelog, or docs) before stating anything as fact; use analyst posts for framing or comparison only when the primary source checks out.
+
+Optional body section: **What the analysts are saying** (see [CONVENTIONS.md](../CONVENTIONS.md) news-insights template).
+
 Add a row when a new tool joins the **sweep** list in one of these folders. Do not invent feed URLs—update the verified feeds section below when confirmed.
 
 ## Verified feeds and check pages
