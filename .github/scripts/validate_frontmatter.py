@@ -138,11 +138,15 @@ def iter_lessons() -> list[Path]:
 
 
 def iter_tools() -> list[Path]:
-    return sorted(
-        p
-        for p in (ROOT / "design/tools").glob("*.md")
-        if p.name != "README.md"
-    )
+    paths: list[Path] = []
+    for base in ("design/tools", "ai-agents/tools", "development/tools"):
+        folder = ROOT / base
+        if not folder.is_dir():
+            continue
+        paths.extend(
+            p for p in sorted(folder.glob("*.md")) if p.name != "README.md"
+        )
+    return paths
 
 
 def iter_skills() -> list[Path]:

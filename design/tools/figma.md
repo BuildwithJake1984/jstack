@@ -39,11 +39,20 @@ For **design systems**, Figma describes reusable **components**, **tokens**, and
 
 Figma sells multiple products and seat types (for example Design and Dev). **Verify current plans and pricing at [figma.com](https://www.figma.com/)** before recommending a subscription. Dev Mode, MCP, and Code Connect availability can depend on plan and organization settings.
 
-## Use notes
+## Where it fits in Jake's stack and JStack
 
 Jake uses Figma especially for **setting up a design system** and a **token library** for colors and typography—foundations that downstream tools (including Paper and code) can align to. He reaches for it when he is doing **more advanced design** work that benefits from deep component, variable, and systems tooling.
 
 When tokens live in Figma variables, keep naming and tiers documented so agents and developers map them consistently to CSS custom properties or Tailwind theme extensions.
+
+## Official links
+
+- [Figma](https://www.figma.com/)
+- [Figma on X](https://x.com/figma)
+
+## News & Insights
+
+Weekly external coverage: [`news-and-insights/README.md`](../../news-and-insights/README.md). When an issue mentions Figma, link to [this file](figma.md).
 
 ## Related
 

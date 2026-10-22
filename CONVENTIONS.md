@@ -18,6 +18,8 @@ Optional sections (tools): `## Capabilities`, `## Access and pricing`, `## Use n
 | Area | Item path | Index |
 | --- | --- | --- |
 | Lessons | `*/lessons/<slug>.md` | `*/lessons/README.md` |
+| AI agent tools | `ai-agents/tools/<name>.md` | `ai-agents/tools/README.md` |
+| Development tools | `development/tools/<name>.md` | `development/tools/README.md` |
 | Design tools | `design/tools/<name>.md` | `design/tools/README.md` |
 | UI libraries | `design/ui-libraries/<name>.md` | `design/ui-libraries/README.md` |
 | Design skills | `design/skills/<name>.md` | _(listed in `design/README.md`)_ |
@@ -74,7 +76,7 @@ status: published
 Content…
 ```
 
-### Tool (`design/tools/<name>.md`)
+### Tool (`design/tools/<name>.md`, `ai-agents/tools/<name>.md`, `development/tools/<name>.md`)
 
 ```markdown
 ---
@@ -194,6 +196,8 @@ Short intro: what week this covers and the themes in this issue.
 ## Related JStack lessons and tools
 
 - [Lesson or tool title](../path/to/item.md) — why it is relevant
+
+When you name a stack tool that has a JStack tool file, **link the tool name** to that file (relative path), for example [Claude](../ai-agents/tools/claude.md) or [Supabase](../development/tools/supabase.md)—do not mention the tool as plain text only.
 ```
 
 Use `status: draft` until Jake approves the PR; set `status: published` when the issue is live. `week_of` must match the Monday in the filename. `sources` in frontmatter is the list of primary URLs cited in the issue (official announcements, docs, or release pages).
@@ -220,6 +224,8 @@ Pull requests must satisfy the frontmatter job for:
 
 - `*/lessons/*.md` (except `README.md`)
 - `design/tools/*.md` (not the catalog `design/tools/README.md`)
+- `ai-agents/tools/*.md` (not `ai-agents/tools/README.md`)
+- `development/tools/*.md` (not `development/tools/README.md`)
 - `design/ui-libraries/*.md` (not the catalog `design/ui-libraries/README.md`)
 - `design/skills/*.md` (not `design/skills/README.md`)
 - `ai-agents/skills/**/SKILL.md` and `development/skills/**/SKILL.md`

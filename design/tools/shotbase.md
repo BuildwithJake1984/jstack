@@ -30,8 +30,25 @@ Notable capabilities include automatic zooms, cinematic 3D transforms, text and 
 
 Promotional eligibility and pricing can change, so verify the current offer before purchase.
 
-## Use notes
+## Where it fits in Jake's stack and JStack
 
-Keep this as a tool reference for future recording and evidence workflows; it is not a dependency or installed application. Confirm privacy and sharing settings before uploading client or product material. Captures stay local unless the user explicitly uploads one for sharing. This is a reference, not a registered agent skill.
+Keep this as a **macOS capture reference** for demos, bug evidence, and documentation—not a runtime dependency. Confirm privacy and sharing settings before uploading client or product material. Captured in [`design/tools/`](README.md) alongside other creative utilities.
 
+## Official links
+
+- [Shotbase](https://shotbase.com/)
+
+## News & Insights
+
+Weekly external coverage: [`news-and-insights/README.md`](../../news-and-insights/README.md). When an issue mentions Shotbase, link to [this file](shotbase.md).
+
+## Jake's take
+
+<!-- Jake's input goes here -->
+
+## Sources
+
+Pages checked for this reference (2026-10-22):
+
+- [https://shotbase.com/](https://shotbase.com/) — product and pricing
 
