@@ -45,3 +45,9 @@ Canva’s drag-and-drop editor, templates, and brand tools cover everyday graphi
 Ship AI features as a graph of small steps—branches, fallbacks, and plain-code validation between LLM calls—instead of one brittle mega-prompt.
 
 [Read the lesson](../ai-agents/lessons/build-ai-features-as-a-graph.md)
+
+## Scrolltide — cinematic scroll templates and AI prompts
+
+Scrolltide is a paid library of scroll-driven website templates, section prompts, shader backgrounds, and app UI screens with full source—built to copy into AI coding tools for cinematic marketing and product sites.
+
+[Read the reference](../design/ui-libraries/scrolltide.md)
