@@ -1,7 +1,7 @@
-
 ---
+type: reference
 title: QuiverAI — structured AI-generated SVGs
-kind: reference
+purpose: AI platform for structured SVG generation, vectorize, and animation.
 status: curated
 tags: [design, ai, svg, vector, logos, icons, illustrations, animation, mcp, api, paid]
 sources:
@@ -13,9 +13,14 @@ sources:
     label: QuiverAI MCP announcement and setup
 ---
 
-Listed in the [UI Components catalog](../components/).
-
 # QuiverAI — structured AI-generated SVGs
+
+## When to use
+
+- Generating or vectorizing editable SVG logos, icons, or illustrations.
+- Needing structured vector output rather than raster-only AI art.
+
+Listed in the [UI Components catalog](../components/).
 
 An AI vector-design platform for generating, vectorizing, editing, and animating structured SVG graphics. Unlike raster-first generators, Quiver produces editable vector paths and SVG markup intended for continued use in design systems, websites, applications, prototypes, and print workflows.
 
@@ -65,5 +70,3 @@ Treat this as an optional project integration. Connecting it requires a Quiver a
 - Verify Quiver's current terms and permitted commercial use for the applicable account and output before client delivery.
 - Do not upload confidential client artwork or third-party assets without permission.
 - Treat generated typography and logos as starting points for professional review, not automatic final identity work.
-
-

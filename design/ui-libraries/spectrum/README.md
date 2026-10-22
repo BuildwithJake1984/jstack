@@ -1,7 +1,7 @@
-
 ---
+type: reference
 title: Spectrum UI — components and MCP registry
-kind: reference
+purpose: Supplemental component registry with MCP discovery.
 status: curated
 tags: [ui, components, react, tailwind, shadcn, mcp, agents]
 sources:
@@ -11,15 +11,15 @@ sources:
     label: Spectrum UI MCP setup and tools
 ---
 
-Listed in [UI Components catalog](../components/).
-
 # Spectrum UI — components and MCP registry
 
+## When to use
+
+- Find reusable interface components before creating complex UI from scratch. Adapt selected components to the project's approved design, accessibility requirements and existing stack.
+
+Listed in [UI Components catalog](../components/).
+
 Supplemental UI component resource. Use its component registry and MCP discovery alongside [shadcn/ui](../shadcn/README.md), the primary foundation, and [AICSS](../aicss/README.md) for AI interfaces.
-
-## Use for
-
-Find reusable interface components before creating complex UI from scratch. Adapt selected components to the project's approved design, accessibility requirements and existing stack.
 
 ## MCP setup
 
@@ -55,5 +55,3 @@ Check the selected component's current license, dependencies and accessibility b
 ## Astra note
 
 This is a **reference**, not a registered skill. Keep setup and library details here and UI selection guidance in your project's design guide.
-
-

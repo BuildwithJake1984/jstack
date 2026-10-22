@@ -1,7 +1,7 @@
-
 ---
+type: reference
 title: XiodUI — versioned React component library
-kind: reference
+purpose: Versioned React library on Base UI and Tailwind CSS 4.
 status: curated
 tags: [ui, components, react, tailwind, base-ui, accessibility, theming, animation, source-available, free]
 sources:
@@ -11,7 +11,12 @@ sources:
     label: XiodUI source repository
 ---
 
-# XiodUI
+# XiodUI — versioned React component library
+
+## When to use
+
+- Preferring one versioned npm component library over copy-paste kits.
+- Evaluating Base UI + Tailwind 4 breadth vs existing shadcn foundation.
 
 XiodUI is a broad React component library built on Base UI primitives and Tailwind CSS 4. It packages 89 components, 20 color palettes, icons, themes, and native CSS animation under one versioned npm dependency.
 
@@ -58,5 +63,3 @@ It is a **supplemental option**, not an automatic replacement for the project's 
 **Curate and pilot.** XiodUI offers unusually broad coverage, thoughtful theming, accessibility-oriented primitives, and simpler upgrades than copy-paste libraries. Its youth and nonstandard license make it better as a tested supplemental library than a new default foundation.
 
 Reviewed: 2026-09-18.
-
-

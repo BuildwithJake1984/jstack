@@ -1,7 +1,7 @@
-
 ---
+type: reference
 title: FeralUI — playful physics-driven React experiments
-kind: reference
+purpose: Playful physics-driven React interaction experiments.
 status: curated
 tags: [ui, components, react, typescript, physics, animation, interaction, experimental, free, mit]
 sources:
@@ -11,7 +11,16 @@ sources:
     label: mortspace on GitHub
 ---
 
-# FeralUI
+# FeralUI — playful physics-driven React experiments
+
+## When to use
+
+- FeralUI is most valuable as a **creative interaction laboratory**, not as a general component foundation. Use it when a screen would benefit from one memorable physical behavior:
+- Brand mascot reactions or playful planet interactions.
+- Theme switching through a physical metaphor.
+- Delightful confirmations, deletion states, or empty states.
+- Portfolio and case-study storytelling.
+- Experimental micro-tools where the interaction is part of the product.
 
 [FeralUI](https://feralui.dev/) is a small showcase of playful, physics-driven React and TypeScript elements. The work emphasizes tactile motion, real-time physics, unusual interactions, and deliberately whimsical interface moments.
 
@@ -40,15 +49,6 @@ sources:
 
 Some experiments are published as individual GitHub repositories or npm packages, while others may be demonstrations only. A public repository is not automatically permission to reuse unless it includes a license.
 
-## Best use
-
-FeralUI is most valuable as a **creative interaction laboratory**, not as a general component foundation. Use it when a screen would benefit from one memorable physical behavior:
-
-- Brand mascot reactions or playful planet interactions.
-- Theme switching through a physical metaphor.
-- Delightful confirmations, deletion states, or empty states.
-- Portfolio and case-study storytelling.
-- Experimental micro-tools where the interaction is part of the product.
 
 ## Adoption guidance
 
@@ -61,5 +61,3 @@ FeralUI is most valuable as a **creative interaction laboratory**, not as a gene
 ## Classification
 
 **Free interactive UI showcase with individually licensed React components; verify each experiment before commercial use.**
-
-

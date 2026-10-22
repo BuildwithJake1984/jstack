@@ -1,7 +1,7 @@
-
 ---
+type: reference
 title: Bencho - interactive UI blocks
-kind: reference
+purpose: MIT interactive UI blocks with preview, tune, and copy workflows.
 status: curated
 tags: [ui, components, interactions, react, mit, free]
 sources:
@@ -11,9 +11,14 @@ sources:
     label: Bencho licence
 ---
 
-Listed in [UI Components catalog](../components/).
-
 # Bencho - interactive UI blocks
+
+## When to use
+
+- Needing tunable interactive blocks such as menus, sliders, or carousels.
+- Copying MIT motion-led components into an existing React interface.
+
+Listed in [UI Components catalog](../components/).
 
 A library of interactive UI blocks that can be previewed, tuned, and copied into product interfaces. Examples include radial menus, command bars, toggles, sliders, carousels, selection controls, and other motion-led interactions.
 
@@ -26,5 +31,3 @@ The Bencho site, name, mark, licensed photographs, fonts, and third-party assets
 ## Use notes
 
 Use as a supplemental interaction reference alongside shadcn/ui. Review accessibility, reduced-motion behavior, dependencies, and visual fit before adoption. This is a reference, not a registered agent skill.
-
-

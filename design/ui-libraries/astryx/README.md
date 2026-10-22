@@ -1,7 +1,7 @@
-
 ---
+type: reference
 title: Astryx — Meta-grown agent-ready design system
-kind: reference
+purpose: Meta-grown open-source React design system with agent tooling.
 status: curated
 tags: [ui, components, design-system, react, stylex, themes, templates, cli, mcp, mit, free]
 sources:
@@ -11,7 +11,12 @@ sources:
     label: Astryx source repository and license
 ---
 
-# Astryx
+# Astryx — Meta-grown agent-ready design system
+
+## When to use
+
+- Evaluating a broad cohesive design system beyond single copy-paste components.
+- Needing agent-ready docs, themes, templates, or MCP alongside React components.
 
 Astryx is a free, open-source design system that grew inside Meta over eight years. It is designed for both people and coding agents, with accessible React components, brand-level theming, production-ready templates, CLI tooling, and MCP support.
 
@@ -52,5 +57,3 @@ This makes Astryx useful when the project needs a broad, cohesive system rather 
 
 - [Documentation and component browser](https://astryx.atmeta.com/)
 - [GitHub repository](https://github.com/facebook/astryx)
-
-

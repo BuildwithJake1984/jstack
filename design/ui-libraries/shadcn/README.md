@@ -1,7 +1,7 @@
-
 ---
+type: reference
 title: shadcn/ui — primary component foundation
-kind: reference
+purpose: Primary copy-paste React + Tailwind + Radix component foundation.
 status: curated
 tags: [ui, components, shadcn, react, tailwind, radix, primary]
 sources:
@@ -15,11 +15,7 @@ sources:
     label: React Native Reusables (mobile port)
 ---
 
-Listed in [UI Components catalog](../components/) under **Primary**.
-
 # shadcn/ui — primary component foundation
-
-**Primary** place for UI components across your projects (web first). Composable, accessible React components with Tailwind + Radix primitives. Copy-into-repo ownership model (`npx shadcn@latest add …`) — not a black-box npm UI kit.
 
 ## When to use
 
@@ -27,6 +23,10 @@ Listed in [UI Components catalog](../components/) under **Primary**.
 - Prefer existing project components / brand tokens when they already cover the need; otherwise reach for shadcn patterns and adapt.
 - Pair with [Keyline Icons](../keyline-icons/) when an icon set is needed (built for shadcn defaults).
 - Pair with [`skills/make-interfaces-feel-better`](../../skills/make-interfaces-feel-better/) for polish after structure is in place.
+
+Listed in [UI Components catalog](../components/) under **Primary**.
+
+**Primary** place for UI components across your projects (web first). Composable, accessible React components with Tailwind + Radix primitives. Copy-into-repo ownership model (`npx shadcn@latest add …`) — not a black-box npm UI kit.
 
 ## Mobile (Expo / React Native)
 
@@ -50,5 +50,3 @@ Do not treat ui.shadcn.com demos as drop-in RN code.
 - **Reference + primary default** — not registered as a operator skill; the catalog marks it primary so agents open here first.
 - MIT / open copy-paste; respect project AGENTS and approved screen inventory before inventing new surfaces.
 - The project's AGENTS.md or component inventory wins over this reference when they conflict.
-
-

@@ -1,7 +1,7 @@
-
 ---
+type: reference
 title: Book of Shapes - generative SVG patterns
-kind: reference
+purpose: Free generative SVG patterns for backgrounds and graphics.
 status: curated
 tags: [design, shapes, svg, patterns, generative, backgrounds, free, commercial]
 sources:
@@ -12,6 +12,11 @@ sources:
 ---
 
 # Book of Shapes - generative SVG patterns
+
+## When to use
+
+- Needing generative SVG backgrounds or section art outside component libraries.
+- Working within the site’s pattern license limits (not redistributing packs).
 
 A collection of minimal, generative, and customizable SVG patterns organized around grid, radial, noise, flow, isometric, organic, distortion, and physics-based forms. Use it for backgrounds, section art, editorial graphics, brand accents, presentation visuals, and other non-component design work.
 
@@ -28,5 +33,3 @@ Important limits:
 ## Use notes
 
 Download and retain the accompanying `LICENSE.txt` with project records. Check visual density, contrast, file size, responsive cropping, and brand fit before using a pattern in production. This is a design-asset reference, not a UI component library or registered agent skill.
-
-

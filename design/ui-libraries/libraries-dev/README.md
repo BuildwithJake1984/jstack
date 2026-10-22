@@ -1,7 +1,7 @@
-
 ---
+type: reference
 title: Libraries.dev - UI effects for AI agents
-kind: reference
+purpose: React effect libraries for beams, orbs, gooey UI, and loaders.
 status: curated
 tags: [ui, components, effects, react, agents, mit, free, paid]
 sources:
@@ -13,9 +13,14 @@ sources:
     label: Terms and license
 ---
 
-Listed in [UI Components catalog](../components/).
-
 # Libraries.dev - UI effects for AI agents
+
+## When to use
+
+- Adding agent-oriented visual effects such as beams, orbs, or loaders.
+- Installing individual MIT libraries or optional Pro effects after review.
+
+Listed in [UI Components catalog](../components/).
 
 Five React effect libraries for border beams, thinking orbs, gooey interfaces, liquid metal, and image-generation loaders. Each library can be installed separately and configured with coding agents.
 
@@ -38,5 +43,3 @@ Use it for focused assistant states or a restrained the project â€œenergy core.â
 ## Use notes
 
 Start with the free packages. Consider Pro only when Studio customization or Pro presets materially save time. Review WebGL and peer dependencies, bundle cost, accessibility, and reduced-motion behavior before shipping. This is a reference, not a registered agent skill.
-
-

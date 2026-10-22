@@ -1,7 +1,7 @@
-
 ---
+type: reference
 title: AICSS — UI components for AI agents
-kind: reference
+purpose: Copy-paste UI patterns for agent and AI-product interfaces.
 status: curated
 tags: [ui, components, ai, agents, chat, react, vue, svelte, shadcn, property-guide]
 sources:
@@ -11,17 +11,16 @@ sources:
     label: AICSS pricing and license terms
 ---
 
-Listed in [UI Components catalog](../components/).
-
 # AICSS — UI components for AI agents
 
+## When to use
+
+- Features that expose AI workflows directly in the product UI: support assistants, agent activity/status, tool-call feedback, generated content, structured AI output, user approvals, and other conversational or agentic experiences.
+- Use AICSS as an **AI-interface pattern library**, while keeping **shadcn/ui** as the default general-purpose component foundation.
+
+Listed in [UI Components catalog](../components/).
+
 A copy-paste component library focused specifically on agent and AI-product interfaces. It includes patterns for thinking/reasoning states, tool and action states, streaming responses, code and file diffs, citations, task lists, data/comparison tables, image-generation states, agent input, and approval/question cards.
-
-## Use for
-
-Features that expose AI workflows directly in the product UI: support assistants, agent activity/status, tool-call feedback, generated content, structured AI output, user approvals, and other conversational or agentic experiences.
-
-Use AICSS as an **AI-interface pattern library**, while keeping **shadcn/ui** as the default general-purpose component foundation.
 
 ## Stack / install notes
 
@@ -48,5 +47,3 @@ Treat AICSS like any copy-paste UI source: inspect component code and dependenci
 - [`ui-shadcn/`](../shadcn/README.md) — primary general-purpose component foundation
 - [`ui-amicro/`](../amicro/README.md) — micro-interactions and motion patterns
 - Local workflow **`make-interfaces-feel-better`** — interface polish principles
-
-

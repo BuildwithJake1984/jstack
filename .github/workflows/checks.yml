@@ -137,6 +137,19 @@ jobs:
             require_nonempty "$block" '^purpose:[[:space:]]*.+' "$f" "purpose"
           }
 
+          check_reference() {
+            local f="$1"
+            echo "Checking reference $f"
+            local block
+            block="$(extract_frontmatter "$f")"
+            require_nonempty "$block" '^type:[[:space:]]*reference\b' "$f" "type: reference"
+            require_field "$block" title "$f"
+            require_field "$block" tags "$f"
+            require_field "$block" purpose "$f"
+            require_nonempty "$block" '^purpose:[[:space:]]*.+' "$f" "purpose"
+            require_nonempty "$block" '^title:[[:space:]]*.+' "$f" "title"
+          }
+
           lesson_files=(
             ai-agents/lessons/*.md
             design/lessons/*.md
@@ -173,6 +186,15 @@ jobs:
               exit 1
             fi
             check_skill "$f"
+          done
+
+          reference_files=(design/ui-libraries/*/README.md)
+          for f in "${reference_files[@]}"; do
+            if ! has_frontmatter_fence "$f"; then
+              echo "::error file=$f::Missing opening frontmatter fence"
+              exit 1
+            fi
+            check_reference "$f"
           done
 
           echo "Write-up frontmatter OK."

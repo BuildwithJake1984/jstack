@@ -1,7 +1,7 @@
-
 ---
+type: reference
 title: Jakub Krehel — interface agent skills
-kind: reference
+purpose: Upstream better-* agent skills for interface polish and review.
 status: curated
 tags: [ui, design, typography, accessibility, layout, colors, writing]
 sources:
@@ -15,9 +15,13 @@ sources:
     label: Interfaces magazine
 ---
 
-Listed in [UI Components catalog](../components/).
-
 # Jakub Krehel — interface agent skills
+
+## When to use
+
+- UI polish or interface review beyond the local make-interfaces quick reference. Load this entry, then fetch specific upstream skill docs from [GitHub](https://github.com/jakubkrehel/skills) on demand.
+
+Listed in [UI Components catalog](../components/).
 
 Open-source agent skill suite for polished product UI: `better-ui`, `better-typography`, `better-colors`, `better-accessibility`, `better-layout`, `better-writing`, `better-interface` (orchestrator), plus verb skills `interface-review`, `variant`, `break`, `explain-interface`.
 
@@ -46,9 +50,3 @@ Reviewed upstream commit `267330e1adfc66a718fb65fa6918c1f06d0a689e`. **Verdict:*
 - `break` / `variant` write local temp harnesses when user-invoked.
 
 **Policy:** reference-only by default; do not bulk-register; re-check on upstream bumps.
-
-## When agents need it
-
-UI polish or interface review beyond the local make-interfaces quick reference. Load this entry, then fetch specific upstream skill docs from [GitHub](https://github.com/jakubkrehel/skills) on demand.
-
-

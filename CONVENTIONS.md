@@ -15,10 +15,10 @@ Optional sections (tools): `## Capabilities`, `## Access and pricing`, `## Use n
 
 | Key | Lessons | Tools | Skills | References (ui-libraries) |
 | --- | --- | --- | --- | --- |
-| `type` | `lesson` | `tool` | `skill` | `reference` (follow-up for link-outs) |
+| `type` | `lesson` | `tool` | `skill` | `reference` |
 | `title` | required | required | — | required |
-| `purpose` | required (one line) | required | required | follow-up |
-| `tags` | required list | required list | required list | follow-up |
+| `purpose` | required (one line) | required | required | required (one line) |
+| `tags` | required list | required list | required list | required list |
 | `slug` | required | — | — | — |
 | `date` | required | — | — | — |
 | `status` | required (`published` for lessons) | optional (`curated`, etc.) | — | optional |
@@ -102,7 +102,27 @@ purpose: One line on the outcome this skill helps you produce.
 
 ### Reference (ui-libraries link-outs)
 
-Existing folders under `design/ui-libraries/` still use the older frontmatter shape. **Follow-up:** migrate them to `type: reference` and add `purpose` + `## When to use` in a dedicated pass.
+```markdown
+---
+type: reference
+title: Resource Name — short subtitle
+purpose: One line on what this reference summarizes or links to.
+status: curated
+tags: [ui, …]
+sources:
+  - url: https://example.com/
+    label: Official site
+---
+
+# Resource Name — short subtitle
+
+## When to use
+
+- Choosing or comparing …
+- …
+
+(body unchanged from prior digest)
+```
 
 ## CI
 
@@ -110,4 +130,5 @@ Pull requests must satisfy the frontmatter job for:
 
 - `*/lessons/*.md` (except `README.md`)
 - `design/tools/*/README.md` (not the catalog `design/tools/README.md`)
+- `design/ui-libraries/*/README.md` (not the catalog `design/ui-libraries/README.md`)
 - `**/skills/**/SKILL.md`

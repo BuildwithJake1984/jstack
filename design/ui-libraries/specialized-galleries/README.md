@@ -1,7 +1,7 @@
-
 ---
+type: reference
 title: Specialized web and brand design inspiration galleries
-kind: link-digest
+purpose: Focused inspiration galleries for sites and page sections.
 status: curated
 tags: [ui, design, inspiration, gallery, websites, sections, bento, hero, navigation, footer, 404, saas, social]
 sources:
@@ -25,7 +25,12 @@ sources:
     label: Posts Design
 ---
 
-# Specialized design inspiration galleries
+# Specialized web and brand design inspiration galleries
+
+## When to use
+
+- Finding inspiration for full sites or a single page section.
+- Browsing free galleries before implementing patterns in your own system.
 
 A group of focused visual-reference sites for finding full websites or one specific page section. These are **inspiration sources**, not component packages. Recreate ideas in the target product’s own system instead of copying another designer’s imagery, brand assets, or complete composition.
 
@@ -70,5 +75,3 @@ A1 is the strongest general-purpose candidate in this group because it combines 
 ## Classification
 
 **Free-to-browse design-inspiration directory with one optional paid research workflow (A1 Pro).**
-
-
