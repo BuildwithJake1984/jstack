@@ -21,6 +21,6 @@ Design and build tool references: [`tools/README.md`](tools/README.md).
 
 ## Templates
 
-[`templates/README.md`](templates/README.md) — reference entry template and skills audit standard.
+[`templates/README.md`](templates/README.md) — pointers to CONVENTIONS layouts and the skills audit standard.
 
 References are for research and inspiration. They are not skills; don't register them as such.

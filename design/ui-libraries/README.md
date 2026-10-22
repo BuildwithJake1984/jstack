@@ -4,7 +4,7 @@ Curated links and markdown digests for UI component libraries and design inspira
 
 ## How to add an entry
 
-1. Copy [`../templates/reference-template/`](../templates/reference-template/) to a new kebab-case folder under `ui-libraries/` (e.g. `ui-libraries/footer-pattern-notes/`).
+1. Create a new kebab-case folder under `ui-libraries/` (e.g. `ui-libraries/footer-pattern-notes/`) with `README.md` using the reference frontmatter in [CONVENTIONS.md](../../CONVENTIONS.md#reference-ui-libraries-link-outs) or the contract below.
 2. Fill frontmatter and body in `README.md`.
 3. For `kind: media-set`, add or update sibling `media.md` (URLs only—no image or video binaries in git).
 4. Set `status: inbox` until reviewed; move to `curated` when ready for agent use.
@@ -87,6 +87,6 @@ Each row: `url`, `type` (`image` | `video`), `alt`, `when-to-use`. URLs only—n
 
 
 
-Contributions: open a pull request that adds a folder from [`../templates/reference-template/`](../templates/reference-template/) plus a catalog row; entries are merged after maintainer review.
+Contributions: open a pull request that adds a reference folder plus a catalog row; entries are merged after maintainer review.
 
 
