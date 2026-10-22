@@ -43,6 +43,8 @@ For `kind: media-set` references, put URL tables in a `## Media` section inside 
 | `name` | — | — | required (skill id) | — |
 | `description` | — | — | required (loader summary) | — |
 
+**News & Insights** (`type: news-insights` in `news-and-insights/`): `title`, `date`, `week_of`, `status` (`draft` \| `published`), `tags`, `purpose`, and `sources` (non-empty list of URLs) are required. See the [News & Insights template](#news--insights-news-and-insightsyyyy-mm-dd-news-and-insightsmd) below.
+
 Keep any other keys already in use (`sources`, `kind`, etc.) unless `type` replaces them.
 
 ## Templates
@@ -152,6 +154,50 @@ sources:
 (body unchanged from prior digest)
 ```
 
+### News & Insights (`news-and-insights/YYYY-MM-DD-news-and-insights.md`)
+
+Weekly external news digest (not the JStack changelog—see [`updates/`](updates/README.md)). Filename date is that week's **Monday**. Heading format: `# YYYY/MM/DD News & Insights` (slashes in the H1; `title` in frontmatter matches).
+
+```markdown
+---
+type: news-insights
+title: YYYY/MM/DD News & Insights
+date: YYYY-MM-DD
+week_of: YYYY-MM-DD
+status: draft
+tags: [news, weekly]
+purpose: One line on what this week's digest covers.
+sources:
+  - https://example.com/official-announcement
+---
+
+# YYYY/MM/DD News & Insights
+
+Short intro: what week this covers and the themes in this issue.
+
+## Company — short update title
+
+### What is the update?
+
+…
+
+### Who does it affect?
+
+…
+
+### How could it affect you?
+
+…
+
+**Source:** [Official announcement](https://example.com/official-announcement)
+
+## Related JStack lessons and tools
+
+- [Lesson or tool title](../path/to/item.md) — why it is relevant
+```
+
+Use `status: draft` until Jake approves the PR; set `status: published` when the issue is live. `week_of` must match the Monday in the filename. `sources` in frontmatter is the list of primary URLs cited in the issue (official announcements, docs, or release pages).
+
 ## Skills audit standard
 
 Governing checklist for operator skills, always-on agent instructions (`AGENTS.md`), and agent profiles. Read [Eric Provencher — Rethinking skills and prompts for GPT-6 Astra](https://x.com/pvncher/status/2095991462416490862) for context; do not invent article text.
@@ -179,5 +225,6 @@ Pull requests must satisfy the frontmatter job for:
 - `ai-agents/skills/**/SKILL.md` and `development/skills/**/SKILL.md`
 - `*/templates/**/*.md` (catalog `*/templates/README.md` excluded; YAML parse when frontmatter is present)
 - `updates/*.md` (except `updates/README.md`; YAML parse when frontmatter is present)
+- `news-and-insights/*.md` (except `news-and-insights/README.md`)
 
-Frontmatter must be valid YAML (`yaml.safe_load`); schema rules apply to lessons, tools, skills, and references.
+Frontmatter must be valid YAML (`yaml.safe_load`); schema rules apply to lessons, tools, skills, references, and news-insights articles.

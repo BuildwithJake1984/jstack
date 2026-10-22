@@ -91,6 +91,42 @@ def check_reference(data: dict, path: Path, errors: list[str]) -> None:
     require_str(data, "purpose", path, errors)
 
 
+def require_source_urls(data: dict, errors: list[str]) -> None:
+    sources = data.get("sources")
+    if sources is None:
+        errors.append("Missing sources")
+        return
+    if not isinstance(sources, list) or not sources:
+        errors.append("sources must be a non-empty list")
+        return
+    for index, item in enumerate(sources):
+        if isinstance(item, str):
+            if not item.strip():
+                errors.append(f"sources[{index}] must be a non-empty URL")
+            continue
+        if isinstance(item, dict):
+            url = item.get("url")
+            if not isinstance(url, str) or not url.strip():
+                errors.append(f"sources[{index}] must include url")
+            continue
+        errors.append(f"sources[{index}] must be a URL string or mapping with url")
+
+
+def check_news_insights(data: dict, path: Path, errors: list[str]) -> None:
+    if data.get("type") != "news-insights":
+        errors.append("type must be news-insights")
+    require_str(data, "title", path, errors)
+    require_str(data, "date", path, errors)
+    require_str(data, "week_of", path, errors)
+    require_str(data, "status", path, errors)
+    require_tags(data, path, errors)
+    require_str(data, "purpose", path, errors)
+    status = data.get("status")
+    if status not in ("draft", "published"):
+        errors.append("status must be draft or published")
+    require_source_urls(data, errors)
+
+
 def iter_lessons() -> list[Path]:
     paths: list[Path] = []
     for base in ("ai-agents/lessons", "design/lessons", "development/lessons"):
@@ -146,6 +182,13 @@ def iter_updates() -> list[Path]:
     if not updates.is_dir():
         return []
     return sorted(p for p in updates.glob("*.md") if p.name != "README.md")
+
+
+def iter_news_insights() -> list[Path]:
+    folder = ROOT / "news-and-insights"
+    if not folder.is_dir():
+        return []
+    return sorted(p for p in folder.glob("*.md") if p.name != "README.md")
 
 
 def validate_file(path: Path, schema_check) -> bool:
@@ -223,6 +266,8 @@ def main() -> int:
         ok = validate_yaml_only(path) and ok
     for path in iter_updates():
         ok = validate_yaml_only(path) and ok
+    for path in iter_news_insights():
+        ok = validate_file(path, check_news_insights) and ok
 
     if ok:
         print("Write-up frontmatter OK.")
