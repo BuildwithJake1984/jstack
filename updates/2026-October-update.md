@@ -24,6 +24,12 @@ Use Figma libraries and variables to define color, type, and component foundatio
 
 [Read the reference](../design/tools/figma/README.md)
 
+## Canva — visual design and publishing platform
+
+Canva’s drag-and-drop editor, templates, and brand tools cover everyday graphics and marketing visuals when you need an all-purpose design surface.
+
+[Read the reference](../design/tools/canva/README.md)
+
 ## Build AI Features as a Graph, Not One Giant Prompt
 
 Ship AI features as a graph of small steps—branches, fallbacks, and plain-code validation between LLM calls—instead of one brittle mega-prompt.

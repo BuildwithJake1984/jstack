@@ -6,6 +6,7 @@ Curated references for design and build tools. For UI component libraries, see [
 
 | Folder | Title | Kind | Status | Tags |
 | --- | --- | --- | --- | --- |
+| [`canva/`](canva/README.md) | Canva — visual design and publishing platform | reference | curated | tools, design, graphics, templates, brand, collaboration, marketing, ai |
 | [`figma/`](figma/README.md) | Figma — collaborative design and design systems | reference | curated | tools, design, design-system, variables, tokens, components, collaboration, dev-mode |
 | [`mobbin/`](mobbin/README.md) | Mobbin — real-product UI and UX research library | reference | curated | tools, design, ux, research, patterns, flows, mcp, inspiration |
 | [`paper/`](paper/README.md) | Paper — connected canvas for design and agents | reference | curated | tools, design, ui, agents, mcp, html, css, canvas, handoff |
