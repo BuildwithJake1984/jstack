@@ -176,7 +176,20 @@ jobs:
             check_tool "$f"
           done
 
-          skill_files=(design/skills/*/SKILL.md ai-agents/skills/*/SKILL.md development/skills/*/SKILL.md)
+          design_skill_files=(design/skills/*.md)
+          for f in "${design_skill_files[@]}"; do
+            base="$(basename "$f")"
+            if [ "$base" = "README.md" ]; then
+              continue
+            fi
+            if ! has_frontmatter_fence "$f"; then
+              echo "::error file=$f::Missing opening frontmatter fence"
+              exit 1
+            fi
+            check_skill "$f"
+          done
+
+          skill_files=(ai-agents/skills/*/SKILL.md development/skills/*/SKILL.md)
           for f in "${skill_files[@]}"; do
             if [ ! -f "$f" ]; then
               continue
