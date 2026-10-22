@@ -1,0 +1,128 @@
+name: checks
+
+on:
+  pull_request:
+
+concurrency:
+  group: checks-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  secrets:
+    name: secrets (gitleaks)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  markdownlint:
+    name: markdownlint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DavidAnson/markdownlint-cli2-action@v19
+        with:
+          command: config
+          globs: |
+            **/*.md
+            !**/node_modules/**
+
+  links:
+    name: links (lychee)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install lychee
+        run: |
+          curl -sSL "https://github.com/lycheeverse/lychee/releases/download/lychee-v0.18.1/lychee-x86_64-unknown-linux-gnu.tar.gz" \
+            | tar xz -C /tmp
+          sudo mv /tmp/lychee /usr/local/bin/lychee
+      - name: Check relative links (offline)
+        run: |
+          mapfile -t files < <(git ls-files '*.md')
+          if [ "${#files[@]}" -eq 0 ]; then
+            echo "No markdown files to check."
+            exit 0
+          fi
+          lychee --config lychee.toml --offline --no-progress "${files[@]}"
+
+  frontmatter:
+    name: frontmatter
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate lesson frontmatter
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          lesson_files=(ai-agents/lessons/*.md)
+          if [ "${#lesson_files[@]}" -eq 0 ]; then
+            echo "No lesson files under ai-agents/lessons/."
+            exit 0
+          fi
+          for f in "${lesson_files[@]}"; do
+            base="$(basename "$f")"
+            if [ "$base" = "README.md" ]; then
+              continue
+            fi
+            echo "Checking $f"
+            if ! head -n 1 "$f" | grep -q '^---$'; then
+              echo "::error file=$f::Missing opening frontmatter fence"
+              exit 1
+            fi
+            block="$(awk 'BEGIN{n=0} /^---$/{n++; if(n==1) next; if(n==2) exit} n==1{print}' "$f")"
+            echo "$block" | grep -qE '^title:\s*.+' || { echo "::error file=$f::Missing title"; exit 1; }
+            echo "$block" | grep -qE '^slug:\s*.+' || { echo "::error file=$f::Missing slug"; exit 1; }
+            echo "$block" | grep -qE '^date:\s*.+' || { echo "::error file=$f::Missing date"; exit 1; }
+            echo "$block" | grep -qE '^status:\s*.+' || { echo "::error file=$f::Missing status"; exit 1; }
+            if echo "$block" | grep -qE '^status:\s*draft\b'; then
+              echo "::error file=$f::Lessons must not use status: draft"
+              exit 1
+            fi
+          done
+          echo "Lesson frontmatter OK."
+
+  markdown-only:
+    name: markdown-only
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Fail on disallowed added files
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+          mapfile -t added < <(git diff --name-only --diff-filter=A "$BASE_SHA" "$HEAD_SHA")
+          if [ "${#added[@]}" -eq 0 ]; then
+            echo "No added files in this PR."
+            exit 0
+          fi
+          allow() {
+            local path="$1"
+            case "$path" in
+              *.md) return 0 ;;
+              .github/*) return 0 ;;
+              .markdownlint.jsonc) return 0 ;;
+              lychee.toml) return 0 ;;
+              LICENSE) return 0 ;;
+              *.png|*.jpg|*.jpeg|*.gif|*.webp|*.svg) return 0 ;;
+              *) return 1 ;;
+            esac
+          }
+          failed=0
+          for path in "${added[@]}"; do
+            if allow "$path"; then
+              echo "OK (allowed): $path"
+            else
+              echo "::error file=$path::Only markdown and allowlisted config/images may be added in this repo"
+              failed=1
+            fi
+          done
+          exit "$failed"

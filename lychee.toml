@@ -1,0 +1,10 @@
+# CI link check: relative and offline only (no external URL fetching).
+offline = true
+include_mail = false
+include_verbatim = false
+max_redirects = 0
+max_retries = 0
+timeout = 1
+
+# Skip common non-link patterns in markdown code samples.
+exclude_path = []

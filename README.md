@@ -6,6 +6,7 @@ A public library of agent skills and reference notes, organized by category. Ski
 
 | Folder | What's in it |
 | --- | --- |
+| [`ai-agents/lessons/`](ai-agents/lessons/README.md) | Lessons on building AI-powered product features |
 | [`ui-ux-design/`](ui-ux-design/README.md) | UI polish skill plus a reference library of component kits, design tools and UI patterns |
 | [`development/`](development/README.md) | Coming soon |
 | [`content-creation/`](content-creation/README.md) | Coming soon |
