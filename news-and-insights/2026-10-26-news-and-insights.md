@@ -5,8 +5,9 @@ date: 2026-10-26
 week_of: 2026-10-26
 status: draft
 tags: [news, weekly]
-purpose: "Test-run digest of Oct 19–22, 2026: Railway security disclosure, Claude API version 2026-10-21, Vercel WebSockets GA, GitHub supply-chain controls, Supabase agent tooling, and OpenAI on Google Cloud."
+purpose: "Test-run digest of Oct 19–22, 2026: Railway security disclosure, Claude API version 2026-10-21, Claude Duet research preview, Vercel WebSockets GA, GitHub supply-chain controls, Supabase agent tooling, and OpenAI on Google Cloud."
 sources:
+  - https://x.com/claudeai/status/2112984664256241837
   - https://blog.railway.com/p/security-disclosure-wednesday-october-21st
   - https://status.railway.com/
   - https://docs.claude.com/en/release-notes/overview
@@ -27,7 +28,7 @@ sources:
 
 # 2026/10/26 News & Insights
 
-Test run covering Monday Oct 19 to Thursday Oct 22, 2026. The theme this week is security across the shipping stack: a credential incident at [Railway](../development/tools/railway.md), new supply-chain and token controls at [GitHub](../development/tools/github.md), and a versioned API break at [Claude](../ai-agents/tools/claude.md). Also: WebSockets go GA on [Vercel](../development/tools/vercel.md) and [OpenAI](../ai-agents/tools/openai.md) models land on [Google](../ai-agents/tools/google.md) Cloud.
+Test run covering Monday Oct 19 to Thursday Oct 22, 2026. The theme this week is security across the shipping stack: a credential incident at [Railway](../development/tools/railway.md), new supply-chain and token controls at [GitHub](../development/tools/github.md), and a versioned API break at [Claude](../ai-agents/tools/claude.md). Anthropic also previewed Claude Duet, a proactive agent app. Also: WebSockets go GA on [Vercel](../development/tools/vercel.md) and [OpenAI](../ai-agents/tools/openai.md) models land on [Google](../ai-agents/tools/google.md) Cloud.
 
 ## Railway — security disclosure and paused deployments
 
@@ -60,6 +61,22 @@ Developers calling the [Claude](../ai-agents/tools/claude.md) API through offici
 Pin SDK versions in [Next.js](../development/tools/nextjs.md)/agent projects and read the migration guide before upgrading dependency bots past the major version.
 
 **Source:** [Claude release notes](https://docs.claude.com/en/release-notes/overview) · [Python SDK v2.0.0](https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.0.0) · [Public Benefit Fund](https://www.anthropic.com/news/public-benefit-fund)
+
+## Anthropic — Claude Duet proactive agent app
+
+### What is the update?
+
+Anthropic announced **Claude Duet**, a standalone app where [Claude](../ai-agents/tools/claude.md) (Opus 5.5) runs as a proactive agent: it surfaces what needs your attention, works on tasks in the background, and checks with you before acting. Duet draws on your Claude account memory, skills, and connected apps. It is an early research preview; US Pro and Max users can join a waitlist.
+
+### Who does it affect?
+
+Anthropic subscribers on Claude Pro or Max in the US who want agent-style help beyond a chat thread.
+
+### How could it affect you?
+
+If you already route work through Claude memory and skills, Duet is the product-shaped version of “agent that nudges you and drafts in the background”—worth watching even if Jake’s day-to-day stays in [Cursor](../ai-agents/tools/cursor.md) and the API.
+
+**Source:** [Claude on X — Claude Duet](https://x.com/claudeai/status/2112984664256241837)
 
 ## Vercel — WebSockets GA, Python routing middleware, monorepo limits
 
@@ -137,12 +154,12 @@ Analysis, not vendor news. Credited by handle; facts checked against the sources
 
 - **Theo** ([@theo](https://x.com/theo/status/2113115149112692883)) spent hours evaluating Railway alternatives and concluded nothing was a drop-in replacement at his price, while criticizing the deploy pause that kept him from shipping rotated keys ([post](https://x.com/theo/status/2113047601058873564)).
 - **[@JustJake](https://x.com/JustJake/status/2113079336899391638)**, Railway's founder (not neutral), said the team was working to restore builds.
-- **Alex Volkov** ([@altryne](https://x.com/altryne/status/2113053725967421590)) previewed ThursdAI covering Anthropic's public-benefit move and a product he calls "Claude Duet"; we could not verify Duet on Anthropic's site, so it is not covered above.
+- **Alex Volkov** ([@altryne](https://x.com/altryne/status/2113053725967421590)) previewed ThursdAI covering Anthropic's public-benefit move and Claude Duet (see Anthropic item above).
 - **Ray Fernando** ([@RayFernando1337](https://x.com/RayFernando1337/status/2112227721665266092)) tested Gemini 4 Argon against Claude Opus on a live project and still preferred Opus for his work.
 
 ## Related JStack lessons and tools
 
 - [Railway](../development/tools/railway.md) — incident above
 - [GitHub](../development/tools/github.md) — token and supply-chain controls
-- [Claude](../ai-agents/tools/claude.md) — API/SDK migration
+- [Claude](../ai-agents/tools/claude.md) — API/SDK migration; Claude Duet preview
 - [Vercel](../development/tools/vercel.md) — realtime on Functions
