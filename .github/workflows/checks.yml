@@ -99,9 +99,24 @@ jobs:
           HEAD_SHA: ${{ github.event.pull_request.head.sha }}
         run: |
           set -euo pipefail
+          mapfile -t renamed_to < <(git diff --name-status --diff-filter=R "$BASE_SHA" "$HEAD_SHA" | awk '{print $3}')
           mapfile -t added < <(git diff --name-only --diff-filter=A "$BASE_SHA" "$HEAD_SHA")
+          filtered=()
+          for path in "${added[@]}"; do
+            skip=0
+            for dest in "${renamed_to[@]}"; do
+              if [ "$path" = "$dest" ]; then
+                skip=1
+                break
+              fi
+            done
+            if [ "$skip" -eq 0 ]; then
+              filtered+=("$path")
+            fi
+          done
+          added=("${filtered[@]}")
           if [ "${#added[@]}" -eq 0 ]; then
-            echo "No added files in this PR."
+            echo "No newly added files in this PR (excluding rename destinations)."
             exit 0
           fi
           allow() {
