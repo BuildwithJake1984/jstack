@@ -8,8 +8,6 @@ tags: [tools, marketing, higgsfield, video, ai, creative, ads]
 sources:
   - url: https://higgsfield.ai/
     label: Higgsfield
-  - url: https://x.com/higgsfield_ai
-    label: Higgsfield on X
 ---
 
 # Higgsfield — AI video and creative studio
@@ -18,31 +16,36 @@ sources:
 
 - Producing **short-form video**, UGC-style ads, or visual variants for campaigns.
 - Comparing Higgsfield workflows against other generative video tools before a launch.
-- Documenting how Jake's stack uses Higgsfield for marketing—not app runtime.
+- Documenting marketing creative tooling separately from app runtime stacks.
 
 ## What it is
 
-[Higgsfield](https://higgsfield.ai/) is an **AI creative studio** focused on generative video, image, and related marketing workflows (templates, avatars, and studio-style production tools as described on the official site).
+[Higgsfield](https://higgsfield.ai/) is an **AI creative studio** for generative **video**, **image**, and related marketing workflows (templates, avatars, and studio production tools as described on the official site).
 
-## Where it fits in Jake's stack and JStack
+## What it can do
 
-Higgsfield sits in the **marketing creative layer**: downstream of product design ([Figma](../../design/tools/figma.md), [Canva](../../design/tools/canva.md)) and separate from [development/tools/](../../development/tools/README.md). Cataloged under [`marketing/tools/`](README.md) per the **use-not-tech** rule in [CONVENTIONS.md](../../CONVENTIONS.md#category-by-use-not-tech).
+### Generative video and image creation
 
-## Official links
+Higgsfield’s product surfaces describe text- and image-driven **video generation**, stylized clips, and campaign-oriented presets. Outputs target social ads, promos, and rapid creative iteration rather than in-app UI.
 
-- [Higgsfield](https://higgsfield.ai/)
-- [Higgsfield on X](https://x.com/higgsfield_ai)
+### Studio workflows and templates
 
-## News & Insights
+The web app organizes work into projects with reusable **presets** and gallery-style browsing of models/effects marketed on higgsfield.ai—confirm current feature names in-product before documenting client deliverables.
 
-**Not** part of the weekly external-news sweep in [`news-and-insights/README.md`](../../news-and-insights/README.md). If another JStack doc mentions Higgsfield, link to [this file](higgsfield.md).
+### Account and asset management
 
-## Jake's take
+Users upload reference media, manage generations, and export finished assets per Higgsfield’s UI (formats and limits vary by plan—verify on site).
 
-<!-- Jake's input goes here -->
+## How it fits Jake's stack
+
+Lives in [`marketing/tools/`](README.md) under the **use-not-tech** rule: creative production for GTM, not [Next.js](../../development/tools/nextjs.md) runtime. Complements [Canva](../../design/tools/canva.md) for static assets and [ElevenLabs](elevenlabs.md) for voice. Product engineering agents in [Cursor](../../ai-agents/tools/cursor.md) do not depend on Higgsfield.
+
+## News and insights
+
+**Not** in the weekly [News & Insights](../../news-and-insights/README.md) vendor sweep. Link [this file](higgsfield.md) when mentioning Higgsfield elsewhere. Follow [higgsfield.ai](https://higgsfield.ai/) product updates and [@higgsfield_ai on X](https://x.com/higgsfield_ai).
 
 ## Sources
 
 Pages checked for this reference (2026-10-22):
 
-- [https://higgsfield.ai/](https://higgsfield.ai/) — product overview
+- [https://higgsfield.ai/](https://higgsfield.ai/) — product overview and studio features

@@ -12,84 +12,46 @@ sources:
     label: VoiceStudio GitHub
 ---
 
-# VoiceStudio
+# VoiceStudio — local AI voice production workspace
 
 ## When to use
 
 - Local voice cloning, dubbing, or transcription without sending audio to the cloud.
 - Audiobook, multi-speaker story, or dictation workflows on your own machine.
 
-[VoiceStudio](https://voicestudio.sh/) is a local-first AI audio workspace for voice cloning and design, video dubbing, dictation, transcription, multi-speaker stories, and audiobook production. It supports hundreds of languages and can expose an OpenAI-compatible local API.
+## What it is
 
-## Capabilities
+[VoiceStudio](https://voicestudio.sh/) is a **local-first** AI audio workspace published as **AGPL-3.0** open source on [GitHub](https://github.com/debpalash/VoiceStudio). It runs on macOS, Windows, Linux, WSL, or Docker and can expose an **OpenAI-compatible local API** and **MCP** connections per project documentation.
 
-- Clone a voice from a permitted reference recording.
-- Design a synthetic voice from age, accent, pitch, gender, emotion, and style.
-- Transcribe, translate, cast, synchronize, and re-voice video.
-- Create multi-character stories and chaptered audiobooks.
-- Dictate and transcribe locally.
-- Browse and manage compatible speech and transcription models.
-- Run on macOS, Windows, Linux, WSL, or Docker.
-- Connect through a local API or MCP.
+## What it can do
 
-## Pricing and licensing
+### Voice cloning and design
 
-| Item | Status |
-| --- | --- |
-| Local application | **Free and open source for permitted use** |
-| Application license | **AGPL-3.0** |
-| Models and voices | Carry separate licenses and restrictions; verify each one |
-| Commercial/proprietary embedding | Commercial licensing is available by enquiry |
-| Hosted Cloud | Early access |
-| Pro/team offering | Enquiry-only at review time |
+Create a voice from a **permitted reference recording** or design synthetic voices using controls such as age, accent, pitch, gender, emotion, and style described in the project README.
 
-AGPL-3.0 has obligations that differ from permissive licenses such as MIT. If the project modifies the application or exposes a modified version over a network, obtain legal or licensing guidance before treating the result as proprietary. A commercial license may be more appropriate for embedded client work.
+### Dubbing and video re-voice
 
-## Best use
+Transcribe, translate, cast, synchronize, and **re-voice video** locally—useful for multilingual marketing drafts when cloud APIs are not desired.
 
-VoiceStudio is a promising creative-production reference for:
+### Long-form and multi-speaker audio
 
-- Narration for product walkthroughs and launch videos.
-- Local transcription of recordings before documentation or editing.
-- Dubbing the project content into additional languages.
-- Prototyping original character voices for brand mascots.
-- Producing multi-character audio experiments without sending source recordings to a hosted voice service.
-- Local audio tooling inside future micro-app experiments.
+Produce **multi-character stories** and **chaptered audiobooks**, plus dictation and transcription workflows, with model management inside the app.
 
-## Responsible-use boundaries
+### Local API and MCP
 
-- Clone or imitate a real person’s voice only with clear permission.
-- Do not use generated speech for impersonation, deception, fraud, or misleading endorsements.
-- Confirm that the selected model and voice license permits the intended commercial use.
-- Protect recordings and generated voice identities as sensitive personal and brand data.
-- Disclose synthetic voice use when the audience could reasonably mistake it for a real speaker.
-- Test pronunciation and factual accuracy before publishing.
+Integrate other tools via the documented **local API** or **MCP** so agents or scripts can trigger generation on the same machine as the audio data.
 
-## Classification
+## How it fits Jake's stack
 
-**Free, local-first AGPL voice-production tool with separately licensed models and enquiry-based commercial options.**
+A **local audio utility** for experiments, walkthrough narration, and transcription—not Jake’s primary marketing voice stack ([ElevenLabs](../../marketing/tools/elevenlabs.md) covers hosted campaign audio). Treat **AGPL-3.0** obligations seriously before embedding in proprietary client work; models and voices carry **separate licenses**—verify each before commercial use. Clone real voices only with permission; disclose synthetic speech where audiences could be misled.
 
-## Where it fits in Jake's stack and JStack
+## News and insights
 
-A **local audio production** reference for narration, dubbing, and transcription experiments without sending recordings to a hosted voice API. Listed in [`design/tools/`](README.md); confirm AGPL obligations before embedding in client deliverables.
-
-## Official links
-
-- [VoiceStudio](https://voicestudio.sh/)
-- [VoiceStudio on GitHub](https://github.com/debpalash/VoiceStudio)
-
-## News & Insights
-
-Weekly external coverage: [`news-and-insights/README.md`](../../news-and-insights/README.md). When an issue mentions VoiceStudio, link to [this file](voicestudio.md).
-
-## Jake's take
-
-<!-- Jake's input goes here -->
+**Not** in the weekly [News & Insights](../../news-and-insights/README.md) vendor sweep. Link [this file](voicestudio.md) if you mention VoiceStudio elsewhere. Follow [voicestudio.sh](https://voicestudio.sh/) and [GitHub releases](https://github.com/debpalash/VoiceStudio/releases).
 
 ## Sources
 
 Pages checked for this reference (2026-10-22):
 
 - [https://voicestudio.sh/](https://voicestudio.sh/) — product overview
-- [https://github.com/debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio) — license and capabilities
-
+- [https://github.com/debpalash/VoiceStudio](https://github.com/debpalash/VoiceStudio) — README (capabilities, license, platforms, API/MCP)

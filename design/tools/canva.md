@@ -22,47 +22,44 @@ sources:
 - Reusing or updating branded templates for recurring campaigns.
 - Non-designers or quick iterations before heavier tools.
 
-[Canva](https://www.canva.com/) is an online **design and publishing** platform. Canva’s **Visual Suite** messaging combines multiple creation surfaces—such as **Docs**, **Emails**, **Sheets**, **Whiteboards**, **Presentations**, **social**, **video**, **websites**, and **landing pages**—in one workflow with drag-and-drop editing, templates, collaboration, and AI-assisted creation ([Visual Suite](https://www.canva.com/visual-suite/)).
+## What it is
 
-Canva states on that page that teams can collaborate with **real-time cursors**, **comments**, and **task assignment**, use **thousands of ready-made templates**, access a large library of **photos, videos, graphics, audio, and fonts**, **import** files such as **PDF, PPTX, and AI** into editable designs, and connect **integrations** with other tools. **Canva Offline** is described as allowing continued work without Wi‑Fi, syncing when back online.
+[Canva](https://www.canva.com/) is an online **design and publishing** platform. The [Visual Suite](https://www.canva.com/visual-suite/) combines Docs, presentations, social graphics, video, websites, whiteboards, and related surfaces with drag-and-drop editing, templates, collaboration, and AI-assisted creation (feature mix varies by plan).
 
-## Capabilities
+## What it can do
 
-- **Drag-and-drop editor** — Canva positions the editor as simple and usable without prior design-tool experience (Visual Suite).
-- **Templates** — Start from scratch or from a large catalog of customizable templates (Canva cites **250,000+** free customizable templates on the Visual Suite page—treat as vendor copy that may change).
-- **Brand Kit** — Central place for logos, colors, fonts, imagery, and guidelines; Canva describes AI-assisted Brand Kit setup and support for **multiple brands** on brand features pages ([brand features](https://www.canva.com/business/features/brand/)).
-- **Brand Templates and controls** — Reusable branded templates, locked fonts/colors, approvers, and design approvals (brand features page).
-- **Magic Studio / Canva AI** — Canva Teams and Visual Suite pages describe AI for writing, design generation, and in-editor assistance; **feature availability varies by plan**—confirm on Canva’s pricing/plan pages.
-- **Collaboration** — Real-time co-editing, comments, tasks, and team folders (Visual Suite and brand pages).
-- **Use cases Canva highlights** — Marketing assets, creative/design production, sales collateral, and internal HR/ops materials (Visual Suite “better way for teams to work” section).
+### Drag-and-drop editor and templates
 
-## Access and pricing
+Canva’s editor targets users without prior professional design-tool experience. The Visual Suite page cites a large catalog of **customizable templates** (vendor-stated counts may change) so teams can start from layouts instead of blank canvases.
 
-Canva offers **free and paid** plans (individual, team, and business tiers). Canva notes **education and nonprofit** programs on its site. **Verify current plans, limits, and pricing at [canva.com](https://www.canva.com/)** before recommending a subscription.
+### Brand Kit and brand controls
 
-## Where it fits in Jake's stack and JStack
+[Brand features](https://www.canva.com/business/features/brand/) describe **Brand Kit** (logos, colors, fonts, imagery), **Brand Templates**, locked fonts/colors, **approvers**, and design **approvals** for teams that need guardrails on marketing output.
 
-Jake treats Canva as an **easy-to-use, all-purpose graphic design tool** for quick marketing assets, social visuals, presentations, and other general creative work outside strict product-UI system work. He especially likes that you can **create templates** and **update them easily**—handy when the same layouts need fresh copy, imagery, or seasonal tweaks without rebuilding from scratch.
+### Asset library and imports
 
-Use Canva for speed and reach; use Figma, Paper, or your code design system when you need component-level product UI, tokens, or dev handoff. Export assets deliberately (format, resolution, licensing) before dropping them into a product repo.
+Canva provides stock photos, video, graphics, audio, and fonts, and documents **import** of files such as PDF, PPTX, and Adobe Illustrator where supported. **Canva Offline** (per Visual Suite) allows editing without Wi‑Fi with sync when back online.
 
-## Official links
+### Collaboration
 
-- [Canva](https://www.canva.com/)
-- [Canva on X](https://x.com/canva)
+Real-time co-editing, **comments**, **task assignment**, and team folders support marketing and ops teams working in parallel on recurring campaigns.
 
-## News & Insights
+### AI-assisted creation
 
-Weekly external coverage: [`news-and-insights/README.md`](../../news-and-insights/README.md). When an issue mentions Canva, link to [this file](canva.md).
+Canva markets **Magic Studio** / in-editor AI for writing and design assistance on team and business pages. Confirm which AI features apply to your plan on Canva’s current pricing pages before production use.
 
-## Jake's take
+## How it fits Jake's stack
 
-<!-- Jake's input goes here -->
+Jake treats Canva as his **easy, all-purpose graphic design tool** for marketing assets, social visuals, and presentations—work **outside** strict product-UI systems. He relies on **templates that are easy to update** when the same layouts need fresh copy, imagery, or seasonal changes without rebuilding from scratch. Use [Figma](figma.md) or [Paper](paper.md) for component-level product UI and dev handoff; export Canva assets deliberately (format, resolution, licensing) before adding them to app repos.
+
+## News and insights
+
+Included in the weekly [News & Insights](../../news-and-insights/README.md) sweep. Follow [canva.com](https://www.canva.com/) (news and product pages), Canva’s help/release channels, and [@canva on X](https://x.com/canva). Link [this file](canva.md) when an issue mentions Canva.
 
 ## Sources
 
 Pages checked for this reference (2026-10-22):
 
-- [https://www.canva.com/](https://www.canva.com/) — entry point (full marketing site may require a current browser)
-- [https://www.canva.com/visual-suite/](https://www.canva.com/visual-suite/) — Visual Suite surfaces, editor, templates, asset library, import formats, collaboration, offline, team use cases
-- [https://www.canva.com/business/features/brand/](https://www.canva.com/business/features/brand/) — Brand Kit, Brand Templates, controls, approvals, collaboration, design import
+- [https://www.canva.com/](https://www.canva.com/) — product entry
+- [https://www.canva.com/visual-suite/](https://www.canva.com/visual-suite/) — surfaces, templates, collaboration, offline
+- [https://www.canva.com/business/features/brand/](https://www.canva.com/business/features/brand/) — Brand Kit, templates, approvals
