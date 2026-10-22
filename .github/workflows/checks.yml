@@ -81,6 +81,11 @@ jobs:
             }
           }
 
+          has_frontmatter_fence() {
+            local file="$1"
+            awk 'BEGIN{ok=0} /^---$/{ok=1; exit} /^[[:space:]]*$/{next} {exit 1} END{if(!ok) exit 1}' "$file"
+          }
+
           check_lesson() {
             local f="$1"
             echo "Checking lesson $f"
@@ -142,7 +147,7 @@ jobs:
             if [ "$base" = "README.md" ]; then
               continue
             fi
-            if ! head -n 1 "$f" | grep -q '^---$'; then
+            if ! has_frontmatter_fence "$f"; then
               echo "::error file=$f::Missing opening frontmatter fence"
               exit 1
             fi
@@ -151,7 +156,7 @@ jobs:
 
           tool_files=(design/tools/*/README.md)
           for f in "${tool_files[@]}"; do
-            if ! head -n 1 "$f" | grep -q '^---$'; then
+            if ! has_frontmatter_fence "$f"; then
               echo "::error file=$f::Missing opening frontmatter fence"
               exit 1
             fi
@@ -160,7 +165,10 @@ jobs:
 
           skill_files=(design/skills/*/SKILL.md ai-agents/skills/*/SKILL.md development/skills/*/SKILL.md)
           for f in "${skill_files[@]}"; do
-            if ! head -n 1 "$f" | grep -q '^---$'; then
+            if [ ! -f "$f" ]; then
+              continue
+            fi
+            if ! has_frontmatter_fence "$f"; then
               echo "::error file=$f::Missing opening frontmatter fence"
               exit 1
             fi
