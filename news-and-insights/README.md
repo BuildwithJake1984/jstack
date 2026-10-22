@@ -35,15 +35,20 @@ The article **H1** uses a slash date and the section title, for example:
 2. **Why it matters** — Every item should make clear what changed and why a JStack reader should care.
 3. **Source link** — Each item ends with a link to the primary official announcement or doc (see body template in [CONVENTIONS.md](../CONVENTIONS.md)).
 4. **Related JStack** — Tie items to relevant lessons, tools, or skills in this repo when they exist.
-5. **JStack tool links** — Every mention of a tool that has a JStack tool file must link to that file with a relative path (for example [`../ai-agents/tools/claude.md`](../ai-agents/tools/claude.md), [`../development/tools/vercel.md`](../development/tools/vercel.md), [`../design/tools/figma.md`](../design/tools/figma.md)).
+5. **JStack tool links** — Every mention of a tool that has a JStack tool file must link to that file with a relative path (for example [`../ai-agents/tools/claude.md`](../ai-agents/tools/claude.md), [`../development/tools/vercel.md`](../development/tools/vercel.md), [`../design/tools/figma.md`](../design/tools/figma.md)), including tools **outside** the weekly sweep below.
 
 Follow the `news-insights` template in [CONVENTIONS.md](../CONVENTIONS.md) for frontmatter and body structure.
 
 ## Sources we follow
 
-Official sites and X accounts for each cataloged tool. When a weekly item is about one of these products, link the tool name to its JStack file and cite the vendor announcement in **Source**.
+The weekly sweep covers **only** the vendors in the tables below (major labs, shipping stack, and core design tools). Official sites and X accounts are the primary channels; add verified RSS/Atom URLs in the feeds section when confirmed.
 
-### AI frontier labs (`ai-agents/tools/`)
+**Out of scope for the weekly sweep** (still cataloged in JStack—link to their tool files if you mention them elsewhere):
+
+- [`screenshot-to-code.md`](../design/tools/screenshot-to-code.md), [`shotbase.md`](../design/tools/shotbase.md), [`voicestudio.md`](../design/tools/voicestudio.md) — utilities, not major platform vendors.
+- [`marketing/tools/`](../marketing/tools/README.md) — marketing creative tools (for example Higgsfield, ElevenLabs).
+
+### AI agents (`ai-agents/tools/`)
 
 | JStack file | Follow for news |
 | --- | --- |
@@ -52,8 +57,9 @@ Official sites and X accounts for each cataloged tool. When a weekly item is abo
 | [xAI / Grok](../ai-agents/tools/xai.md) | x.ai, docs.x.ai; X: [@xai](https://x.com/xai), [@grok](https://x.com/grok) |
 | [Google / Gemini](../ai-agents/tools/google.md) | ai.google, gemini.google.com, ai.google.dev; X: [@GoogleDeepMind](https://x.com/GoogleDeepMind), [@GeminiApp](https://x.com/GeminiApp) |
 | [Meta / Meta AI / Muse](../ai-agents/tools/meta-muse.md) | ai.meta.com, meta.ai; X: [@MetaAI](https://x.com/MetaAI) |
+| [Cursor](../ai-agents/tools/cursor.md) | cursor.com, docs.cursor.com; X: [@cursor](https://x.com/cursor) |
 
-### Infrastructure and shipping (`development/tools/`)
+### Development (`development/tools/`)
 
 | JStack file | Follow for news |
 | --- | --- |
@@ -62,8 +68,9 @@ Official sites and X accounts for each cataloged tool. When a weekly item is abo
 | [Vercel](../development/tools/vercel.md) | vercel.com, vercel.com/docs; X: [@vercel](https://x.com/vercel) |
 | [Next.js](../development/tools/nextjs.md) | nextjs.org, nextjs.org/docs; X: [@nextjs](https://x.com/nextjs) |
 | [GitHub](../development/tools/github.md) | github.com, docs.github.com; X: [@github](https://x.com/github) |
+| [Resend](../development/tools/resend.md) | resend.com, resend.com/docs; X: [@resend](https://x.com/resend) |
 
-### Design and build (`design/tools/`)
+### Design (`design/tools/`)
 
 | JStack file | Follow for news |
 | --- | --- |
@@ -71,11 +78,8 @@ Official sites and X accounts for each cataloged tool. When a weekly item is abo
 | [Figma](../design/tools/figma.md) | figma.com; X: [@figma](https://x.com/figma) |
 | [Mobbin](../design/tools/mobbin.md) | mobbin.com; X: [@mobbin](https://x.com/mobbin) |
 | [Canva](../design/tools/canva.md) | canva.com; X: [@canva](https://x.com/canva) |
-| [Screenshot to Code](../design/tools/screenshot-to-code.md) | screenshottocode.com, GitHub releases; feed **TBD** |
-| [Shotbase](../design/tools/shotbase.md) | shotbase.com; X **TBD** (verify on vendor site before citing) |
-| [VoiceStudio](../design/tools/voicestudio.md) | voicestudio.sh, GitHub releases; X **TBD** |
 
-Add a row when a new tool file lands under `ai-agents/tools/`, `development/tools/`, or `design/tools/`. Do not invent feed URLs—update the verified feeds section below when confirmed.
+Add a row when a new tool joins the **sweep** list in one of these folders. Do not invent feed URLs—update the verified feeds section below when confirmed.
 
 ## Verified feeds and check pages
 
@@ -108,7 +112,7 @@ Hosted at https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/:
 
 ### Feed TBD
 
-Official RSS/Atom URLs are **not listed** for: Anthropic (primary site), Google, Meta, Supabase, Railway, Paper, Next.js, Vercel, GitHub (beyond per-repo release atoms above), Resend, Figma, and other design tools without a verified feed. Add rows only after a feed is verified—do not invent URLs.
+Official RSS/Atom URLs are **not listed** for: Anthropic (primary site), Cursor, Google, Meta, Supabase, Railway, Paper, Next.js, Vercel, GitHub (beyond per-repo release atoms above), Resend, and Figma. Add rows only after a feed is verified—do not invent URLs.
 
 ## Index
 

@@ -20,12 +20,24 @@ Optional sections (tools): `## Capabilities`, `## Access and pricing`, `## Use n
 | Lessons | `*/lessons/<slug>.md` | `*/lessons/README.md` |
 | AI agent tools | `ai-agents/tools/<name>.md` | `ai-agents/tools/README.md` |
 | Development tools | `development/tools/<name>.md` | `development/tools/README.md` |
+| Marketing tools | `marketing/tools/<name>.md` | `marketing/tools/README.md` |
 | Design tools | `design/tools/<name>.md` | `design/tools/README.md` |
 | UI libraries | `design/ui-libraries/<name>.md` | `design/ui-libraries/README.md` |
 | Design skills | `design/skills/<name>.md` | _(listed in `design/README.md`)_ |
 | Vendored skills | `ai-agents/skills/<name>/SKILL.md`, `development/skills/<name>/SKILL.md` | category `skills/README.md` |
 
 For `kind: media-set` references, put URL tables in a `## Media` section inside the same file (not a sibling `media.md`).
+
+## Category by use, not tech
+
+Pick the **top-level category folder** from what the reader is trying to do, not from the vendor's technical label.
+
+- **Marketing** (`marketing/`) — campaigns, creative production, ads, email copy, growth, and GTM tooling (including AI video/voice tools used for marketing).
+- **AI agents** (`ai-agents/`) — frontier models, coding agents, and product AI features in the application.
+- **Development** (`development/`) — runtime infrastructure: data, hosting, frameworks, git, transactional email APIs, and shipping.
+- **Design** (`design/`) — product UI, design systems, and design research tools.
+
+Example: an AI voice API used for **ads and promos** → `marketing/tools/`; the same vendor's **in-app assistant API** would still be documented under `ai-agents/` or product code, not marketing.
 
 ## Workflows
 
@@ -76,7 +88,7 @@ status: published
 Content…
 ```
 
-### Tool (`design/tools/<name>.md`, `ai-agents/tools/<name>.md`, `development/tools/<name>.md`)
+### Tool (`design/tools/<name>.md`, `ai-agents/tools/<name>.md`, `development/tools/<name>.md`, `marketing/tools/<name>.md`)
 
 ```markdown
 ---
@@ -226,6 +238,7 @@ Pull requests must satisfy the frontmatter job for:
 - `design/tools/*.md` (not the catalog `design/tools/README.md`)
 - `ai-agents/tools/*.md` (not `ai-agents/tools/README.md`)
 - `development/tools/*.md` (not `development/tools/README.md`)
+- `marketing/tools/*.md` (not `marketing/tools/README.md`)
 - `design/ui-libraries/*.md` (not the catalog `design/ui-libraries/README.md`)
 - `design/skills/*.md` (not `design/skills/README.md`)
 - `ai-agents/skills/**/SKILL.md` and `development/skills/**/SKILL.md`

@@ -11,5 +11,6 @@ Infrastructure and shipping tools for Jake's apps (database, hosting, framework,
 | [`vercel.md`](vercel.md) | Vercel — frontend cloud and deployments | curated | development, vercel, hosting, deploy, nextjs, edge |
 | [`nextjs.md`](nextjs.md) | Next.js — React framework for the web | curated | development, nextjs, react, framework, vercel |
 | [`github.md`](github.md) | GitHub — source control and collaboration | curated | development, github, git, ci, collaboration |
+| [`resend.md`](resend.md) | Resend — email API for developers | curated | development, resend, email, api, transactional |
 
 Contributions: add a tool `.md` file per [CONVENTIONS.md](../../CONVENTIONS.md) and a row here; update [`news-and-insights/README.md`](../../news-and-insights/README.md) **Sources we follow**.
