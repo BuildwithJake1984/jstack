@@ -37,7 +37,7 @@ Canva offers **free and paid** plans (including team and business tiers). Educat
 
 ## Use notes
 
-Jake treats Canva as an **easy-to-use, all-purpose graphic design tool** for quick marketing assets, social visuals, presentations, and other general creative work outside strict product-UI system work.
+Jake treats Canva as an **easy-to-use, all-purpose graphic design tool** for quick marketing assets, social visuals, presentations, and other general creative work outside strict product-UI system work. He especially likes that you can **create templates** and **update them easily**—handy when the same layouts need fresh copy, imagery, or seasonal tweaks without rebuilding from scratch.
 
 Use Canva for speed and reach; use Figma, Paper, or your code design system when you need component-level product UI, tokens, or dev handoff. Export assets deliberately (format, resolution, licensing) before dropping them into a product repo.
 
