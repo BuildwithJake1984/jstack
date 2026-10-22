@@ -6,12 +6,12 @@ Monthly changelogs for new lessons, skills, and other published material in JSta
 
 One markdown file per calendar month:
 
-`updates/YYYY-MM-<month-name>-YYYY-update.md`
+`updates/YYYY-Month-update.md`
 
 Examples:
 
-- `updates/2026-10-october-2026-update.md` — October 2026
-- `updates/2027-01-january-2027-update.md` — January 2027
+- `updates/2026-October-update.md` — October 2026
+- `updates/2027-January-update.md` — January 2027
 
 Use **month and year** in titles and copy (for example, “October 2026”). Do not use month/day/year dates in update posts.
 
@@ -29,4 +29,4 @@ Add newest months at the top of this README’s index when you create them.
 
 | Month | File |
 | --- | --- |
-| October 2026 | [October 2026 Update](2026-10-october-2026-update.md) |
+| October 2026 | [October 2026 Update](2026-October-update.md) |
