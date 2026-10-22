@@ -9,7 +9,7 @@ sources:
   - url: https://screenshottocode.com/
     label: Hosted Screenshot to Code product
   - url: https://github.com/abi/screenshot-to-code
-    label: Open-source repository and license
+    label: Open-source repository
 ---
 
 # Screenshot to Code — visual frontend reconstruction
@@ -21,45 +21,39 @@ sources:
 
 Listed in the [UI Components catalog](../ui-libraries/components.md).
 
-An AI tool that converts screenshots, mockups, Figma designs, text prompts, and short screen recordings into frontend code. Supported outputs include HTML with Tailwind or CSS, React with Tailwind, Vue with Tailwind, Bootstrap, and Ionic with Tailwind.
+## What it is
 
-## Access and pricing
+[Screenshot to Code](https://screenshottocode.com/) is an AI tool (with an [MIT-licensed open-source project](https://github.com/abi/screenshot-to-code)) that turns **screenshots, mockups, Figma inputs, text prompts, and short screen recordings** into front-end code. The README documents output stacks such as **HTML + Tailwind/CSS**, **React + Tailwind**, **Vue + Tailwind**, **Bootstrap**, and **Ionic + Tailwind**.
 
-- **Open-source self-hosted version:** free under MIT; model APIs, image services, browser tooling, and hosting create separate usage costs.
-- **Hosted version:** currently starts around **$15/month** for 100 monthly credits, with a higher-volume plan around **$40/month** for 500 credits. Credits reset monthly and pricing should be confirmed at checkout.
+## What it can do
 
-## Best use
+### Image and mockup to code
 
-Use for rapid layout reconstruction, prototyping, migration studies, and extracting a first-pass structure from approved visual references.
+Upload a static screenshot or mockup and receive generated markup and styles as a **starting layout**. The model infers structure and visual hierarchy from pixels; you still own semantics, accessibility, and production quality.
 
-## Cautions
+### Figma and recording inputs
 
-- Treat generated output as a starting point, not production-ready application code.
-- It cannot infer backend behavior, permissions, data contracts, hidden states, or complete responsive logic from a still image.
-- Reconcile output with the project's design system and verify semantics, accessibility, responsive behavior, performance, states, and tests.
-- Confirm rights before uploading confidential or third-party designs.
+The project README describes using **Figma** exports and **short recordings** as additional inputs beyond still images, which helps when motion or multi-state UI is part of the reference (within the limits of what the model can see).
 
-## Where it fits in Jake's stack and JStack
+### Self-hosted open source
 
-A **rapid prototyping** reference in the design/build lane: useful for bootstrapping layout from mocks when exploring ideas, not as a substitute for the project's design system or production components. Cataloged in [`design/tools/`](README.md); pair with [Figma](figma.md) exports and [Paper](paper.md) exploration before merge.
+Clone and run the **MIT** project locally or on your infrastructure. You supply model API keys, optional image services, and hosting; there is no vendor lock-in for the core app, but operational cost shifts to you.
 
-## Official links
+### Hosted credits product
 
-- [Screenshot to Code (hosted)](https://screenshottocode.com/)
-- [Open-source repository](https://github.com/abi/screenshot-to-code)
+The [hosted product](https://screenshottocode.com/) sells monthly **credits** for managed runs. Pricing and credit counts change—confirm at checkout before relying on quoted tiers in older notes.
 
-## News & Insights
+## How it fits Jake's stack
 
-Weekly external coverage: [`news-and-insights/README.md`](../../news-and-insights/README.md). When an issue mentions Screenshot to Code, link to [this file](screenshot-to-code.md).
+A **rapid prototyping** utility—not a substitute for [Paper](paper.md), [Figma](figma.md), or the production design system in [Next.js](../../development/tools/nextjs.md) repos. Use it to explore layout ideas from approved references, then rewrite into real components, tokens, tests, and accessible markup. Do not upload confidential or third-party designs without rights.
 
-## Jake's take
+## News and insights
 
-<!-- Jake's input goes here -->
+**Not** in the weekly [News & Insights](../../news-and-insights/README.md) vendor sweep. If you mention it elsewhere in JStack, link [this file](screenshot-to-code.md). Follow [screenshottocode.com](https://screenshottocode.com/) and [GitHub releases](https://github.com/abi/screenshot-to-code/releases) for the open-source project.
 
 ## Sources
 
 Pages checked for this reference (2026-10-22):
 
-- [https://screenshottocode.com/](https://screenshottocode.com/) — hosted product
-- [https://github.com/abi/screenshot-to-code](https://github.com/abi/screenshot-to-code) — MIT license and README
-
+- [https://screenshottocode.com/](https://screenshottocode.com/) — hosted product and pricing
+- [https://github.com/abi/screenshot-to-code](https://github.com/abi/screenshot-to-code) — README (inputs, stacks, MIT license)

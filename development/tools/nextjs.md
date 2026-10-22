@@ -10,8 +10,8 @@ sources:
     label: Next.js
   - url: https://nextjs.org/docs
     label: Next.js documentation
-  - url: https://x.com/nextjs
-    label: Next.js on X
+  - url: https://github.com/vercel/next.js/releases
+    label: Next.js GitHub releases
 ---
 
 # Next.js — React framework for the web
@@ -20,33 +20,45 @@ sources:
 
 - Starting or extending a **React** app with routing, SSR, RSC, or API routes.
 - Following Next.js release notes before upgrading production apps on [Vercel](vercel.md).
-- Aligning UI work from [Paper](../../design/tools/paper.md) or [Figma](../../design/tools/figma.md) with the app's component structure.
+- Aligning UI from [Paper](../../design/tools/paper.md) or [Figma](../../design/tools/figma.md) with app structure.
 
 ## What it is
 
-[Next.js](https://nextjs.org/) is a **React framework** for production web apps: file-based routing, server and client components, data fetching patterns, and optimizations for deploy targets (especially [Vercel](vercel.md)). Docs: [nextjs.org/docs](https://nextjs.org/docs).
+[Next.js](https://nextjs.org/) is a **React framework** for production web apps maintained by Vercel. The [App Router](https://nextjs.org/docs/app) is the modern default for routing, layouts, server components, and data fetching patterns documented at [nextjs.org/docs](https://nextjs.org/docs).
 
-## Where it fits in Jake's stack and JStack
+## What it can do
 
-Next.js is Jake's **default application framework** for web products. JStack lists it under [`development/tools/`](README.md) next to [Vercel](vercel.md) and [GitHub](github.md); lessons and agents in other folders assume a Next-friendly repo unless stated otherwise.
+### App Router and React Server Components
 
-## Official links
+**Server Components** render on the server by default, reducing client JavaScript for data-heavy pages. **Client Components** handle interactivity where needed. Nested **layouts** and **loading UI** keep navigation fast.
 
-- [Next.js](https://nextjs.org/)
-- [Next.js documentation](https://nextjs.org/docs)
-- [Next.js on X](https://x.com/nextjs)
+### Data fetching and caching
 
-## News & Insights
+Next.js documents `fetch` caching, **revalidation**, and **Server Actions** for mutations without separate API boilerplate—pair with [Supabase](supabase.md) or other backends using server-only credentials.
 
-Weekly external coverage: [`news-and-insights/README.md`](../../news-and-insights/README.md). When an issue mentions Next.js, link to [this file](nextjs.md).
+### Routing and middleware
 
-## Jake's take
+File-system **routes**, dynamic segments, **route groups**, and **middleware** support auth gates, localization, and experiments at the edge on [Vercel](vercel.md).
 
-<!-- Jake's input goes here -->
+### Image and font optimization
+
+Built-in **`next/image`** and **`next/font`** improve performance with sensible defaults—important for marketing pages and product UI alike.
+
+### Incremental adoption and tooling
+
+Next.js supports incremental migration from legacy React apps and ships with **Turbopack** (per current docs) for faster local development—confirm defaults in the version you run.
+
+## How it fits Jake's stack
+
+**Default application framework** for web products. Design exploration happens in [Paper](../../design/tools/paper.md); production components live in GitHub repos deployed to Vercel with Supabase backends and Resend email.
+
+## News and insights
+
+Included in the weekly [News & Insights](../../news-and-insights/README.md) sweep. Follow [nextjs.org/blog](https://nextjs.org/blog), [GitHub releases](https://github.com/vercel/next.js/releases), [docs](https://nextjs.org/docs), and [@nextjs on X](https://x.com/nextjs). Link [this file](nextjs.md) in digests.
 
 ## Sources
 
 Pages checked for this reference (2026-10-22):
 
-- [https://nextjs.org/](https://nextjs.org/) — project home
-- [https://nextjs.org/docs](https://nextjs.org/docs) — documentation
+- [https://nextjs.org/](https://nextjs.org/) — framework home
+- [https://nextjs.org/docs](https://nextjs.org/docs) — App Router, data fetching, deployment

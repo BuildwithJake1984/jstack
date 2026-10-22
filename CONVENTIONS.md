@@ -9,7 +9,7 @@ Lessons, tools, skills, and reference notes share one shape so humans and agents
 3. **`## When to use`** — a few bullets: when to open this file.
 4. **Body** — the lesson, tool notes, or skill instructions.
 
-Optional sections (tools): `## Capabilities`, `## Access and pricing`, `## Use notes`, `## Jake's take`, `## Sources`.
+Optional sections (tools): extra subsections under `## What it can do` when needed; `## Sources` is required when citing vendor pages.
 
 ## Catalog layout
 
@@ -109,9 +109,33 @@ sources:
 - Choosing or comparing …
 - Setting up …
 
-## Capabilities
+## What it is
+
+One or two paragraphs grounded in official product/docs pages.
+
+## What it can do
+
+### Feature area one
+
+Short paragraph on what it does and how it helps—not a one-liner bullet list.
+
+### Feature area two
 
 …
+
+## How it fits Jake's stack
+
+How Jake uses the tool with sibling JStack links where relevant.
+
+## News and insights
+
+Where to follow releases (blog, changelog, docs, GitHub releases, X) and link to [`news-and-insights/README.md`](../news-and-insights/README.md). State whether the tool is in the weekly sweep.
+
+## Sources
+
+Pages checked for this reference (YYYY-MM-DD):
+
+- https://example.com/ — what you verified
 ```
 
 ### Skill — design catalog (`design/skills/<name>.md`)

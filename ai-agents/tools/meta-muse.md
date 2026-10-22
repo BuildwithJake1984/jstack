@@ -7,46 +7,55 @@ status: curated
 tags: [tools, ai-agents, meta, meta-ai, muse, llama, open-models]
 sources:
   - url: https://ai.meta.com/
-    label: Meta AI
+    label: Meta AI research
   - url: https://www.meta.ai/
     label: Meta AI app
-  - url: https://x.com/MetaAI
-    label: Meta AI on X
+  - url: https://llama.meta.com/
+    label: Llama
 ---
 
 # Meta — Meta AI and Muse
 
 ## When to use
 
-- Evaluating **Meta AI** consumer and assistant experiences versus API-first labs.
-- Tracking **Llama** and other Meta open-model releases for self-hosted or fine-tuned stacks.
-- Following **Muse** and related Meta research when generative media or model architecture news matters to the product.
+- Evaluating **Meta AI** assistant experiences or **Llama** open models for self-hosted stacks.
+- Tracking Meta research (including **Muse** generative work) when architecture or media pipelines are affected.
+- Comparing open-weights options with API-first labs.
 
 ## What it is
 
-[Meta AI](https://ai.meta.com/) is Meta's research and product organization for AI, including open models such as **Llama** and the [Meta AI](https://www.meta.ai/) assistant experience. **Muse** refers to Meta's published generative-model research (for example text-to-image Muse work described on Meta AI research channels)—confirm current product names on official pages before integrating.
+[Meta AI](https://ai.meta.com/) is Meta’s research and product organization for AI. **[Llama](https://llama.meta.com/)** is Meta’s open model family with downloadable weights and license terms. The **[Meta AI](https://www.meta.ai/)** app provides a consumer assistant across Meta surfaces. **Muse** refers to Meta-published generative research (for example text-to-image Muse models described on Meta AI research channels)—confirm current product names on official pages before integration.
 
-## Where it fits in Jake's stack and JStack
+## What it can do
 
-Meta is a **secondary frontier and open-model source**: strong when Llama-family weights, on-device, or Meta-platform distribution matter. JStack keeps it in [`ai-agents/tools/`](README.md) for parity with [Claude](claude.md), [OpenAI](openai.md), and [Google](google.md); it is not a default replacement for Jake's primary coding agents unless a project explicitly targets Meta's stack.
+### Llama models
 
-## Official links
+Meta releases **Llama** checkpoints with documented licenses for research and commercial use subject to terms on [llama.meta.com](https://llama.meta.com/). Teams can fine-tune or host on their own GPUs—useful when data residency or cost favors self-hosting over [OpenAI](openai.md)-style APIs.
 
-- [Meta AI (research)](https://ai.meta.com/)
-- [Meta AI app](https://www.meta.ai/)
-- [Meta AI on X](https://x.com/MetaAI)
+### Meta AI assistant
 
-## News & Insights
+The Meta AI app answers questions, generates images where enabled, and integrates with Meta apps per Meta’s product pages. Distribution reach differs from developer APIs—treat it as a product surface, not a drop-in replacement for Claude/OpenAI in custom apps.
 
-Weekly external coverage: [`news-and-insights/README.md`](../../news-and-insights/README.md). When an issue mentions Meta AI or Muse, link to [this file](meta-muse.md).
+### Research models (Muse and related)
 
-## Jake's take
+Meta AI research blogs document models such as **Muse** for high-quality image generation and other modalities. Research artifacts may not map 1:1 to shipping APIs—read each release for availability and license constraints.
 
-<!-- Jake's input goes here -->
+### PyTorch and open ecosystem
+
+Much of Meta’s stack builds on **PyTorch** and open tooling, influencing how Llama weights are served (vLLM, Ollama, etc.) in self-hosted deployments.
+
+## How it fits Jake's stack
+
+A **secondary frontier and open-model source** when Llama weights or Meta distribution matter; not Jake’s default for [Cursor](cursor.md)-driven app development unless a project explicitly targets Meta’s stack. Marketing creative may use separate tools in [`marketing/tools/`](../../marketing/tools/README.md).
+
+## News and insights
+
+Included in the weekly [News & Insights](../../news-and-insights/README.md) sweep. Follow [ai.meta.com](https://ai.meta.com/) blog/research, [llama.meta.com](https://llama.meta.com/) releases, [meta.ai](https://www.meta.ai/) product updates, and [@MetaAI](https://x.com/MetaAI). Link [this file](meta-muse.md) in digests.
 
 ## Sources
 
 Pages checked for this reference (2026-10-22):
 
-- [https://ai.meta.com/](https://ai.meta.com/) — Meta AI research and blog
+- [https://ai.meta.com/](https://ai.meta.com/) — research and blog
+- [https://llama.meta.com/](https://llama.meta.com/) — Llama models and license
 - [https://www.meta.ai/](https://www.meta.ai/) — Meta AI assistant product

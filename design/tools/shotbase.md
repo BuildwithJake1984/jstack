@@ -17,38 +17,38 @@ sources:
 - Recording product walkthroughs, bug reports, or before/after evidence on macOS.
 - Organizing and sharing captures with editing, frames, or scroll capture.
 
-A macOS capture workspace for screenshots, screen recordings, webpage captures, editing, animation, organization, and share links. Useful for product walkthroughs, feature demos, bug reports, before-and-after evidence, client instructions, launch assets, and development documentation.
+## What it is
 
-Notable capabilities include automatic zooms, cinematic 3D transforms, text and callouts, custom backgrounds and device frames, scrolling and responsive webpage capture, a searchable visual library, and locally processed AI naming, tags, and summaries. Local AI requires Apple silicon.
+[Shotbase](https://shotbase.com/) is a **macOS** application for screenshots, screen recordings, webpage captures, editing, and shareable links. The product site positions it for demos, documentation, bug reports, and client instructions with a searchable visual library.
 
-## Access and pricing
+## What it can do
 
-**Paid software with a seven-day free trial and no card required.** As verified on 2026-09-16, Shotbase displayed a limited 25% promotion:
+### Capture and recording
 
-- Pro Yearly: $9.75/month billed yearly; the regular displayed rate is $13/month.
-- Pro Monthly: $18.75/month; the regular displayed rate is $25/month.
+Record the screen, capture still screenshots, and capture **scrolling or responsive webpages** as assets for documentation and support.
 
-Promotional eligibility and pricing can change, so verify the current offer before purchase.
+### In-app editing and presentation
 
-## Where it fits in Jake's stack and JStack
+Shotbase markets **automatic zooms**, **3D transforms**, text and callouts, **custom backgrounds**, and **device frames** so captures read well in docs and social posts without opening a separate editor.
 
-Keep this as a **macOS capture reference** for demos, bug evidence, and documentation—not a runtime dependency. Confirm privacy and sharing settings before uploading client or product material. Captured in [`design/tools/`](README.md) alongside other creative utilities.
+### Library and local AI metadata
 
-## Official links
+A searchable **library** organizes past captures. Shotbase describes **locally processed AI** naming, tags, and summaries (local AI features require **Apple silicon** per product copy).
 
-- [Shotbase](https://shotbase.com/)
+### Sharing
 
-## News & Insights
+Generate **share links** for selected captures when you explicitly choose to upload; otherwise assets remain local until you share.
 
-Weekly external coverage: [`news-and-insights/README.md`](../../news-and-insights/README.md). When an issue mentions Shotbase, link to [this file](shotbase.md).
+## How it fits Jake's stack
 
-## Jake's take
+A **macOS-only capture reference** for demos and evidence—not part of the shipping stack ([Vercel](../../development/tools/vercel.md), [Supabase](../../development/tools/supabase.md), etc.). Verify privacy and sharing settings before client or production material leaves the machine. Confirm current pricing on [shotbase.com](https://shotbase.com/) (paid app with trial; promotional rates change).
 
-<!-- Jake's input goes here -->
+## News and insights
+
+**Not** in the weekly [News & Insights](../../news-and-insights/README.md) vendor sweep. Link [this file](shotbase.md) if you mention Shotbase elsewhere. Follow [shotbase.com](https://shotbase.com/) for product updates; no verified X handle is listed in JStack—confirm on the vendor site before citing social accounts.
 
 ## Sources
 
 Pages checked for this reference (2026-10-22):
 
-- [https://shotbase.com/](https://shotbase.com/) — product and pricing
-
+- [https://shotbase.com/](https://shotbase.com/) — features, pricing, platform requirements

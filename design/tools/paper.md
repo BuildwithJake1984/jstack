@@ -8,6 +8,8 @@ tags: [tools, design, ui, agents, mcp, html, css, canvas, handoff]
 sources:
   - url: https://paper.design/
     label: Paper marketing site
+  - url: https://paper.design/docs
+    label: Paper documentation
   - url: https://paper.design/docs/mcp
     label: Paper MCP documentation
 ---
@@ -20,53 +22,44 @@ sources:
 - Connecting Cursor or other agents to a design file via Paper MCP.
 - Syncing tokens or real content between code and canvas.
 
-[Paper](https://paper.design/) describes itself as **the connected canvas for teams shipping with agents**: a single design space built on **web standards** where teams, agents, code, and data can stay aligned. Paper Desktop extends that workflow by connecting visual work to apps, agents, and repos through **MCP**.
+## What it is
 
-Paper’s site emphasizes a **design-to-code loop**: an **HTML/CSS canvas** so designs map to code, agents that can **sync design tokens, styles, and components** between a **codebase and the canvas**, and workflows to **pull real content or data** (files, CMS, databases, APIs) into layers and **push copy updates back toward code**. It also positions agents for repetitive work such as **responsive layouts**, style variations, and consistency checks while the designer keeps creative control.
+[Paper](https://paper.design/) is a **connected canvas** for teams that ship with agents: a design space built on **web standards** where visual work, code, and data can stay aligned. [Paper Desktop](https://paper.design/) extends that workflow with local files and agent connections through the **Model Context Protocol (MCP)** described in [Paper’s MCP docs](https://paper.design/docs/mcp).
 
-## Capabilities
+## What it can do
 
-- **Canvas on web technology** — Paper markets an HTML/CSS-based canvas so layout work stays close to how sites and apps are built.
-- **Paper Desktop** — Desktop app that unlocks the connected workflow and MCP setup described in official docs.
-- **Paper MCP server** — Agents can **read and write** open Paper files: generate layouts, pull real content, or turn a selected frame into code ([MCP docs](https://paper.design/docs/mcp)). Setup is centered on Paper Desktop (install/open Desktop, then connect agents via the in-app MCP panel or documented manual config). Supported agents listed in docs include **Cursor**, Claude / Claude Code, Codex, VS Code, GitHub Copilot, OpenCode, Antigravity, and others.
-- **Agent connection options** — Docs describe **stdio via the Paper CLI** (`paper mcp`) for many agents, plus legacy **localhost HTTP** MCP while a file is open; Cursor can use the marketplace plugin or `/add-plugin paper-desktop`.
-- **Documented MCP workflows** — Official guides cover **syncing tokens/styles from Figma** (Figma MCP + Paper MCP together), **pulling content from Notion** into frames, and **building sites from selected frames** (docs recommend flex layouts/containers for better code generation).
-- **Tokens** — Paper documents **tokens and themes** for styling designs (see Paper docs index at [paper.design/docs](https://paper.design/docs)).
+### HTML/CSS canvas
 
-## Access and pricing
+Paper’s canvas is grounded in **HTML and CSS**, so layouts map closely to how sites and apps are built in production. That reduces translation loss when moving from exploration to front-end implementation compared with purely abstract drawing models.
 
-Paper offers web and desktop experiences. **Verify current plans and pricing on [paper.design](https://paper.design/)** before recommending a purchase. MCP workflows in the official documentation assume **Paper Desktop** is installed and updated.
+### Paper Desktop and MCP
 
-## Where it fits in Jake's stack and JStack
+With **Paper Desktop** installed, agents can **read and write** open Paper files—generate layouts, apply styles, or export selected frames toward code. Official docs list supported clients (including **Cursor**, Claude / Claude Code, Codex, VS Code, GitHub Copilot, and others) and setup via the in-app MCP panel, **`paper mcp` CLI** (stdio), or documented HTTP transport while a file is open.
 
-Jake uses Paper as his **primary UI/UX tool for mapping website and app screens**. His AI agents connect through Paper MCP and design directly on the platform. Because output is grounded in **HTML/CSS**, handoff to front-end development tends to stay closer to what ships in the browser. Paper also lets him be **more hands-on** when he wants to—he can work **directly on the canvas** instead of only delegating to agents.
+### Design–code sync
 
-Treat Paper files as the source of truth for exploratory UI work in this stack; pair with your repo’s components, tokens, and accessibility standards before production merge.
+Paper documents workflows to **sync design tokens, styles, and components** between a **codebase and the canvas**, and to **pull real content** from files, CMS, databases, or APIs into layers. Copy and structure updates can flow back toward code so the canvas does not drift from what ships.
 
-## Official links
+### Documented cross-tool workflows
 
-- [Paper](https://paper.design/)
-- [Paper documentation](https://paper.design/docs)
-- [Paper on X](https://x.com/paper)
+Official guides cover combining **Figma MCP with Paper MCP** to bring tokens or styles from Figma, **Notion** content into frames, and **building sites from selected frames** (docs recommend flex layouts and containers for stronger code generation).
 
-## News & Insights
+### Tokens and themes
 
-Weekly external coverage: [`news-and-insights/README.md`](../../news-and-insights/README.md). When an issue mentions Paper, link to [this file](paper.md).
+Paper documents **tokens and themes** for consistent styling on the canvas ([docs index](https://paper.design/docs)), which pairs with Jake’s Figma token libraries and code-side theme files.
 
-## Related
+## How it fits Jake's stack
 
-- [Figma](figma.md) — design systems, variables, and Dev Mode handoff
-- [Mobbin](mobbin.md) — real-product UI and UX pattern research
-- [Design tokens in a design system](../lessons/design-tokens.md) — shared naming between Figma, Paper, and code
+Jake uses Paper as his **primary UI/UX tool for mapping website and app screens**. Agents connect through **Paper MCP** and can design directly in the file; because output is **HTML/CSS**, handoff to [Next.js](../../development/tools/nextjs.md) development stays closer to the browser. He also works **hands-on on the canvas** when he wants direct control instead of delegating everything to agents. Paper complements [Figma](figma.md) (systems and tokens) and [Mobbin](mobbin.md) (pattern research). Verify plans on [paper.design](https://paper.design/) before purchase; MCP flows in docs assume an up-to-date Desktop app.
 
-## Jake's take
+## News and insights
 
-<!-- Jake's input goes here -->
+Included in the weekly [News & Insights](../../news-and-insights/README.md) sweep. Follow [paper.design](https://paper.design/), [Paper docs](https://paper.design/docs) (including MCP and release-related pages), and [@paper on X](https://x.com/paper). Link [this file](paper.md) when an issue mentions Paper.
 
 ## Sources
 
 Pages checked for this reference (2026-10-22):
 
-- [https://paper.design/](https://paper.design/) — product positioning, HTML/CSS canvas, token/style sync with code, real data workflows, agent-assisted layout work
-- [https://paper.design/docs/mcp](https://paper.design/docs/mcp) — MCP read/write behavior, Desktop requirement, supported agents, Figma/Notion/code workflows, CLI vs HTTP transport
-- [https://paper.design/docs](https://paper.design/docs) — docs index (tokens/themes, MCP, and related guides)
+- [https://paper.design/](https://paper.design/) — product positioning, HTML/CSS canvas, agent and data workflows
+- [https://paper.design/docs](https://paper.design/docs) — documentation index (tokens, themes, MCP)
+- [https://paper.design/docs/mcp](https://paper.design/docs/mcp) — MCP setup, supported agents, Figma/Notion/code workflows, CLI vs HTTP

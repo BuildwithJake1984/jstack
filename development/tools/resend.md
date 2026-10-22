@@ -10,8 +10,8 @@ sources:
     label: Resend
   - url: https://resend.com/docs
     label: Resend documentation
-  - url: https://x.com/resend
-    label: Resend on X
+  - url: https://resend.com/changelog
+    label: Resend changelog
 ---
 
 # Resend — email API for developers
@@ -24,29 +24,42 @@ sources:
 
 ## What it is
 
-[Resend](https://resend.com/) is an **email API** for developers: send, receive (where offered), domains, templates, and SDKs. Documentation: [resend.com/docs](https://resend.com/docs).
+[Resend](https://resend.com/) is an **email API** for developers with SDKs, domain verification, templates, and dashboards. Docs: [resend.com/docs](https://resend.com/docs); product updates: [resend.com/changelog](https://resend.com/changelog).
 
-## Where it fits in Jake's stack and JStack
+## What it can do
 
-Resend is Jake's **preferred developer email layer** on the [Vercel](vercel.md) + [Next.js](nextjs.md) stack—paired with [Supabase](supabase.md) auth flows and product events. Listed under [`development/tools/`](README.md); included in the weekly [News & Insights](../../news-and-insights/README.md) sweep.
+### Send API and SDKs
 
-## Official links
+The **Send** endpoint delivers HTML/text messages with attachments and tags. Official SDKs (including Node/React examples in docs) integrate with [Next.js](nextjs.md) Route Handlers and Server Actions using server-only API keys.
 
-- [Resend](https://resend.com/)
-- [Resend documentation](https://resend.com/docs)
-- [Resend on X](https://x.com/resend)
+### Domains and deliverability
 
-## News & Insights
+Add and verify **DNS records** (SPF, DKIM, DMARC per Resend guides) on your sending domain before production traffic. Resend documents batching, idempotency, and bounce handling patterns.
 
-Weekly external coverage: [`news-and-insights/README.md`](../../news-and-insights/README.md). When an issue mentions Resend, link to [this file](resend.md).
+### Templates and React email
 
-## Jake's take
+Resend supports **templates** and documents **React Email** integration for component-based message markup—useful for consistent product and auth emails.
 
-<!-- Jake's input goes here -->
+### Audiences and broadcasts (product-dependent)
+
+Resend has expanded beyond pure transactional mail into **audiences** and marketing-style sends on some plans—confirm current product boundaries in docs before mixing transactional and promotional mail.
+
+### Webhooks
+
+**Webhooks** notify your [Vercel](vercel.md) or [Supabase](supabase.md) backends about delivery, bounces, and complaints for automation and suppression lists.
+
+## How it fits Jake's stack
+
+**Preferred developer email layer** on Vercel + Next.js—auth messages from [Supabase](supabase.md), product notifications, and lifecycle mail. Marketing blasts may also use [Canva](../../design/tools/canva.md) assets but sending infrastructure stays in Resend for code-owned flows.
+
+## News and insights
+
+Included in the weekly [News & Insights](../../news-and-insights/README.md) sweep. Follow [resend.com/changelog](https://resend.com/changelog), [docs](https://resend.com/docs), Resend blog posts, and [@resend on X](https://x.com/resend). Link [this file](resend.md) in digests.
 
 ## Sources
 
 Pages checked for this reference (2026-10-22):
 
 - [https://resend.com/](https://resend.com/) — product overview
-- [https://resend.com/docs](https://resend.com/docs) — documentation
+- [https://resend.com/docs](https://resend.com/docs) — API, domains, React Email
+- [https://resend.com/changelog](https://resend.com/changelog) — changelog

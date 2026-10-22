@@ -10,8 +10,6 @@ sources:
     label: Railway
   - url: https://docs.railway.com/
     label: Railway documentation
-  - url: https://x.com/Railway
-    label: Railway on X
 ---
 
 # Railway — deploy apps and databases
@@ -24,29 +22,37 @@ sources:
 
 ## What it is
 
-[Railway](https://railway.com/) is a cloud platform for **deploying applications and data services** from Git or templates, with logs, metrics, and project-scoped environments. Docs: [docs.railway.com](https://docs.railway.com/).
+[Railway](https://railway.com/) is a cloud platform to **deploy applications and data services** from Git repositories or templates, with per-project environments, logs, and metrics. Documentation: [docs.railway.com](https://docs.railway.com/).
 
-## Where it fits in Jake's stack and JStack
+## What it can do
 
-Railway is Jake's **flexible compute and data host** when something is not a static/edge Next.js site—long-running processes, custom Docker services, or auxiliary databases. JStack catalogs it in [`development/tools/`](README.md) alongside [Vercel](vercel.md) and [Supabase](supabase.md).
+### Git-based deploys
 
-## Official links
+Connect a [GitHub](github.md) repo (or CLI deploy) so pushes build container images or Nixpacks builds and roll out to Railway’s network. Preview environments map to branches per Railway docs.
 
-- [Railway](https://railway.com/)
-- [Railway documentation](https://docs.railway.com/)
-- [Railway on X](https://x.com/Railway)
+### Services and networking
 
-## News & Insights
+Run multiple **services** in one project with private networking, public URLs, and configurable **resources** (CPU/RAM). Suitable for APIs, queues workers, and cron-style jobs.
 
-Weekly external coverage: [`news-and-insights/README.md`](../../news-and-insights/README.md). When an issue mentions Railway, link to [this file](railway.md).
+### Databases and plugins
 
-## Jake's take
+Railway offers managed **PostgreSQL**, **MySQL**, **Redis**, and other data templates as attachable services—helpful when a workload should not share [Supabase](supabase.md) with the main app.
 
-<!-- Jake's input goes here -->
+### Observability
+
+Built-in **logs**, metrics, and deployment history support debugging without standing up a separate observability stack for small projects.
+
+## How it fits Jake's stack
+
+**Flexible compute host** when something is not a static/edge [Next.js](nextjs.md) site on [Vercel](vercel.md)—long-running processes, custom Docker images, or auxiliary databases. Primary product web apps still default to Vercel + Supabase unless requirements push elsewhere.
+
+## News and insights
+
+Included in the weekly [News & Insights](../../news-and-insights/README.md) sweep. Follow [railway.com](https://railway.com/) blog/changelog, [docs.railway.com](https://docs.railway.com/) updates, and [@Railway on X](https://x.com/Railway). Link [this file](railway.md) in digests.
 
 ## Sources
 
 Pages checked for this reference (2026-10-22):
 
 - [https://railway.com/](https://railway.com/) — product overview
-- [https://docs.railway.com/](https://docs.railway.com/) — documentation
+- [https://docs.railway.com/](https://docs.railway.com/) — deploy, services, databases

@@ -10,8 +10,6 @@ sources:
     label: ElevenLabs
   - url: https://elevenlabs.io/docs
     label: ElevenLabs documentation
-  - url: https://x.com/elevenlabs
-    label: ElevenLabs on X
 ---
 
 # ElevenLabs — AI voice and audio
@@ -19,34 +17,46 @@ sources:
 ## When to use
 
 - **Voiceovers**, dubbing, or character audio for ads, demos, and social clips.
-- Evaluating ElevenLabs APIs versus local tools (for example [VoiceStudio](../../design/tools/voicestudio.md)) for a marketing workflow.
+- Evaluating ElevenLabs APIs versus local tools such as [VoiceStudio](../../design/tools/voicestudio.md).
 - Checking voice licensing and disclosure before publishing synthetic speech.
 
 ## What it is
 
-[ElevenLabs](https://elevenlabs.io/) provides **AI voice synthesis**, cloning (where permitted), dubbing, and related audio APIs. Documentation: [elevenlabs.io/docs](https://elevenlabs.io/docs).
+[ElevenLabs](https://elevenlabs.io/) provides **AI voice synthesis**, dubbing, and audio APIs for creators and developers. Documentation: [elevenlabs.io/docs](https://elevenlabs.io/docs).
 
-## Where it fits in Jake's stack and JStack
+## What it can do
 
-ElevenLabs is a **marketing and content audio** tool in JStack—hosted voice for campaigns and explainers—not core app infrastructure. It lives in [`marketing/tools/`](README.md) even though the underlying tech is AI; coding agents remain under [`ai-agents/tools/`](../../ai-agents/tools/README.md).
+### Text-to-speech and voice design
 
-## Official links
+Generate speech from text with selectable **voices**; design new voices from prompts or samples where the product and license allow (see ElevenLabs **Voice Design** docs).
 
-- [ElevenLabs](https://elevenlabs.io/)
-- [ElevenLabs documentation](https://elevenlabs.io/docs)
-- [ElevenLabs on X](https://x.com/elevenlabs)
+### Voice cloning (policy-bound)
 
-## News & Insights
+**Instant Voice Cloning** and related features require consent and prohibited-use policies published by ElevenLabs—read current terms before cloning real speakers.
 
-**Not** part of the weekly external-news sweep in [`news-and-insights/README.md`](../../news-and-insights/README.md). If another JStack doc mentions ElevenLabs, link to [this file](elevenlabs.md).
+### Dubbing and multilingual audio
 
-## Jake's take
+**Dubbing** workflows translate and re-voice video audio tracks—useful for adapting campaign creative across locales.
 
-<!-- Jake's input goes here -->
+### API and SDK access
+
+HTTP **API** endpoints and official SDKs integrate with automation pipelines (export from Higgsfield/Canva timelines, assemble in edit tools). API keys stay server-side when called from [Next.js](../../development/tools/nextjs.md) backends.
+
+### Projects and studio UI
+
+The web **Projects** UI supports non-developer iteration; developers pair UI exports with API calls for scale.
+
+## How it fits Jake's stack
+
+**Marketing and content audio** in JStack—hosted voice for campaigns and explainers—cataloged in [`marketing/tools/`](README.md) even though the tech is AI. Not a substitute for in-app conversational models ([Claude](../../ai-agents/tools/claude.md), etc.). Disclose synthetic voice in ads; confirm commercial rights per voice license.
+
+## News and insights
+
+**Not** in the weekly [News & Insights](../../news-and-insights/README.md) vendor sweep. Link [this file](elevenlabs.md) when mentioning ElevenLabs elsewhere. Follow [elevenlabs.io/blog](https://elevenlabs.io/blog) (when published), [docs](https://elevenlabs.io/docs) updates, and [@elevenlabs on X](https://x.com/elevenlabs).
 
 ## Sources
 
 Pages checked for this reference (2026-10-22):
 
 - [https://elevenlabs.io/](https://elevenlabs.io/) — product overview
-- [https://elevenlabs.io/docs](https://elevenlabs.io/docs) — documentation
+- [https://elevenlabs.io/docs](https://elevenlabs.io/docs) — API, voice design, dubbing, policies

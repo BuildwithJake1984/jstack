@@ -10,43 +10,56 @@ sources:
     label: GitHub
   - url: https://docs.github.com/
     label: GitHub documentation
-  - url: https://x.com/github
-    label: GitHub on X
+  - url: https://github.blog/changelog/
+    label: GitHub changelog
 ---
 
 # GitHub — source control and collaboration
 
 ## When to use
 
-- Hosting repos, opening PRs, and running **GitHub Actions** checks (as in this JStack repo).
+- Hosting repos, opening PRs, and running **GitHub Actions** checks (as in JStack).
 - Tracking **release feeds** for dependencies such as Claude Code, OpenAI SDKs, or xAI SDKs.
-- Connecting Vercel or Railway deploys to Git branches and tags.
+- Connecting [Vercel](vercel.md) or [Railway](railway.md) deploys to branches and tags.
 
 ## What it is
 
-[GitHub](https://github.com/) is Microsoft's **git hosting and collaboration** platform: repositories, pull requests, issues, Actions CI/CD, releases, and packages. Documentation: [docs.github.com](https://docs.github.com/).
+[GitHub](https://github.com/) is Microsoft's **Git hosting and collaboration** platform: repositories, pull requests, issues, Actions CI/CD, releases, and packages. Documentation: [docs.github.com](https://docs.github.com/); platform changes: [github.blog/changelog](https://github.blog/changelog/).
 
-## Where it fits in Jake's stack and JStack
+## What it can do
 
-GitHub is the **system of record for code**—JStack itself lives here, and app repos link to [Vercel](vercel.md) or [Railway](railway.md) for deploys. Tool release Atom feeds listed in [`news-and-insights/README.md`](../../news-and-insights/README.md) point at `github.com/<org>/<repo>/releases.atom`.
+### Pull requests and code review
 
-## Official links
+**Pull requests** combine diffs, reviews, checks, and merge strategies (merge, squash, rebase). JStack and app repos rely on PR gating before deploy.
 
-- [GitHub](https://github.com/)
-- [GitHub documentation](https://docs.github.com/)
-- [GitHub on X](https://x.com/github)
+### GitHub Actions
 
-## News & Insights
+**Actions** run workflows on events (push, PR, schedule) for linting, tests, security scans, and deployments. JStack’s `checks` workflow is an example pattern.
 
-Weekly external coverage: [`news-and-insights/README.md`](../../news-and-insights/README.md). When an issue mentions GitHub platform changes, link to [this file](github.md).
+### Releases and dependency tracking
 
-## Jake's take
+**Releases** and `releases.atom` feeds announce SDK and CLI updates—listed in [News & Insights](../../news-and-insights/README.md) for `anthropics/*`, `openai/*`, and `xai-org/*` repositories.
 
-<!-- Jake's input goes here -->
+### Issues, projects, and permissions
+
+**Issues** and **Projects** track work; **branch protection** and **environments** enforce approval flows for production.
+
+### Integrations
+
+GitHub Apps connect [Vercel](vercel.md), [Cursor](../../ai-agents/tools/cursor.md) Cloud Agents, and third-party CI without sharing long-lived passwords.
+
+## How it fits Jake's stack
+
+**System of record for code**—including this JStack repo and Property Guide–style apps. Deploy previews flow to Vercel; agents open PRs from [Cursor](../../ai-agents/tools/cursor.md); changelog monitoring feeds weekly digests.
+
+## News and insights
+
+Included in the weekly [News & Insights](../../news-and-insights/README.md) sweep. Follow [github.blog/changelog](https://github.blog/changelog/), [GitHub Blog](https://github.blog/), release Atom feeds for tracked repos, and [@github on X](https://x.com/github). Link [this file](github.md) in digests.
 
 ## Sources
 
 Pages checked for this reference (2026-10-22):
 
 - [https://github.com/](https://github.com/) — product home
-- [https://docs.github.com/](https://docs.github.com/) — documentation
+- [https://docs.github.com/](https://docs.github.com/) — Actions, PRs, releases
+- [https://github.blog/changelog/](https://github.blog/changelog/) — platform changelog

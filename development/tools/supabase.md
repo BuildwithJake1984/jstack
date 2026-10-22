@@ -10,8 +10,6 @@ sources:
     label: Supabase
   - url: https://supabase.com/docs
     label: Supabase documentation
-  - url: https://x.com/supabase
-    label: Supabase on X
 ---
 
 # Supabase — Postgres backend as a service
@@ -20,33 +18,45 @@ sources:
 
 - Standing up **Postgres**, **Auth**, **Storage**, or **Realtime** without running your own database fleet.
 - Pairing a Next.js or Vercel frontend with a managed backend and row-level security.
-- Evaluating migrations, edge functions, or Supabase changelog items for active projects.
+- Evaluating migrations, Edge Functions, or Supabase changelog items for active projects.
 
 ## What it is
 
-[Supabase](https://supabase.com/) is an open-source **Postgres development platform**: hosted database, authentication, object storage, realtime subscriptions, and related APIs. Documentation and guides live at [supabase.com/docs](https://supabase.com/docs).
+[Supabase](https://supabase.com/) is an open-source **Postgres development platform**: hosted database, authentication, object storage, realtime subscriptions, and auto-generated APIs. Guides and references live at [supabase.com/docs](https://supabase.com/docs).
 
-## Where it fits in Jake's stack and JStack
+## What it can do
 
-Supabase is Jake's **default data and auth layer** for apps that need a real database without bespoke DevOps. In JStack it lives under [`development/tools/`](README.md) with [Vercel](vercel.md), [Next.js](nextjs.md), and [GitHub](github.md). Design and agent work still flow through [`design/tools/`](../../design/tools/README.md) and [`ai-agents/tools/`](../../ai-agents/tools/README.md).
+### Managed Postgres
 
-## Official links
+Each project includes a full **PostgreSQL** database with SQL editor, migrations, backups (per plan), and extensions documented in Supabase guides. Use familiar SQL and Postgres tooling while Supabase operates the cluster.
 
-- [Supabase](https://supabase.com/)
-- [Supabase documentation](https://supabase.com/docs)
-- [Supabase on X](https://x.com/supabase)
+### Auth
 
-## News & Insights
+**Supabase Auth** supports email/password, magic links, OAuth providers, and phone flows (provider list in docs). JWT-based sessions integrate with [Next.js](nextjs.md) server and client components and **Row Level Security** policies in SQL.
 
-Weekly external coverage: [`news-and-insights/README.md`](../../news-and-insights/README.md). When an issue mentions Supabase, link to [this file](supabase.md).
+### Storage
 
-## Jake's take
+**Storage buckets** hold user-generated files with access rules tied to Auth users or service roles—common for avatars, uploads, and CMS media.
 
-<!-- Jake's input goes here -->
+### Realtime
+
+**Realtime** channels broadcast database changes or custom messages to subscribed clients—useful for live dashboards and collaborative features without operating a separate websocket fleet.
+
+### Edge Functions
+
+**Edge Functions** (Deno) run server-side logic close to users for webhooks, light transforms, and privileged operations that should not live in the browser.
+
+## How it fits Jake's stack
+
+**Default data and auth layer** for apps on [Vercel](vercel.md) + [Next.js](nextjs.md). Agents in [Cursor](../../ai-agents/tools/cursor.md) use the Supabase MCP in some workflows; schema changes should still go through migrations and review. Transactional email often pairs with [Resend](resend.md) for auth and product messages.
+
+## News and insights
+
+Included in the weekly [News & Insights](../../news-and-insights/README.md) sweep. Follow [supabase.com/blog](https://supabase.com/blog), [changelog](https://github.com/supabase/supabase/blob/master/CHANGELOG.md) and docs updates, [@supabase on X](https://x.com/supabase). Link [this file](supabase.md) in digests.
 
 ## Sources
 
 Pages checked for this reference (2026-10-22):
 
 - [https://supabase.com/](https://supabase.com/) — product overview
-- [https://supabase.com/docs](https://supabase.com/docs) — documentation
+- [https://supabase.com/docs](https://supabase.com/docs) — Auth, Database, Storage, Realtime, Functions
