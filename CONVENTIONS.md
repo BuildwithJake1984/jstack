@@ -234,6 +234,16 @@ Short intro: what week this covers and the themes in this issue.
 - [Lesson or tool title](../path/to/item.md) — why it is relevant
 
 When you name a stack tool that has a JStack tool file, **link the tool name** to that file (relative path), for example [Claude](../ai-agents/tools/claude.md) or [Supabase](../development/tools/supabase.md)—do not mention the tool as plain text only.
+
+## What the analysts are saying (optional)
+
+Use when [analysts and commentators](../news-and-insights/README.md#analysts-and-commentators) add useful comparison or context on a story already anchored to an official source.
+
+- Credit each person **by name**; label content as **analysis**, not vendor news.
+- Do not state facts unless they are **checked against the official announcement** (blog, changelog, docs, or release page) cited in the item’s **Source** link.
+- Link to the analyst’s post on X when you reference their view (for example [Matthew Berman on X](https://x.com/MatthewBerman)).
+
+…
 ```
 
 Use `status: draft` until Jake approves the PR; set `status: published` when the issue is live. `week_of` must match the Monday in the filename. `sources` in frontmatter is the list of primary URLs cited in the issue (official announcements, docs, or release pages).
