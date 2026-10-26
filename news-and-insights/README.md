@@ -149,3 +149,7 @@ Official RSS/Atom URLs are **not listed** for: Anthropic (primary site), Cursor,
 ## Index
 
 Weekly issues appear in this folder as they are published. Newest files sort by Monday date in the filename.
+
+| Week of | File |
+| --- | --- |
+| 26 October 2026 | [2026/10/26 News & Insights](2026-10-26-news-and-insights.md) |
