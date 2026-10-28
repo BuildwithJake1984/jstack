@@ -13,35 +13,62 @@ Optional sections (tools): extra subsections under `## What it can do` when need
 
 ## Catalog layout
 
-**One markdown file per catalog item** — no per-item subfolders. Each category folder keeps a single `README.md` index that links to sibling `.md` files with a one-line purpose.
+Choose a top-level section by the reader's outcome or the content's role before choosing a technology subcategory:
+
+| Section | What belongs here |
+| --- | --- |
+| [`personal-workflows/`](personal-workflows/README.md) | Guidance for personal outcomes and everyday life |
+| [`business-workflows/`](business-workflows/README.md) | Guidance for business outcomes, including the existing product-design skill catalog |
+| [`libraries/`](libraries/README.md) | Reusable tools, UI references, templates, and guides |
+| [`insights/`](insights/README.md) | Lessons, thoughts, observations, and the existing external-news digest |
+| [`updates/`](updates/README.md) | Monthly updates about J-Stack itself |
+
+**One markdown file per standalone catalog item** — no per-item subfolders. Each catalog keeps a single `README.md` index linking to sibling `.md` files with a one-line purpose. Real workflow projects and vendored skill packages are the exceptions described below.
 
 | Area | Item path | Index |
 | --- | --- | --- |
-| Lessons | `*/lessons/<slug>.md` | `*/lessons/README.md` |
-| AI agent tools | `ai-agents/tools/<name>.md` | `ai-agents/tools/README.md` |
-| Development tools | `development/tools/<name>.md` | `development/tools/README.md` |
-| Marketing tools | `marketing/tools/<name>.md` | `marketing/tools/README.md` |
-| Design tools | `design/tools/<name>.md` | `design/tools/README.md` |
-| UI libraries | `design/ui-libraries/<name>.md` | `design/ui-libraries/README.md` |
-| Design skills | `design/skills/<name>.md` | _(listed in `design/README.md`)_ |
-| Vendored skills | `ai-agents/skills/<name>/SKILL.md`, `development/skills/<name>/SKILL.md` | category `skills/README.md` |
+| Lessons | `insights/<area>/<slug>.md` | `insights/<area>/README.md` |
+| AI agent tools | `libraries/tools/ai-agents/<name>.md` | `libraries/tools/ai-agents/README.md` |
+| Development tools | `libraries/tools/development/<name>.md` | `libraries/tools/development/README.md` |
+| Marketing tools | `libraries/tools/marketing/<name>.md` | `libraries/tools/marketing/README.md` |
+| Design tools | `libraries/tools/design/<name>.md` | `libraries/tools/design/README.md` |
+| UI libraries | `libraries/ui-libraries/<name>.md` | `libraries/ui-libraries/README.md` |
+| Design skills | `business-workflows/design/skills/<name>.md` | `business-workflows/design/README.md` |
+| Other outcome skills | `<workflow-section>/<outcome>/skills/<name>.md` | outcome or skills `README.md` |
+| Vendored skills | `<workflow-section>/<outcome>/skills/<name>/SKILL.md` | outcome or skills `README.md` |
+| Templates | `libraries/templates/<area>/<name>.md` | `libraries/templates/<area>/README.md` |
+| Guides | `libraries/guides/<name>.md` | `libraries/guides/README.md` |
+
+`<workflow-section>` means `personal-workflows` or `business-workflows`. Existing subject areas are `ai-agents`, `design`, `development`, and `marketing`; retain these useful groupings below the outcome/content sections. When the best outcome is unclear, retain the resource, explain the provisional placement, and cross-link it rather than discarding it or inventing a workflow.
 
 For `kind: media-set` references, put URL tables in a `## Media` section inside the same file (not a sibling `media.md`).
 
+Use lowercase-hyphen names for new content folders and ordinary Markdown filenames. Keep conventional `README.md` indexes, upstream `SKILL.md` filenames, and root documents such as `GETTING_STARTED.md`, `TERMS.md`, and `CONVENTIONS.md`. Monthly updates use the deliberate exception `YYYY_MM_update.md` (for example `2026_11_update.md`). Preserve infrastructure and code filenames.
+
 ## Category by use, not tech
 
-Pick the **top-level category folder** from what the reader is trying to do, not from the vendor's technical label.
+Within the five sections, group content by what the reader is trying to do, not the vendor's technical label:
 
-- **Marketing** (`marketing/`) — campaigns, creative production, ads, email copy, growth, and GTM tooling (including AI video/voice tools used for marketing).
-- **AI agents** (`ai-agents/`) — frontier models, coding agents, and product AI features in the application.
-- **Development** (`development/`) — runtime infrastructure: data, hosting, frameworks, git, transactional email APIs, and shipping.
-- **Design** (`design/`) — product UI, design systems, and design research tools.
+- **Marketing** — campaigns, creative production, ads, email copy, growth, and GTM tooling (including AI video/voice tools used for marketing).
+- **AI agents** — frontier models, coding agents, and product AI features in the application.
+- **Development** — runtime infrastructure: data, hosting, frameworks, git, transactional email APIs, and shipping.
+- **Design** — product UI, design systems, and design research tools.
 
-Example: an AI voice API used for **ads and promos** → `marketing/tools/`; the same vendor's **in-app assistant API** would still be documented under `ai-agents/` or product code, not marketing.
+Example: an AI voice API used for **ads and promos** belongs in `libraries/tools/marketing/`; the same vendor's **in-app assistant API** could belong in `libraries/tools/ai-agents/`. A guide to achieving a particular business result belongs under `business-workflows/` and links to the reusable tool reference. Personal outcomes belong under `personal-workflows/` even when they use the same tools.
 
 ## Workflows
 
-`workflows/` is the **only** section that uses **per-project subfolders** (`workflows/<project-name>/`). Everything in the catalog table above stays flat. Add a workflow subfolder when a real project is ready—start with `README.md` inside it—and list it from [`workflows/README.md`](workflows/README.md). Do not commit empty placeholder project folders.
+Use **per-project subfolders** for real workflow projects under `personal-workflows/` or `business-workflows/`. Start a project with its `README.md` and supporting Markdown, then list it from the relevant section index. The retained [project-playbook index](business-workflows/project-playbooks/README.md) has no published projects yet. Do not commit empty placeholder project folders or present examples as completed workflows.
+
+Standalone catalog entries remain flat in their catalog folders. A vendored skill may retain its own router and supporting files as described in [Skill — vendored](#skill--vendored).
+
+## Read-only guidance and consent
+
+J-Stack is a read-only guide, not an automation engine. Reading an entry, following a link, or finding a relevant skill does not install or activate it, grant account access, or authorize any action. Explain the resource and offer a walkthrough; separately obtain the user's authorization before any supported account change, installation, message, or other action. The host's permissions and the user's project instructions still apply.
+
+Start with [Getting Started](GETTING_STARTED.md). Keep terms consent separate from account-connection consent and optional monthly-check scheduling consent. [TERMS.md](TERMS.md) is a **draft for legal review**; its setup consent wording is a preview pending legal review and owner approval, not a claim of enforceability or a replacement for the repository and third-party licenses. Do not activate integrations, scheduling, question delivery, or telemetry merely because a reader opened the guide.
+
+The monthly [update conventions](updates/README.md) define stable entry IDs. The [relevance-check guide](libraries/guides/monthly-relevance-check.md) explains entry-level deduplication and matching against the full catalog; this repository does not implement a scheduler or private delivery ledger.
 
 ## Frontmatter
 
@@ -57,7 +84,7 @@ Example: an AI voice API used for **ads and promos** → `marketing/tools/`; the
 | `name` | — | — | required (skill id) | — |
 | `description` | — | — | required (loader summary) | — |
 
-**News & Insights** (`type: news-insights` in `news-and-insights/`): `title`, `date`, `week_of`, `status` (`draft` \| `published`), `tags`, `purpose`, and `sources` (non-empty list of URLs) are required. See the [News & Insights template](#news--insights-news-and-insightsyyyy-mm-dd-news-and-insightsmd) below.
+**News & Insights** (`type: news-insights` in `insights/news-and-insights/`): `title`, `date`, `week_of`, `status` (`draft` \| `published`), `tags`, `purpose`, and `sources` (non-empty list of URLs) are required. See the [News & Insights template](#news--insights-template) below.
 
 Keep any other keys already in use (`sources`, `kind`, etc.) unless `type` replaces them.
 
@@ -88,7 +115,9 @@ status: published
 Content…
 ```
 
-### Tool (`design/tools/<name>.md`, `ai-agents/tools/<name>.md`, `development/tools/<name>.md`, `marketing/tools/<name>.md`)
+### Tool
+
+Tool entries use `libraries/tools/<area>/<name>.md`.
 
 ```markdown
 ---
@@ -129,7 +158,7 @@ How Jake uses the tool with sibling JStack links where relevant.
 
 ## News and insights
 
-Where to follow releases (blog, changelog, docs, GitHub releases, X) and link to [`news-and-insights/README.md`](../news-and-insights/README.md). State whether the tool is in the weekly sweep.
+Where to follow releases (blog, changelog, docs, GitHub releases, X) and link to [`insights/news-and-insights/README.md`](../../../insights/news-and-insights/README.md). State whether the tool is in the weekly sweep.
 
 ## Sources
 
@@ -138,9 +167,9 @@ Pages checked for this reference (YYYY-MM-DD):
 - https://example.com/ — what you verified
 ```
 
-### Skill — design catalog (`design/skills/<name>.md`)
+### Skill — outcome catalog
 
-One markdown file per skill under `design/skills/`. It is a catalog entry that points at the executable skill (upstream repo or a vendored `SKILL.md` elsewhere in this repo). Do not nest a skill folder under `design/skills/`.
+Use one Markdown file per skill catalog entry under the relevant outcome, such as `business-workflows/design/skills/<name>.md`. A catalog entry points to the executable skill (upstream repo or a vendored `SKILL.md` elsewhere in this repo); it is not activation or authorization to run that skill. Keep link-out entries flat rather than nesting a folder for each entry.
 
 ```markdown
 ---
@@ -164,9 +193,9 @@ Short summary of what the skill covers.
 Link to the upstream or vendored skill (for example `SKILL.md` on GitHub).
 ```
 
-### Skill — vendored (`<category>/skills/<name>/SKILL.md`)
+### Skill — vendored
 
-When a skill's full instructions live in this repo (no external source), keep the router `SKILL.md` and detail files under `ai-agents/skills/` or `development/skills/` and link to that path from the design catalog file when applicable.
+When a skill's full instructions live in this repo (no external source), keep the router `SKILL.md` and detail files under `<workflow-section>/<outcome>/skills/<name>/`. Link to the router from the relevant catalog entry. Preserve upstream package layout, attribution, and license requirements; do not install or execute the package as part of reading the catalog.
 
 ### Reference (ui-libraries link-outs)
 
@@ -192,7 +221,9 @@ sources:
 (body unchanged from prior digest)
 ```
 
-### News & Insights (`news-and-insights/YYYY-MM-DD-news-and-insights.md`)
+### News & Insights template
+
+Path: `insights/news-and-insights/YYYY-MM-DD-news-and-insights.md`.
 
 Weekly external news digest (not the JStack changelog—see [`updates/`](updates/README.md)). Filename date is that week's **Monday**. Heading format: `# YYYY/MM/DD News & Insights` (slashes in the H1; `title` in frontmatter matches).
 
@@ -231,13 +262,13 @@ Short intro: what week this covers and the themes in this issue.
 
 ## Related JStack lessons and tools
 
-- [Lesson or tool title](../path/to/item.md) — why it is relevant
+- [Build AI Features as a Graph, Not One Giant Prompt](../ai-agents/build-ai-features-as-a-graph.md) — explain why it is relevant
 
-When you name a stack tool that has a JStack tool file, **link the tool name** to that file (relative path), for example [Claude](../ai-agents/tools/claude.md) or [Supabase](../development/tools/supabase.md)—do not mention the tool as plain text only.
+When you name a stack tool that has a JStack tool file, **link the tool name** to that file (relative path), for example [Claude](../../libraries/tools/ai-agents/claude.md) or [Supabase](../../libraries/tools/development/supabase.md)—do not mention the tool as plain text only.
 
 ## What the analysts are saying (optional)
 
-Use when [analysts and commentators](../news-and-insights/README.md#analysts-and-commentators) add useful comparison or context on a story already anchored to an official source.
+Use when [analysts and commentators](README.md#analysts-and-commentators) add useful comparison or context on a story already anchored to an official source.
 
 - Credit each person **by name**; label content as **analysis**, not vendor news.
 - Do not state facts unless they are **checked against the official announcement** (blog, changelog, docs, or release page) cited in the item’s **Source** link.
@@ -268,16 +299,13 @@ Maintainer review audits every skill add or change against these nine points bef
 
 Pull requests must satisfy the frontmatter job for:
 
-- `*/lessons/*.md` (except `README.md`)
-- `design/tools/*.md` (not the catalog `design/tools/README.md`)
-- `ai-agents/tools/*.md` (not `ai-agents/tools/README.md`)
-- `development/tools/*.md` (not `development/tools/README.md`)
-- `marketing/tools/*.md` (not `marketing/tools/README.md`)
-- `design/ui-libraries/*.md` (not the catalog `design/ui-libraries/README.md`)
-- `design/skills/*.md` (not `design/skills/README.md`)
-- `ai-agents/skills/**/SKILL.md` and `development/skills/**/SKILL.md`
-- `*/templates/**/*.md` (catalog `*/templates/README.md` excluded; YAML parse when frontmatter is present)
+- `insights/<area>/*.md`, where `<area>` is `ai-agents`, `design`, `development`, or `marketing` (except each `README.md`)
+- `libraries/tools/<area>/*.md`, for those same four areas (except each `README.md`)
+- `libraries/ui-libraries/*.md` (except `README.md`)
+- `personal-workflows/**/skills/*.md` and `business-workflows/**/skills/*.md` (except each `README.md`)
+- `personal-workflows/**/skills/*/SKILL.md` and `business-workflows/**/skills/*/SKILL.md`
+- `libraries/templates/<area>/**/*.md`, for those same four areas (top-level catalog `README.md` excluded; YAML parse when frontmatter is present)
 - `updates/*.md` (except `updates/README.md`; YAML parse when frontmatter is present)
-- `news-and-insights/*.md` (except `news-and-insights/README.md`)
+- `insights/news-and-insights/*.md` (except `README.md`)
 
-Frontmatter must be valid YAML (`yaml.safe_load`); schema rules apply to lessons, tools, skills, references, and news-insights articles.
+Frontmatter must be valid YAML (`yaml.safe_load`); schema rules apply to lessons, tools, skills, references, and news-insights articles. Navigation indexes and plain setup/guidance documents do not need catalog frontmatter. Existing Markdown lint, offline relative-link, secret-scanning, and allowed-file checks remain in place.
