@@ -130,10 +130,10 @@ def check_news_insights(data: dict, path: Path, errors: list[str]) -> None:
 def iter_lessons() -> list[Path]:
     paths: list[Path] = []
     for base in (
-        "ai-agents/lessons",
-        "design/lessons",
-        "development/lessons",
-        "marketing/lessons",
+        "insights/ai-agents",
+        "insights/design",
+        "insights/development",
+        "insights/marketing",
     ):
         for path in sorted((ROOT / base).glob("*.md")):
             if path.name == "README.md":
@@ -145,10 +145,10 @@ def iter_lessons() -> list[Path]:
 def iter_tools() -> list[Path]:
     paths: list[Path] = []
     for base in (
-        "design/tools",
-        "ai-agents/tools",
-        "development/tools",
-        "marketing/tools",
+        "libraries/tools/design",
+        "libraries/tools/ai-agents",
+        "libraries/tools/development",
+        "libraries/tools/marketing",
     ):
         folder = ROOT / base
         if not folder.is_dir():
@@ -161,26 +161,32 @@ def iter_tools() -> list[Path]:
 
 def iter_skills() -> list[Path]:
     paths: list[Path] = []
-    for path in sorted((ROOT / "design/skills").glob("*.md")):
-        if path.name == "README.md":
-            continue
-        paths.append(path)
-    for pattern in ("ai-agents/skills/*/SKILL.md", "development/skills/*/SKILL.md"):
-        paths.extend(sorted(ROOT.glob(pattern)))
+    for base in ("personal-workflows", "business-workflows"):
+        root = ROOT / base
+        for path in sorted(root.glob("**/skills/*.md")):
+            if path.name == "README.md":
+                continue
+            paths.append(path)
+        paths.extend(sorted(root.glob("**/skills/*/SKILL.md")))
     return paths
 
 
 def iter_references() -> list[Path]:
     return sorted(
         p
-        for p in (ROOT / "design/ui-libraries").glob("*.md")
+        for p in (ROOT / "libraries/ui-libraries").glob("*.md")
         if p.name != "README.md"
     )
 
 
 def iter_templates() -> list[Path]:
     paths: list[Path] = []
-    for base in ("ai-agents/templates", "design/templates", "development/templates"):
+    for base in (
+        "libraries/templates/ai-agents",
+        "libraries/templates/design",
+        "libraries/templates/development",
+        "libraries/templates/marketing",
+    ):
         root = ROOT / base
         if not root.is_dir():
             continue
@@ -199,7 +205,7 @@ def iter_updates() -> list[Path]:
 
 
 def iter_news_insights() -> list[Path]:
-    folder = ROOT / "news-and-insights"
+    folder = ROOT / "insights/news-and-insights"
     if not folder.is_dir():
         return []
     return sorted(p for p in folder.glob("*.md") if p.name != "README.md")
